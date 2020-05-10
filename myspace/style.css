@@ -1,12 +1,5 @@
 /*
-	 ::::::::  :::::::::      :::     :::::::::: ::::::::::: :::::::::  :::            :::      ::::::::  :::::::::: :::::::::  ::: ::::::::        ::::::::   ::::::::   ::::::::
-	:+:    :+: :+:    :+:   :+: :+:   :+:            :+:     :+:    :+: :+:          :+: :+:   :+:    :+: :+:        :+:    :+: :+ :+:    :+:      :+:    :+: :+:    :+: :+:    :+:
-	+:+        +:+    +:+  +:+   +:+  +:+            +:+     +:+    +:+ +:+         +:+   +:+  +:+        +:+        +:+    +:+    +:+             +:+        +:+        +:+
-	+#+        +#++:++#:  +#++:++#++: :#::+::#       +#+     +#++:++#+  +#+        +#++:++#++: +#+        +#++:++#   +#++:++#:     +#++:++#++      +#+        +#++:++#++ +#++:++#++
-	+#+        +#+    +#+ +#+     +#+ +#+            +#+     +#+        +#+        +#+     +#+ +#+        +#+        +#+    +#+           +#+      +#+               +#+        +#+
-	#+#    #+# #+#    #+# #+#     #+# #+#            #+#     #+#        #+#        #+#     #+# #+#    #+# #+#        #+#    #+#    #+#    #+#      #+#    #+# #+#    #+# #+#    #+#
-	 ########  ###    ### ###     ### ###            ###     ###        ########## ###     ###  ########  ########## ###    ###     ########        ########   ########   ########
-
+	Craftplacer's CSS
 	================================================================================================================================================================================
 
 	Feel free using snippets of it in your page, credit *would* be nice (even if some stuff was copied from StackOverflow)
@@ -113,11 +106,21 @@ body {
 	}
 
 /* colorful titles */
-	#about > h2:nth-of-type(1) { --h: #f788c1; }
-	#about > h2:nth-of-type(2) { --h: var(--purple); }
-	#about > h2:nth-of-type(3) { --h: #4d4cff; }
-	#about > h2:nth-of-type(4) { --h: var(--green); }
-	#about > h2:nth-of-type(5) { --h: var(--blue); }
+	#about > h2:nth-of-type(1) { --h: var(--black); color: var(--white); }
+	#about > h2:nth-of-type(2) { --h: #f788c1; }
+	#about > h2:nth-of-type(3) { --h: var(--purple); }
+	#about > h2:nth-of-type(4) { --h: #4d4cff; }
+	#about > h2:nth-of-type(5) { --h: var(--green); }
+	#about > h2:nth-of-type(6) { --h: var(--blue); }
+
+	/* very nice message*/
+	.boxInfo.box > a:nth-of-type(3):hover {
+		font-size: 0px;
+	}
+	.boxInfo.box > a:nth-of-type(3):hover:before {
+		content: "Are you sure about that?";
+		font-size: 14pt;
+	}
 
 /* colored links */
 	.boxButton { color: var(--linkColor); }
@@ -270,7 +273,7 @@ body {
 
 /* cool videos ( o w o)b */
 	.url {
-			background-image: url(https://craftplacer.github.io/img/powerofdream.gif);
+			background-image: url(https://craftplacer.github.io/myspace/powerofdream.gif);
 	    height: 192px;
 	    background-size: cover;
 	}
