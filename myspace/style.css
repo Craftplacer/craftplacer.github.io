@@ -11,6 +11,7 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import url("https://craftplacer.github.io/myspace/shake.css");
 @import url("https://craftplacer.github.io/myspace/rainbow.css");
+@import url("https://craftplacer.github.io/myspace/better-notifications.css");
 
 :root {
 	--darker-black: #131519;
@@ -157,28 +158,34 @@ a {
 
 a:hover {
 	text-decoration: underline;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 2px;
 }
 
 /* yes */
-
 .boxInfo.box>a {
 	font-weight: 900;
 }
 
 /* big futanari catgirl penis energy */
-
 #block:hover:after {
 	content: " lol, gay?";
 }
 
-/* hide title owo */
-.boxInfo, .boxInfo>.boxHead, .blurbs>.rightHead {
-	border: none;
+
+
+/* hide various stuff */
+.boxInfo>.boxHead, .blurbs>.rightHead, .comments>.boxHead, .url.box {
+	display: none;
 }
 
 .extended {
 	border: none;
 	margin: 0;
+}
+
+.boxInfo {
+	border: none;
 }
 
 /* fancy title ^w^ */
@@ -226,10 +233,6 @@ a:hover {
 	color: white;
 	font-weight: 100;
 	text-shadow: rgba(0, 0, 0, 0.75) 1px 1px 1px;
-}
-
-.comments>.boxHead {
-	display: none;
 }
 
 #userWall>tbody {
@@ -314,13 +317,14 @@ input[type="submit"] {
 	color: white;
 }
 
-/* cool videos ( o w o)b */
+/* cool videos ( o w o)b
 
-/*.url {
-			background-image: url(https://craftplacer.github.io/myspace/powerofdream.gif);
-	    height: 192px;
-	    background-size: cover;
-	}*/
+.url {
+	background-image: url(https://craftplacer.github.io/myspace/powerofdream.gif);
+	height: 192px;
+	background-size: cover;
+}
+*/
 
 .player>audio {
 	background: white;
@@ -431,59 +435,8 @@ code {
 	position: relative;
 }
 
-/* better header   */
-
-.blinkGreen {
-	display: none;
-}
-
-/* new friend */
-
-a.blinkYellow {
-	font-size: 0px !important;
-}
-
-/* Friend req */
-
-a.blinkYellow:before {
-	font-family: "Material Icons";
-	font-size: var(--headerIconSize);
-	content: "group_add";
-}
-
-/* new comments */
-
-.blinkViolet {
-	font-size: 0px !important;
-}
-
-.blinkViolet:before {
-	font-family: "Material Icons";
-	font-size: var(--headerIconSize);
-	content: "add_comment";
-}
-
-/* inbox */
-
-#hUp>a:nth-last-child(2) {
-	font-size: 0px !important;
-}
-
-#hUp>a:nth-last-child(2):before {
-	font-family: "Material Icons";
-	font-size: var(--headerIconSize);
-	content: "inbox";
-	color: var(--headerForeground);
-}
-
-#hUp>a:nth-last-child(1) {
-	color: var(--headerForeground);
-	top: calc(var(--headerIconSize) / 4 * -1);
-	position: relative;
-}
 
 /* blog tables */
-
 .blogCorpus>table {
 	border-collapse: collapse;
 	background: rgba(0, 0, 0, 0.5);
@@ -500,8 +453,7 @@ a.blinkYellow:before {
 	border-right: var(--white) solid 1px;
 }
 
-/* CSS-Tutorials*/
-
+/* CSS-Tutorials */
 a[href^="crtplr//example/"] {
 	/* we're creating elements for ourselves */
 	color: var(--white);
@@ -549,7 +501,7 @@ a[href="crtplr//example/2"] {
 	background-size: 400% 400%;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	-webkit-animation: rainbow 0.5s linear infinite, cool infinite 5s;
+	-webkit-animation: rainbow 2s linear infinite, cool infinite 5s;
 	text-align: center;
 	text-shadow: none;
 	font-weight: 900;

@@ -1,0 +1,74 @@
+@import url("https://craftplacer.github.io/myspace/icons.css");
+
+#hSub {
+    text-align: center;
+}
+
+#hSub > a {
+    font-family: "Material Design Icons";
+}
+
+#hSub > a[href^="/?id="] { /* Home */
+    content: "\F02DC";
+}
+#hSub > a[href^="/all.php?id="] { /* my fwiends */
+    content: "\F0899";
+}
+#hSub > a[href^="/list.php"] { /* all fwiends */
+    content: "\F000E";
+}
+#hSub > a[href="/random.php"] {
+    content: "\F049D";
+}
+#hSub > a[href="/music.php"] {
+    content: "\F0387";
+}
+#hSub > a[href="/search.php"] {
+    content: "\F0349";
+}
+
+/* Hide "New fwiends!" */
+.blinkGreen {
+	display: none;
+}
+
+/* new friend */
+a.blinkYellow {
+	font-size: 0px !important;
+}
+
+/* Friend req */
+a.blinkYellow:before {
+	font-family: "Material Icons";
+	font-size: var(--headerIconSize);
+	content: "group_add";
+}
+
+/* new comments */
+.blinkViolet {
+	font-size: 0px !important;
+}
+
+.blinkViolet:before {
+	font-family: "Material Icons";
+	font-size: var(--headerIconSize);
+	content: "add_comment";
+}
+
+/* inbox */
+#hUp>a:nth-last-child(2) {
+	font-size: 0px !important;
+}
+
+#hUp>a:nth-last-child(2):before {
+	font-family: "Material Icons";
+	font-size: var(--headerIconSize);
+	content: "inbox";
+	color: var(--headerForeground);
+}
+
+#hUp>a:nth-last-child(1) {
+	color: var(--headerForeground);
+	top: calc(var(--headerIconSize) / 4 * -1);
+	position: relative;
+}
