@@ -1,0 +1,40 @@
+:root {
+	/*
+		math time!
+		bps: (bpm / 60)
+		beatLength = 1000 / bps
+    */
+    --beatLength: 1332ms;
+
+    --beatBrightness14: 6;
+	--beatBrightness24: calc(var(--beatBrightness14) / 3);
+	--beatBrightness34: calc(var(--beatBrightness14) / 2);
+	--beatBrightness44: calc(var(--beatBrightness14) / 3);
+}
+
+#container {
+    animation: beat var(--beatLength) infinite;
+}
+
+@keyframes beat {
+    0% { background: rgba(var(--beatBrightness14), var(--beatBrightness14), var(--beatBrightness14), 0.5); }
+
+    20% { background: rgba(0, 0, 0, 0.5); }
+
+    24% { background: rgba(0, 0, 0, 0.5); }
+    25% { background: rgba(var(--beatBrightness24), var(--beatBrightness24), var(--beatBrightness24), 0.5); }
+
+    45% { background: rgba(0, 0, 0, 0.5); }
+
+    49% { background: rgba(0, 0, 0, 0.5); }
+    50% { background: rgba(var(--beatBrightness34), var(--beatBrightness34), var(--beatBrightness34), 0.5); }
+
+    70% { background: rgba(0, 0, 0, 0.5); }
+
+    74% { background: rgba(0, 0, 0, 0.5); }
+    75% { background: rgba(var(--beatBrightness44), var(--beatBrightness44), var(--beatBrightness44), 0.5); }
+
+    95% { background: rgba(0, 0, 0, 0.5); }
+
+    100% { background: rgba(0, 0, 0, 0.5); }
+}

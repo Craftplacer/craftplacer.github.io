@@ -1,0 +1,21 @@
+.url > div {
+    will-change: transform;
+    animation: marquee 25s linear infinite;
+    white-space: nowrap;
+    overflow: visible;
+}
+.url > div:nth-of-type(1) { display: none; }
+.url > div:nth-of-type(2) { text-align: center; }
+.url > div > a:before {
+    content: "this touhou video was uploaded by ";
+}
+.url > div > a {
+    color: rgba(192,192,192,0.5) !important;
+    text-shadow: rgba(0,0,0,0.5) 1px 1px 0, rgba(255,255,255,0.5) -1px -1px 0;
+    font-weight: bolder;
+    font-size: 24px;
+}
+@keyframes marquee {
+	0% { transform: translate(100%, 10px); }
+	100% { transform: translate(-300%, 10px); }
+}

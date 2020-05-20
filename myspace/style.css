@@ -6,9 +6,9 @@
 	:3
 */
 
-
-
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://craftplacer.github.io/myspace/shake.css");
+@import url("https://craftplacer.github.io/myspace/rainbow.css");
 
 :root {
 	--darker-black: #131519;
@@ -26,36 +26,19 @@
 	--headerBackground: rgba(255, 161, 104, 0.75);
 	--headerForeground: black;
 	--headerIconSize: 24px;
-
-	--rainbow: linear-gradient(to right, var(--red), var(--yellow), var(--green), var(--blue), var(--purple));
+	
 	--monospace: Roboto Mono, Consolas, monospace;
-
 	--background: rgba(40, 44, 52, 0.75);
-	--border: rgba(0,0,0,0.5) 1px solid;
+	--border: rgba(0, 0, 0, 0.5) 1px solid;
 	--areaPadding: 24px;
-
 	--fwiendSize: 48px;
-
-	/*
-		math time!
-		bps: (bpm / 60)
-		beatLength = 1000 / bps
-		*/
-	--beatLength: 1332ms;
-
-	--videoUrl: url(https://craftplacer.github.io/myspace/powerofdream.gif);
-
-	--beatBrightness14: 24;
-	--beatBrightness24: calc(var(--beatBrightness) / 4);
-	--beatBrightness34: calc(var(--beatBrightness) / 3);
-	--beatBrightness44: calc(var(--beatBrightness) / 4);
+	--videoUrl: url(https://craftplacer.github.io/myspace/cirno-onsen.gif);
 }
 
 body {
 	color: var(--white);
-	text-shadow: rgba(0,0,0,0.5) 0px 1px 2px;
+	text-shadow: rgba(0, 0, 0, 0.5) 0px 1px 2px;
 	font-family: var(--monospace);
-
 	background-image: var(--videoUrl);
 	background-size: cover;
 	background-attachment: fixed;
@@ -64,52 +47,45 @@ body {
 #container {
 	background: rgba(0, 0, 0, 0.5);
 	box-shadow: black 0px 0px 24px;
-	animation: beat var(--beatLength) infinite;
 }
+
 #header {
 	background: var(--headerBackground) !important;
 	color: black !important;
 	border-bottom: none !important;
 	padding-bottom: 6px !important;
 }
-#header > a {
+
+#header>a {
 	color: var(--headerForeground) !important;
 }
+
 #hSub {
-    background: var(--headerBackground) !important;
-    color: rgba(0,0,0,0.5);
+	background: var(--headerBackground) !important;
+	color: rgba(0, 0, 0, 0.5);
 }
-#hSub a { color: var(--headerForeground) !important; }
-#container > div:nth-of-type(1) { backdrop-filter: blur(5px); }
-#container > div:nth-of-type(2) { backdrop-filter: blur(5px); box-shadow: rgba(0,0,0,0.25) 0px 6px 6px; }
+
+#hSub a {
+	color: var(--headerForeground) !important;
+}
+
+#container>div:nth-of-type(1) {
+	backdrop-filter: blur(5px);
+}
+
+#container>div:nth-of-type(2) {
+	backdrop-filter: blur(5px);
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 6px 6px;
+}
 
 /* css props that don't work on the above :( */
 
-
-
-
-
-
 /* abawt */
-
-
-	#about {
+#about {
 	text-align: center;
 }
 
-#about > h1 {
-	color: #820070;
-	font-weight: bolder;
-	font-size: 32pt;
-	background-image: url(https://www.trbimg.com/img-58c1d636/turbine/mc-cherry-blossoms-washington-damage-travel-20170309);
-	background-size: cover;
-	box-shadow: pink 0px 0px 65px;
-	text-shadow: pink 0px 0px 11px;
-	height: 100px;
-	padding-top: 40px;
-}
-
-#about > h2 {
+#about>h2 {
 	background: var(--h);
 	padding: 4px;
 	margin-top: 14px;
@@ -120,72 +96,51 @@ body {
 	font-size: 15px;
 	color: white;
 	font-weight: 500;
-	text-shadow: rgba(0,0,0,0.75) 1px 1px 1px;
+	text-shadow: rgba(0, 0, 0, 0.75) 1px 1px 1px;
 }
 
-#about > h3 {
+#about>h3 {
 	background: var(--black);
 	margin: 0;
 	padding-block-start: 1em;
 	padding-block-end: 1em;
 }
 
-#about > p {
+#about>p {
 	background: var(--background);
 	border: var(--border);
 	padding: var(--areaPadding);
 }
 
-
-
 /* colorful titles */
 
-
-	#about > h2:nth-of-type(1) {
+#about>h2:nth-of-type(1) {
 	--h: var(--black);
 	color: var(--white);
 }
 
-#about > h2:nth-of-type(2) {
+#about>h2:nth-of-type(2) {
 	--h: #f788c1;
 }
 
-#about > h2:nth-of-type(3) {
+#about>h2:nth-of-type(3) {
 	--h: var(--purple);
 }
 
-#about > h2:nth-of-type(4) {
+#about>h2:nth-of-type(4) {
 	--h: #4d4cff;
 }
 
-#about > h2:nth-of-type(5) {
+#about>h2:nth-of-type(5) {
 	--h: var(--green);
 }
 
-#about > h2:nth-of-type(6) {
+#about>h2:nth-of-type(6) {
 	--h: var(--blue);
 }
 
-
-
-/* very nice message*/
-
-
-	.boxInfo.box > a:nth-of-type(3):hover {
-	font-size: 0px;
-}
-
-.boxInfo.box > a:nth-of-type(3):hover:before {
-	content: "Are you sure about that?";
-	font-size: 14pt;
-}
-
-
-
 /* colored links */
-
-
-	.boxButton {
+.boxButton {
 	color: var(--linkColor);
 }
 
@@ -198,50 +153,21 @@ a:hover {
 	text-decoration: underline;
 }
 
-
-
 /* yes */
 
-
-	.boxInfo.box {
-	display: grid;
-}
-
-.boxInfo.box > a {
-	background: var(--rainbow);
-	background-size: 400% 400%;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	-webkit-animation: rainbow 2s linear infinite, shake 0.5s infinite;
+.boxInfo.box>a {
 	font-weight: 900;
-	text-shadow: none;
-	text-align: center;
 }
 
+/* big futanari catgirl penis energy */
 
-
-/* no ;w; */
-
-
-	#report {
-	display: none;
+#block:hover:after {
+	content: " lol, gay?";
 }
-
-#block {
-	display: none;
-}
-
-
 
 /* hide title owo */
-
-
-	.boxInfo {
+.boxInfo, .boxInfo>.boxHead, .blurbs>.rightHead {
 	border: none;
-}
-
-.boxInfo > .boxHead {
-	display: none;
 }
 
 .extended {
@@ -249,16 +175,9 @@ a:hover {
 	margin: 0;
 }
 
-.blurbs > .rightHead {
-	display: none;
-}
-
-
-
 /* fancy title ^w^ */
 
-
-	.blurbs > h4 {
+.blurbs>h4 {
 	background: linear-gradient(45deg, var(--green), var(--blue));
 	padding: 4px;
 	margin-top: 14px;
@@ -268,10 +187,10 @@ a:hover {
 	border: var(--border);
 	font-size: 15px;
 	color: white;
-	text-shadow: rgba(0,0,0,0.75) 1px 1px 1px;
+	text-shadow: rgba(0, 0, 0, 0.75) 1px 1px 1px;
 }
 
-.fwiends > .rightHead {
+.fwiends>.rightHead {
 	padding: 4px;
 	margin-top: 14px;
 	margin-bottom: 0;
@@ -279,7 +198,7 @@ a:hover {
 	text-align: center;
 	font-size: 15px;
 	font-weight: 100;
-	text-shadow: rgba(0,0,0,0.75) 1px 1px 1px;
+	text-shadow: rgba(0, 0, 0, 0.75) 1px 1px 1px;
 	border: var(--border);
 	border-radius: 2px;
 	color: white;
@@ -287,12 +206,9 @@ a:hover {
 	-webkit-animation: rainbow 2s linear infinite;
 }
 
-
-
 /* kawwments (´o w o`) */
 
-
-	#form > .boxHead {
+#form>.boxHead {
 	background: var(--yellow);
 	padding: 4px;
 	margin-top: 14px;
@@ -303,22 +219,18 @@ a:hover {
 	font-size: 15px;
 	color: white;
 	font-weight: 100;
-	text-shadow: rgba(0,0,0,0.75) 1px 1px 1px;
+	text-shadow: rgba(0, 0, 0, 0.75) 1px 1px 1px;
 }
 
-.comments > .boxHead {
+.comments>.boxHead {
 	display: none;
 }
 
-#userWall > tbody {
-	background: rgba(0,0,0,0.5);
+#userWall>tbody {
+	background: rgba(0, 0, 0, 0.5);
 }
 
-tr > td.tableLeft {
-	background: none;
-}
-
-tr > td.tableRight {
+tr>td.tableLeft, tr>td.tableRight {
 	background: none;
 }
 
@@ -332,58 +244,52 @@ textarea {
 	border: var(--border);
 }
 
-
-
 /* fancy buttons */
 
-
-	input[type="submit"] {
-	background: var(--blue);
-	color: var(--black);
-	border: rgba(255,255,255,0.25) solid 2px;
+button, input[type="submit"] {
+	border: rgba(255, 255, 255, 0.25) solid 2px;
 	border-radius: 2px;
 	padding: 2px 16px;
 }
 
 button {
-	background: var(--black);
-	color: var(--white);
-	border: rgba(255,255,255,0.25) solid 2px;
-	border-radius: 2px;
-	padding: 2px 16px;
+	background: var(--blue);
+	color: var(--black);
 }
 
-#userWall > tbody > tr > .tableRight > button {
+input[type="submit"] {
+	background: var(--black);
+	color: var(--white);
+}
+
+#userWall>tbody>tr>.tableRight>button {
 	background: var(--red);
 	color: var(--black);
 }
 
-.blogCorpus > div > button:nth-child(1) {
+.blogCorpus>div>button:nth-child(1) {
 	font-size: 0px !important;
 }
 
-.blogCorpus > div > button:nth-child(1):before {
+.blogCorpus>div>button:nth-child(1):before {
 	font-family: "Material Icons";
 	content: "create";
 	font-size: 20px;
 }
 
-.blogCorpus > div > button:nth-child(2) {
+.blogCorpus>div>button:nth-child(2) {
 	font-size: 0px !important;
 }
 
-.blogCorpus > div > button:nth-child(2):before {
+.blogCorpus>div>button:nth-child(2):before {
 	font-family: "Material Icons";
 	content: "delete";
 	font-size: 20px;
 }
 
-
-
 /* fancy text uwu */
 
-
-	#who > p {
+#who>p {
 	font-size: 24pt;
 	text-align: center;
 	background: var(--background);
@@ -402,12 +308,7 @@ button {
 	color: white;
 }
 
-
-
 /* cool videos ( o w o)b */
-
-
-
 
 /*.url {
 			background-image: url(https://craftplacer.github.io/myspace/powerofdream.gif);
@@ -415,47 +316,17 @@ button {
 	    background-size: cover;
 	}*/
 
-
-
-
-.player > audio {
+.player>audio {
 	background: white;
 	height: 16px;
 }
 
-
-
-/* adult watermark (o /// o)
-	.url > div {
-		will-change: transform;
-		animation: marquee 25s linear infinite;
-		white-space: nowrap;
-		overflow: visible;
-	}
-	.url > div:nth-of-type(1) { display: none; }
-	.url > div:nth-of-type(2) { text-align: center; }
-	.url > div > a:before {
-		content: "this touhou video was uploaded by ";
-	}
-	.url > div > a {
-		color: rgba(192,192,192,0.5) !important;
-	    text-shadow: rgba(0,0,0,0.5) 1px 1px 0, rgba(255,255,255,0.5) -1px -1px 0;
-	    font-weight: bolder;
-		font-size: 24px;
-	} */
-
-
-
-
-
 /* blog */
-
-
-	.blog {
+.blog {
 	background: none;
 }
 
-.blurbs > .blogs > div:nth-of-type(1) {
+.blurbs>.blogs>div:nth-of-type(1) {
 	background: var(--red);
 	padding: 4px;
 	margin-top: 14px;
@@ -466,10 +337,10 @@ button {
 	font-size: 15px;
 	color: white;
 	font-weight: 500;
-	text-shadow: rgba(0,0,0,0.75) 1px 1px 1px;
+	text-shadow: rgba(0, 0, 0, 0.75) 1px 1px 1px;
 }
 
-.blogs > div {
+.blogs>div {
 	background: var(--background);
 	border-left: var(--border);
 	border-right: var(--border);
@@ -479,12 +350,12 @@ button {
 	padding-bottom: 4px;
 }
 
-.blogs > div:nth-of-type(2) {
+.blogs>div:nth-of-type(2) {
 	border-top: var(--border);
 	padding-top: var(--areaPadding);
 }
 
-.blogs > div:last-child {
+.blogs>div:last-child {
 	border-bottom: var(--border);
 	padding-bottom: var(--areaPadding);
 }
@@ -499,12 +370,9 @@ code {
 	margin: 1em 0;
 }
 
-
-
 /* fwiends >w< */
 
-
-	.fwiendCounter {
+.fwiendCounter {
 	padding-top: 10px;
 	padding-bottom: 20px;
 	margin: 0;
@@ -522,6 +390,8 @@ code {
 	border-top: none;
 	border-bottom: none;
 	text-align: center;
+	display: flex;
+	padding-top: 16px;
 }
 
 #viewFriends {
@@ -541,7 +411,7 @@ code {
 	padding: 0;
 }
 
-.fwiendFace > img {
+.fwiendFace>img {
 	height: var(--fwiendSize);
 	width: auto;
 	image-rendering: initial;
@@ -550,32 +420,33 @@ code {
 	border-radius: calc(var(--fwiendSize) / 2);
 }
 
-.fwiendFace > b {
+.fwiendFace>b {
 	top: -18px;
 	position: relative;
 }
 
-
-
 /* better header   */
+
 .blinkGreen {
 	display: none;
 }
 
 /* new friend */
+
 a.blinkYellow {
 	font-size: 0px !important;
 }
 
 /* Friend req */
+
 a.blinkYellow:before {
 	font-family: "Material Icons";
 	font-size: var(--headerIconSize);
 	content: "group_add";
 }
 
-
 /* new comments */
+
 .blinkViolet {
 	font-size: 0px !important;
 }
@@ -587,76 +458,105 @@ a.blinkYellow:before {
 }
 
 /* inbox */
-#hUp > a:nth-last-child(2) {
+
+#hUp>a:nth-last-child(2) {
 	font-size: 0px !important;
 }
-#hUp > a:nth-last-child(2):before {
+
+#hUp>a:nth-last-child(2):before {
 	font-family: "Material Icons";
 	font-size: var(--headerIconSize);
 	content: "inbox";
 	color: var(--headerForeground);
 }
 
-#hUp > a:nth-last-child(1) {
+#hUp>a:nth-last-child(1) {
 	color: var(--headerForeground);
 	top: calc(var(--headerIconSize) / 4 * -1);
 	position: relative;
 }
 
+/* blog tables */
 
-
-/* 🌸　アニメーション 🌸 */
-@keyframes marquee {
-	0% { transform: translate(100%, 10px); }
-	100% { transform: translate(-300%, 10px); }
+.blogCorpus>table {
+	border-collapse: collapse;
+	background: rgba(0, 0, 0, 0.5);
+	width: 100%;
 }
-@keyframes rainbow {
-	0% {
-		background-position: 0% 50%
-	}
 
+.blogCorpus>*>*>*>th {
+	background: var(--white);
+	color: var(--black);
+}
+
+.blogCorpus>*>*>*>td {
+	border-left: var(--white) solid 1px;
+	border-right: var(--white) solid 1px;
+}
+
+/* CSS-Tutorials*/
+
+a[href^="crtplr//example/"] {
+	/* we're creating elements for ourselves */
+	color: var(--white);
+	text-decoration: none;
+	pointer-events: none;
+	cursor: text;
+}
+
+a[href^="crtplr//example/1"]:before {
+	content: ">";
+}
+
+a[href^="crtplr//example/1"]:after {
+	content: "<";
+}
+
+a[href="crtplr//example/1/2"]:before {
+	animation: cute 2s infinite;
+}
+
+a[href="crtplr//example/1/2"]:after {
+	animation: cute 2s infinite;
+}
+
+a[href="crtplr//example/2"] {
+	color: red;
+}
+
+@keyframes cute {
 	50% {
-		background-position: 100% 50%
+		content: "owo";
 	}
-
-	100% {
-		background-position: 0% 50%
+	75% {
+		content: "uwu";
+	}
+	90% {
+		content: ">w<";
 	}
 }
-/* taken from hashida's page! (https://myspace.windows93.net/?id=5464) */
-@keyframes shake {
-		0% { transform: translate(1px, 1px) rotate(0deg); }
-		10% { transform: translate(-1px, -2px) rotate(-1deg); }
-		20% { transform: translate(-3px, 0px) rotate(1deg); }
-		30% { transform: translate(3px, 2px) rotate(0deg); }
-		40% { transform: translate(1px, -1px) rotate(1deg); }
-		50% { transform: translate(-1px, 2px) rotate(-1deg); }
-		60% { transform: translate(-3px, 1px) rotate(0deg); }
-		70% { transform: translate(3px, 1px) rotate(-1deg); }
-		80% { transform: translate(-1px, -1px) rotate(1deg); }
-		90% { transform: translate(1px, 2px) rotate(0deg); }
-		100% { transform: translate(1px, -2px) rotate(-1deg); }
+
+.fwiendCount:after {
+	content: "cool";
+	margin-left: 0.5rem;
+	background: var(--rainbow);
+	background-size: 400% 400%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: rainbow 0.5s linear infinite, cool infinite 5s;
+	text-align: center;
+	text-shadow: none;
+	font-weight: 900;
 }
-@keyframes beat {
-		0% { background: rgba(var(--beatBrightness14), var(--beatBrightness14), var(--beatBrightness14), 0.5); }
-		10% { background: rgba(0, 0, 0, 0.5); }
 
-		20% { background: rgba(0, 0, 0, 0.5); }
-
-		24% { background: rgba(0, 0, 0, 0.5); }
-		25% { background: rgba(var(--beatBrightness24), var(--beatBrightness24), var(--beatBrightness24), 0.5); }
-
-		35% { background: rgba(0, 0, 0, 0.5); }
-
-		49% { background: rgba(0, 0, 0, 0.5); }
-		50% { background: rgba(var(--beatBrightness34), var(--beatBrightness34), var(--beatBrightness34), 0.5); }
-
-		60% { background: rgba(0, 0, 0, 0.5); }
-
-		74% { background: rgba(0, 0, 0, 0.5); }
-		75% { background: rgba(var(--beatBrightness44), var(--beatBrightness44), var(--beatBrightness44), 0.5); }
-
-		85% { background: rgba(0, 0, 0, 0.5); }
-
-		100% { background: rgba(0, 0, 0, 0.5); }
+@keyframes cool {
+	25% {
+		content: "kawaii";
+	}
+	50% {
+		content: "cute";
+	}
+	75% {
+		content: "adorable";
+	}
 }

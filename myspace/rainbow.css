@@ -1,0 +1,25 @@
+:root {
+    --rainbow: linear-gradient(to right, red, orange, yellow, lime, cyan, blue, #8000ff, #ff00ff, );
+}
+
+@keyframes rainbow {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+/*
+    background: var(--rainbow);
+	background-size: 400% 400%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: rainbow 2s linear infinite, shake 0.5s infinite;
+	text-align: center;
+    text-shadow: none;
+*/
