@@ -1,8 +1,10 @@
 /*
 	Craftplacer's CSS
-	================================================================================================================================================================================
+	=================
 
-	Feel free using snippets of it in your page, credit *would* be nice (even if some stuff was copied from StackOverflow)
+	Feel free using snippets of it in your page, credit *would* be nice
+	(even if some stuff was copied from StackOverflow)
+
 	:3
 */
 
@@ -20,11 +22,11 @@
 	--yellow: #e5c07b;
 	--green: #98c379;
 
-	--mainColor: rgba(255, 161, 104);
+	--mainColor: var(--blue);
 	--linkColor: var(--mainColor);
 
-	--headerBackground: rgba(255, 161, 104, 0.75);
-	--headerForeground: black;
+	--headerBackground: rgb(97, 175, 239, 0.75);
+	--headerForeground: white;
 	--headerIconSize: 24px;
 	
 	--monospace: Roboto Mono, Consolas, monospace;
@@ -39,9 +41,13 @@ body {
 	color: var(--white);
 	text-shadow: rgba(0, 0, 0, 0.5) 0px 1px 2px;
 	font-family: var(--monospace);
+}
+
+body {
 	background-image: var(--videoUrl);
 	background-size: cover;
 	background-attachment: fixed;
+	background-position: center;
 }
 
 #container {
