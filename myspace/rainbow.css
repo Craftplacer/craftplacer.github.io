@@ -1,5 +1,5 @@
 :root {
-    --rainbow: linear-gradient(to right, red, orange, yellow, lime, cyan, blue, #8000ff, #ff00ff);
+    --rainbow: linear-gradient(to right, hsla(0, 100%, 75%, 1), hsla(39, 100%, 75%, 1), hsla(60, 100%, 75%, 1), hsl(141, 100%, 75%), hsla(180, 100%, 75%, 1), hsla(240, 100%, 75%, 1), hsla(270, 100%, 75%, 1), hsla(300, 100%, 75%, 1));
 }
 
 @keyframes rainbow {
