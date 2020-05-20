@@ -2,28 +2,30 @@
 
 #hSub {
     text-align: center;
+    font-size: 0px;
 }
 
-#hSub > a {
+#hSub > a:before {
     font-family: "Material Design Icons";
+    font-size: 24px;
 }
 
-#hSub > a[href^="/?id="] { /* Home */
+#hSub > a[href^="/?id="]:before { /* Home */
     content: "\F02DC";
 }
-#hSub > a[href^="/all.php?id="] { /* my fwiends */
+#hSub > a[href^="/all.php?id="]:before { /* my fwiends */
     content: "\F0899";
 }
-#hSub > a[href^="/list.php"] { /* all fwiends */
+#hSub > a[href^="/list.php"]:before { /* all fwiends */
     content: "\F000E";
 }
-#hSub > a[href="/random.php"] {
+#hSub > a[href="/random.php"]:before {
     content: "\F049D";
 }
-#hSub > a[href="/music.php"] {
+#hSub > a[href="/music.php"]:before {
     content: "\F0387";
 }
-#hSub > a[href="/search.php"] {
+#hSub > a[href="/search.php"]:before {
     content: "\F0349";
 }
 
