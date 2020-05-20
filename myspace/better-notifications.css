@@ -2,6 +2,9 @@
 
 #hSub {
     text-align: center;
+}
+
+#hSub > a {
     font-size: 0px;
 }
 
@@ -21,14 +24,16 @@
 #hSub > a[href="/random.php"]:before {
     content: "\F049D";
 }
+#hSub > a[href="/online.php"]:before {
+    content: "\F0014";
+}
 #hSub > a[href="/music.php"]:before {
     content: "\F0387";
 }
 #hSub > a[href="/search.php"]:before {
     content: "\F0349";
 }
-
-#hSub > .sep > a[href="/blog.php"]:before {
+#hSub > span.sep > a[href="/blog.php"]:before {
     content: "\F0395";
 }
 
