@@ -6,8 +6,7 @@
 }
 
 #hSub > a:before {
-    font-family: "Material Design Icons";
-    font-size: 24px;
+    font: normal normal normal 24px/1 "Material Design Icons";
 }
 
 #hSub > a[href^="/?id="]:before { /* Home */
@@ -27,6 +26,10 @@
 }
 #hSub > a[href="/search.php"]:before {
     content: "\F0349";
+}
+
+#hSub > .sep > a[href="/blog.php"]:before {
+    content: "\F0395";
 }
 
 /* Hide "New fwiends!" */
