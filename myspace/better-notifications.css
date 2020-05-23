@@ -2,6 +2,9 @@
 
 #hSub {
     text-align: center;
+    text-shadow: none;
+    color: transparent !important;
+    padding-bottom: 14px !important;
 }
 
 #hSub > a {
@@ -49,9 +52,8 @@ a.blinkYellow {
 
 /* Friend req */
 a.blinkYellow:before {
-	font-family: "Material Icons";
-	font-size: var(--headerIconSize);
-	content: "group_add";
+	font: normal normal normal 24px/1 "Material Design Icons";
+	content: "\F0800";
 }
 
 /* new comments */
@@ -60,9 +62,8 @@ a.blinkYellow:before {
 }
 
 .blinkViolet:before {
-	font-family: "Material Icons";
-	font-size: var(--headerIconSize);
-	content: "add_comment";
+	font: normal normal normal 24px/1 "Material Design Icons";
+	content: "\F0861";
 }
 
 /* inbox */
@@ -71,9 +72,8 @@ a.blinkYellow:before {
 }
 
 #hUp>a:nth-last-child(2):before {
-	font-family: "Material Icons";
-	font-size: var(--headerIconSize);
-	content: "inbox";
+	font: normal normal normal 24px/1 "Material Design Icons";
+	content: "\F0687";
 	color: var(--headerForeground);
 }
 

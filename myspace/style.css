@@ -8,9 +8,10 @@
 	:3
 */
 
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://craftplacer.github.io/myspace/boxButton-icons.css");
 @import url("https://craftplacer.github.io/myspace/shake.css");
 @import url("https://craftplacer.github.io/myspace/rainbow.css");
+@import url("https://craftplacer.github.io/myspace/tutorials.css");
 @import url("https://craftplacer.github.io/myspace/better-notifications.css");
 
 :root {
@@ -29,7 +30,7 @@
 	--headerBackground: rgb(97, 175, 239, 0.75);
 	--headerForeground: white;
 	--headerIconSize: 24px;
-	
+
 	--monospace: Roboto Mono, Consolas, monospace;
 	--background: rgba(40, 44, 52, 0.75);
 	--border: rgba(0, 0, 0, 0.5) 1px solid;
@@ -69,10 +70,10 @@ body {
 
 #hSub {
 	background: var(--headerBackground) !important;
-	color: rgba(0, 0, 0, 0.5);
+	padding-top: 0px !important;
 }
 
-#hSub a {
+#hSub > a {
 	color: var(--headerForeground) !important;
 }
 
@@ -453,34 +454,7 @@ code {
 	border-right: var(--white) solid 1px;
 }
 
-/* CSS-Tutorials */
-a[href^="crtplr//example/"] {
-	/* we're creating elements for ourselves */
-	color: var(--white);
-	text-decoration: none;
-	pointer-events: none;
-	cursor: text;
-}
 
-a[href^="crtplr//example/1"]:before {
-	content: ">";
-}
-
-a[href^="crtplr//example/1"]:after {
-	content: "<";
-}
-
-a[href="crtplr//example/1/2"]:before {
-	animation: cute 2s infinite;
-}
-
-a[href="crtplr//example/1/2"]:after {
-	animation: cute 2s infinite;
-}
-
-a[href="crtplr//example/2"] {
-	color: red;
-}
 
 @keyframes cute {
 	50% {

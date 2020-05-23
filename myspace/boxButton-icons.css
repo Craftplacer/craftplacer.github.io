@@ -1,0 +1,29 @@
+.boxButton {
+		background-image: none !important;
+		padding-left: 0;
+}
+
+.boxButton:before {
+	font: normal normal normal 24px/1 "Material Design Icons";
+	top: 4px;
+	position: relative;
+	margin-right: 4px;
+	color: var(--white);
+	text-shadow: none;
+}
+
+#sMsg:before {
+	content: "\F01EE";
+}
+
+#report:before {
+	content: "\F023B";
+}
+
+#add:before {
+	content: "\F0014";
+}
+
+#block:before {
+	content: "\F0376";
+}
