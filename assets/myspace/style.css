@@ -8,11 +8,11 @@
 	:3
 */
 
-@import url("https://craftplacer.github.io/myspace/boxButton-icons.css");
-@import url("https://craftplacer.github.io/myspace/shake.css");
-@import url("https://craftplacer.github.io/myspace/rainbow.css");
-@import url("https://craftplacer.github.io/myspace/tutorials.css");
-@import url("https://craftplacer.github.io/myspace/better-notifications.css");
+@import url("https://craftplacer.github.io/assets/myspace/boxButton-icons.css");
+@import url("https://craftplacer.github.io/assets/myspace/shake.css");
+@import url("https://craftplacer.github.io/assets/myspace/rainbow.css");
+@import url("https://craftplacer.github.io/assets/myspace/tutorials.css");
+@import url("https://craftplacer.github.io/assets/myspace/better-notifications.css");
 
 :root {
 	--darker-black: #131519;
@@ -36,7 +36,7 @@
 	--border: rgba(0, 0, 0, 0.5) 1px solid;
 	--areaPadding: 24px;
 	--fwiendSize: 48px;
-	--videoUrl: url(https://craftplacer.github.io/myspace/cirno-onsen.gif);
+	--videoUrl: url(https://craftplacer.github.io/assets/myspace/cirno-onsen.gif);
 }
 
 body {
@@ -321,7 +321,7 @@ input[type="submit"] {
 /* cool videos ( o w o)b
 
 .url {
-	background-image: url(https://craftplacer.github.io/myspace/powerofdream.gif);
+	background-image: url(https://craftplacer.github.io/assets/myspace/powerofdream.gif);
 	height: 192px;
 	background-size: cover;
 }
