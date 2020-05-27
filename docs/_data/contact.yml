@@ -1,0 +1,50 @@
+- platform: Email
+  link: mailto:Y3JhZnRwbGFjZXJAd2FpZnUuY2x1Yg==
+
+- platform: Twitter
+  link: https://twitter.com/Craftplacer
+  color: 1DA1F2
+
+- platform: SoundCloud
+  link: https://soundcloud.com/craftplacer
+  color: FF3300
+
+- platform: Twitch
+  link: https://www.twitch.tv/craftplacer
+  color: 9146FF
+
+- platform: NicoNico
+  link: https://www.nicovideo.jp/user/85862482
+
+- platform: Reddit
+  link: https://www.reddit.com/user/Craftplacer
+  color: FF4500
+
+- platform: Steam
+  link: https://steamcommunity.com/id/craftplacer/
+
+- platform: Etterna
+  link: https://etternaonline.com/user/Craftplacer
+  color: 6732ae
+
+- platform: osu!
+  link: https://osu.ppy.sh/users/8233638
+  color: e6649f
+
+- platform: GitHub
+  link: https://github.com/Craftplacer
+
+- platform: GitLab
+  link: https://gitlab.com/Craftplacer
+
+- platform: MySpace
+  link: https://myspace.windows93.net/index.php?id=6618
+  color: 6699cc
+
+- platform: pr0gramm
+  link: https://pr0gramm.com/user/Craftplacer
+  color: d23c22
+
+- platform: Mastodon
+  link: https://mas.to/@Craftplacer
+  color: 3088d4

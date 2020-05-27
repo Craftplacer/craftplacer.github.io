@@ -1,0 +1,112 @@
+:root {
+  --dark-1: #1F1F30;
+  --dark-6: #2D2D3C;
+
+  --background: #141425;
+  --foreground: rgba(255, 255, 255, .87);
+  --font-family: "Roboto Mono", monospace;
+}
+
+html, .mdl-layout__drawer {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.mdl-layout__drawer {
+  border: none;
+}
+
+html, body, h1, h2, h3, h4, h5, h6, .mdl-layout__title, .mdl-layout-title {
+  font-family: var(--font-family);
+}
+
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link:hover {
+    background: var(--dark-1);
+}
+
+.mdl-layout__drawer-button > i.material-icons {
+  display: none;
+}
+
+.mdl-layout__drawer-button:before {
+  display: inline-block;
+  font: normal normal normal 24px/1 "Material Design Icons";
+  font-size: 24px;
+  position: relative;
+  top: -4px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  content: "\F035C";
+}
+
+a {
+  text-decoration: none;
+}
+
+a.mdl-card {
+  color: inherit;
+}
+
+p > a:hover {
+  color: rgb(236, 144, 251);
+  background: rgba(255,255,255,0.125);
+  text-decoration: underline;
+}
+
+p > a:hover, code {
+  border-radius: 2px;
+  padding: 2px 4px;
+  margin: -2px -4px;
+}
+
+p > code {
+  background: rgba(0,0,0,0.5);
+  color: rgba(255,255,255,0.75);
+}
+
+figure.highlight {
+  background: rgba(0,0,0,0.5);
+  border-radius: 4px;
+  margin-left: 0;
+  margin-right: 0;
+  padding-block-start: 0.5em;
+  padding-block-end: 0.5em;
+  padding-inline-start: 40px;
+  padding-inline-end: 40px;
+}
+
+.mdl-card {
+  background: var(--dark-6);
+}
+
+.mdl-card__title, .mdl-card__supporting-text {
+  color: inherit;
+}
+
+.post-header {
+  border-bottom: rgba(255,255,255,0.5) solid 1px;
+  padding-bottom: 8px;
+  margin-bottom: 1rem;
+}
+
+.post-fields {
+  display: flex;
+}
+
+.post-field {
+  width: calc(100% / 3);
+}
+
+.post-field:not(:last-child) {
+  border-right: rgba(255,255,255,0.25) solid 1px;
+  margin-right: 8px;
+}
+
+.post-field > i {
+  font-size: 16px;
+}
+
+.post-card {
+  width: 100%;
+}

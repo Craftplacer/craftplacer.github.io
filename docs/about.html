@@ -1,0 +1,38 @@
+---
+layout: page
+title: About
+permalink: /about/
+---
+
+<p>
+  Weeb Developer from Germany.
+</p>
+
+<h4>
+  Contact
+</h4>
+
+<p>
+  {% for contact in site.data.contact %}
+      <a
+        href="{{ contact.link }}"
+        style="color:#{{contact.color | default: "EEE" }}"
+
+        {% if contact.link contains "mas.to" %}
+          rel="me"
+        {% endif %}
+      >{{contact.platform}}</a>
+  {% endfor %}
+</p>
+
+<script>
+  let e = document.getElementsByTagName("a");
+  const p = "mailto:";
+  for (i in e) {
+    var l = e[i];
+    if (l.href.startsWith(p)) {
+      l.href = p + window.atob(l.href.split(p)[1]);
+      break;
+    }
+  }
+</script>
