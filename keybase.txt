@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/craftplacer
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://craftplacer.github.io
+  * I am craftplacer (https://keybase.io/craftplacer) on keybase.
+  * I have a public key with fingerprint 0B89 DD82 B5A7 D851 29A2  DE31 740B 7E01 25DF 6B82
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120c74cfa838bcfb295cf9a5866e8452c6042f6996fc46169b6dfc9e605a156f3b70a",
+      "fingerprint": "0b89dd82b5a7d85129a2de31740b7e0125df6b82",
+      "host": "keybase.io",
+      "key_id": "740b7e0125df6b82",
+      "kid": "0101c34a07708d68d0a64e7caa3b28a408d875a1127e1500cf4151f421c4d26db0cc0a",
+      "uid": "004ff8b43aaf8b02aff462188f86c019",
+      "username": "craftplacer"
+    },
+    "service": {
+      "hostname": "craftplacer.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1590672899,
+  "expire_in": 157680000,
+  "prev": "6579ebc366738ee4c32cc527481bc5c3af18ff276a76dd796bb827c7f7d729cd",
+  "seqno": 23,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.13
+Comment: https://keybase.io/crypto
+
+yMNwAnicbVJ/UFRVFF4wRFCDoUJrJPUBarHqe2/fu/e+baS0kEpkJAbNhoB777uP
+fQK72+5bcJdRJvkxKOQwjgpTmo05TsQohdOIESQgDYOhUk7WaKWCWoStTOoURPVW
+86+6/5y553zfd75z5pyaPc0SHWbM3BqW/GPRtrDT3Yd8lryzXdPKOeJS/Zy9nCti
+9wIrVpnXyC/SVc7O8YLIUyhRDSMbIlQjoiJTTcEyAoAhSRYp4CVRA4oCNCoBASgE
+qBpVGOBlLMhAsxHIY87KabqzkHncHt1phGQJUlQViUTGUEWyICpYVJlNgBJPIDOb
+yqoGCBJNosPlDTFMcwR72TLdZebMT/49e/+Df+CbF6hNwjyEPFIBUnkMJAYpxjYi
+IiyZSQRNh4IImSDzPNUkQRY0SRSopIpAJTyl93z77svxkqYhItkwNgMvYk2TgCgg
+pCFAeUEJAb3M48QlzERTD9YMdzGmzMNtsXJmoVSnLLTb0DD/BS0r1A2Hj9yfze1x
+GS7qKjYhDsNwe+0hCcPvDnHKGMn/Vy2f6E7V3KnJKGUer+5ycnbBRFJDD8kLssID
+KCJFsXJss1v3sHw9hJAhQLz5Qn1YqSkJZKgwQm0AQBtiTKI2kVJZhBISCJWpDWsC
+0jQRAgyBqkIFEHPNkEINqlBUqMqF5nvD6eLsos30iQtNTa9e6MSGz8O4LT3duQ9Z
+wqIt0yPCQ8dmiY6KfXCCW96P+fvV08eO/xBTf2T9EUuFujf8TyM77N2vriA1Sqt4
+eP7dsTm9H6/xluW68i7Cq/2R2/3F7ROTeydnDNirjs6ffhPsvNTT/8mT82YNW4bc
+kZdfnp3XNzc3Laz6ZGzXhajOV8hz6ak9fBWqGK9d390d7lhQln/ScO7ukOs+H6yj
+W1fz7pgh3+hE5eHxhqTAHqVUnh2+VsnIWLQ0UcjqS8j4ZbxmxdRj1rL6Y8tTylu/
+vL6afDFgXTseeK/hzo5HwI2URlldXbNiT0ruX9b6yO4NcYvfvBG5MH1g+G78zTZU
+VFj580J5w0g2PLG8ZS16+/koHP3U4InG/TEbv/OvzF436Yh9PK2geV7ziPzW0k2N
+M9edz7lzbjhm7Mqzuzo/LOnoSb2WHOhocsb90Zr50xmyzbvz9qbjdu94VuntltrJ
+5M6L/kcPOqqD/mZtd5WP3Fp5Zk3e+UHum9t7rlXTstGEmlPPxGTnBByX2g8nZc1f
+8uu+qSFtxv7XWxN2gawDSSUTrauWMPBt0UuvbW+M24xx0kfGucQXCzpT+fS2nL7i
+344G34lMLFp0oa2ysqwuIu1C8NYHLVUtL/SOBJu2HlWtc0erD43lHbB1fZqnzCIC
+3Rh4Iq1DjkvY1x95ORgkq75/WqrNHmhsODiw+Pf2pqvX44OX59Rmws++nhEwsgvi
+Ixakne0dmUrRM/3h0/4BgCG85A==
+=qENa
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/craftplacer
+
+==================================================================
