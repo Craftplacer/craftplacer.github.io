@@ -1,25 +1,66 @@
 - platform: Email
   link: mailto:Y3JhZnRwbGFjZXJAd2FpZnUuY2x1Yg==
 
+# Chat
+- platform: Telegram
+  link: https://t.me/Craftplacer
+  color: 32afed
+
+- platform: Discord
+  link: https://discord.gg/qMKfcKc
+  color: 7289da
+
+- platform: Keybase
+  link: https://keybase.io/craftplacer
+  color: 33a0ff
+
+# Social
 - platform: Twitter
   link: https://twitter.com/Craftplacer
   color: 1DA1F2
 
-- platform: SoundCloud
-  link: https://soundcloud.com/craftplacer
-  color: FF3300
-
-- platform: Twitch
-  link: https://www.twitch.tv/craftplacer
-  color: 9146FF
+- platform: Mastodon
+  link: https://mas.to/@Craftplacer
+  color: 3088d4
 
 - platform: NicoNico
   link: https://www.nicovideo.jp/user/85862482
+
+- platform: pr0gramm
+  link: https://pr0gramm.com/user/Craftplacer
+  color: d23c22
 
 - platform: Reddit
   link: https://www.reddit.com/user/Craftplacer
   color: FF4500
 
+- platform: Newgrounds
+  link: https://craftplacer.newgrounds.com/
+  color: f27e2b
+
+# File Sharing
+- platform: MEGA
+  link: https://mega.nz/C!TUEWzaJA
+  color: d90007
+
+- platform: MEGAdrop
+  link: https://mega.nz/megadrop/w9dPSM9kTwo
+  color: d90007
+
+# Music
+- platform: SoundCloud
+  link: https://soundcloud.com/craftplacer
+  color: FF3300
+
+- platform: Mixcloud
+  link: https://www.mixcloud.com/Craftplacer/
+  color: 5000ff
+
+- platform: Twitch
+  link: https://www.twitch.tv/craftplacer
+  color: 9146FF
+
+# Games
 - platform: Steam
   link: https://steamcommunity.com/id/craftplacer/
 
@@ -31,6 +72,12 @@
   link: https://osu.ppy.sh/users/8233638
   color: e6649f
 
+# Anime
+- platform: Kitsu
+  link: https://kitsu.io/users/craftplacer
+  color: e96c55
+
+# Git
 - platform: GitHub
   link: https://github.com/Craftplacer
 
@@ -41,10 +88,36 @@
   link: https://myspace.windows93.net/index.php?id=6618
   color: 6699cc
 
-- platform: pr0gramm
-  link: https://pr0gramm.com/user/Craftplacer
-  color: d23c22
+# Forum
+- platform: MessengerGeek
+  link: https://wink.messengergeek.com/u/craftplacer
+  color: f0d941
 
-- platform: Mastodon
-  link: https://mas.to/@Craftplacer
-  color: 3088d4
+- platform: XDA Forums
+  link: https://forum.xda-developers.com/member.php?u=8076675
+  color: c08000
+
+# "I exist"
+- platform: StackOverflow
+  link: https://stackoverflow.com/users/7972419/craftplacer
+  color: f48024
+
+- platform: DeviantArt
+  link: https://www.deviantart.com/craftplacer
+  color: 00e59b
+
+- platform: GameBanana
+  link: https://gamebanana.com/members/1536641
+  color: ffe033
+
+- platform: Crowdin
+  link: https://crowdin.com/profile/Craftplacer
+  color: 6eaa68
+
+- platform: HackerOne
+  link: hackerone.com/craftplacer
+  color: e10e71
+
+- platform: Trello
+  link: https://trello.com/craftplacer
+  color: 026aa7
