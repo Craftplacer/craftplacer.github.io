@@ -1,5 +1,11 @@
 - title: Posts
+  icon: newspaper
   url: /posts
 
+- title: Projects
+  icon: archive
+  url: /projects
+
 - title: About
+  icon: information
   url: /about

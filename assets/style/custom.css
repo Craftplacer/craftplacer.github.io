@@ -40,6 +40,10 @@ html, body, h1, h2, h3, h4, h5, h6, .mdl-layout__title, .mdl-layout-title {
   content: "\F035C";
 }
 
+.mdl-navigation__link {
+  color: rgba(255,255,255,0.8);
+}
+
 a {
   text-decoration: none;
 }
@@ -85,13 +89,13 @@ figure.highlight {
 }
 
 .post-header {
-  border-bottom: rgba(255,255,255,0.5) solid 1px;
   padding-bottom: 8px;
   margin-bottom: 1rem;
 }
 
 .post-fields {
   display: flex;
+  margin-top: -8px;
 }
 
 .post-field {
@@ -107,6 +111,18 @@ figure.highlight {
   font-size: 16px;
 }
 
-.post-card {
+.post-card, .project-card {
   width: 100%;
+  margin-bottom: 12px;
+  min-height: 0;
+}
+
+h2, h3, h4, h5, h6 {
+  color: rgba(255,255,255,0.5);
+}
+
+.mdl-navigation__link.mdi {
+  font-size: 24px;
+  line-height: 24px;
+  padding: 8px;
 }

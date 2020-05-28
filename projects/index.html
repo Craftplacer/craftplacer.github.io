@@ -1,0 +1,23 @@
+---
+layout: optimized
+title: Projects
+---
+
+<h2>
+  Projects
+</h2>
+
+{% for project in site.data.projects %}
+<a class="mdl-card mdl-shadow--2dp project-card" href="{{project.url}}">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">{{project.title}}</h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+    {{project.description}}
+  </div>
+</a>
+{% endfor %}
+
+<p>
+  <i>Consider checking me out on GitHub for more</i>
+</p>

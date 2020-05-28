@@ -1,15 +1,17 @@
 ---
-layout: page
+layout: optimized
 title: About
 permalink: /about/
 ---
+
+<h2>About me</h2>
 
 <p>
   Weeb Developer from Germany.
 </p>
 
 <h4>
-  Contact
+  Contact & Profiles <i style="font-size:small">I'm everywhere</i>
 </h4>
 
 <p>
@@ -17,7 +19,6 @@ permalink: /about/
       <a
         href="{{ contact.link }}"
         style="color:#{{contact.color | default: "EEE" }}"
-
         {% if contact.link contains "mas.to" %}
           rel="me"
         {% endif %}

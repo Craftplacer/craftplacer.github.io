@@ -2,10 +2,17 @@
   <div class="mdl-layout__header-row">
     <a class="mdl-layout-title" href="/">{{ site.title | escape }}</a>
     <div class="mdl-layout-spacer"></div>
-    <nav class="mdl-navigation mdl-layout--large-screen-only">
+    <nav class="mdl-navigation">
       {% for item in site.data.navigation %}
-      <a class="mdl-navigation__link" href="{{item.url}}">{{item.title}}</a>
+      <a class="mdl-navigation__link mdi mdi-{{item.icon}}" id="nav-{{item.icon}}" href="{{item.url}}">
+      </a>
       {% endfor %}
+      {% for item in site.data.navigation %}
+      <div class="mdl-tooltip" data-mdl-for="nav-{{item.icon}}">
+        {{item.title}}
+      </div>
+      {% endfor %}
+
     </nav>
   </div>
 </header>

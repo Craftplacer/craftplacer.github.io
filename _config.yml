@@ -1,6 +1,8 @@
 title: Craftplacer's Site
 url: "https://craftplacer.github.io"
 permalink: /posts/:title
+lang: en
+twitter: "@Craftplacer"
 
 plugins:
   - jekyll-feed

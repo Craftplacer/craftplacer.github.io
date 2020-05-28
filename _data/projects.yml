@@ -1,0 +1,10 @@
+- title: CraftBot
+  description: Chat bot for various services.
+  url: craftbot
+
+- title: Tweak Utility
+  description: Windows tweaking utility, inspired by similar software.
+
+- title: Obsidian
+  description: Minecraft Server written in .NET Core.
+  url: https://github.com/Naamloos/Obsidian
