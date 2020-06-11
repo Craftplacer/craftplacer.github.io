@@ -1,33 +1,53 @@
 ---
 layout: optimized
 ---
+{% if page.cover %}
+<style>
+  .post-header {
+    background-image: url("{{ page.cover }}");
+    padding-top: 200px;
+  }
+</style>
+{% endif %}
+
 <article class="post">
   <header class="post-header">
-    <h1 class="post-title">
-      {{ page.title | escape }}
-    </h1>
-    <div class="post-fields">
-      {% if page.date %}
-        <div class="post-date post-field">
-          <i class="mdi mdi-calendar"></i>
+    <div class="post-header-cover">
+      <h1 class="post-title">
+        {{ page.title | escape }}
+      </h1>
+      <div class="post-fields">
+        {% if page.date != empty %}
+          <div class="post-date post-field">
+            <i class="mdi mdi-calendar"></i>
+            <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+              {{ page.date | date_to_long_string: "ordinal" }}
+            </time>
+          </div>
+        {% endif %}
 
-          <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-            {{ page.date | date_to_long_string: "ordinal" }}
-          </time>
-        </div>
-      {% endif %}
-      {% if page.categories %}
-        <div class="post-field">
-          <i class="mdi mdi-folder"></i>
-          {{ page.categories | join: ', ' }}
-        </div>
-      {% endif %}
-      {% if page.tags %}
-        <div class="post-field">
-          <i class="mdi mdi-label"></i>
-          {{ page.tags | join: ', ' }}
-        </div>
-      {% endif %}
+        {% if page.categories != empty %}
+          <div class="post-field">
+            <i class="mdi mdi-folder"></i>
+            {{ page.categories | join: ', ' }}
+          </div>
+        {% endif %}
+
+        {% if page.tags != empty %}
+          <div class="post-field">
+            <i class="mdi mdi-label"></i>
+            {% for tag in page.tags %}
+              <a class="tag-link" href="/posts/tags#{{ tag | escape }}">
+                {{ tag | escape }}
+              </a>
+            {% else %}
+              <i>
+                No tags
+              </i>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
     </div>
   </header>
   <div class="post-content">

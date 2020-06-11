@@ -1,10 +1,14 @@
+html, body, h1, h2, h3, h4, h5, h6, .mdl-layout__title, .mdl-layout-title {
+  font-family: "Roboto Mono", monospace;
+}
+
 :root {
   --dark-1: #1F1F30;
   --dark-6: #2D2D3C;
 
   --background: #141425;
   --foreground: rgba(255, 255, 255, .87);
-  --font-family: "Roboto Mono", monospace;
+  --foreground2: rgba(255, 255, 255, .54);
 }
 
 html, .mdl-layout__drawer {
@@ -12,18 +16,13 @@ html, .mdl-layout__drawer {
   color: var(--foreground);
 }
 
-.mdl-layout__drawer {
-  border: none;
-}
 
-html, body, h1, h2, h3, h4, h5, h6, .mdl-layout__title, .mdl-layout-title {
-  font-family: var(--font-family);
-}
 
 .mdl-layout__drawer .mdl-navigation .mdl-navigation__link:hover {
     background: var(--dark-1);
 }
 
+/* Drawer Button */
 .mdl-layout__drawer-button > i.material-icons {
   display: none;
 }
@@ -42,6 +41,10 @@ html, body, h1, h2, h3, h4, h5, h6, .mdl-layout__title, .mdl-layout-title {
 
 .mdl-navigation__link {
   color: rgba(255,255,255,0.8);
+}
+
+.mdl-layout__drawer {
+  border: none;
 }
 
 a {
@@ -88,23 +91,27 @@ figure.highlight {
   color: inherit;
 }
 
-.post-header {
-  padding-bottom: 8px;
-  margin-bottom: 1rem;
-}
 
+.post-field {
+  width: 100%;
+}
 .post-fields {
-  display: flex;
   margin-top: -8px;
 }
 
-.post-field {
-  width: calc(100% / 3);
+@media (max-width: 479px) {
+  .post-fields {
+    display: block;
+  }
 }
-
-.post-field:not(:last-child) {
-  border-right: rgba(255,255,255,0.25) solid 1px;
-  margin-right: 8px;
+@media (min-width: 480px) {
+  .post-field:not(:last-child) {
+    border-right: rgba(255,255,255,0.25) solid 1px;
+    margin-right: 8px;
+  }
+  .post-fields {
+    display: flex;
+  }
 }
 
 .post-field > i {
@@ -115,6 +122,7 @@ figure.highlight {
   width: 100%;
   margin-bottom: 12px;
   min-height: 0;
+
 }
 
 h2, h3, h4, h5, h6 {
@@ -125,4 +133,45 @@ h2, h3, h4, h5, h6 {
   font-size: 24px;
   line-height: 24px;
   padding: 8px;
+}
+
+.mdl-tabs__tab-bar {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.mdl-tabs.is-upgraded .mdl-tabs__tab.is-active {
+  color: var(--foreground);
+}
+
+.mdl-tabs__tab {
+  color: var(--foreground2);
+}
+
+.post-header {
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+
+.post-header, .post-card {
+  background-size: cover;
+}
+
+.post-card-cover {
+  background-color: rgba(31, 31, 48, 0.8);
+}
+
+.post-header-cover {
+  padding-bottom: 8px;
+  background-color: rgba(31, 31, 48, 0.75);
+  height: 100%;
+  width: 100%;
+
+  text-shadow: black 0px 0px 2px;
+}
+
+.post-header, .post-header-cover {
+  margin-left: -50%;
+  margin-right: -50%;
+  padding-left: 50%;
+  padding-right: 50%;
 }
