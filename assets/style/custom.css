@@ -67,7 +67,7 @@ p > a:hover, code {
   margin: -2px -4px;
 }
 
-p > code {
+p > code, .highlighter-rouge {
   background: rgba(0,0,0,0.5);
   color: rgba(255,255,255,0.75);
 }
