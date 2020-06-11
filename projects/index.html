@@ -12,9 +12,11 @@ title: Projects
   <div class="mdl-card__title">
     <h2 class="mdl-card__title-text">{{project.title}}</h2>
   </div>
+  {% if project.description %}
   <div class="mdl-card__supporting-text">
     {{project.description}}
   </div>
+  {% endif %}
 </a>
 {% endfor %}
 
