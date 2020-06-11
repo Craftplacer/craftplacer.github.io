@@ -1,7 +1,15 @@
-<title>{{page.title | escape}} - {{site.title | escape}}</title>
+{% assign siteTitle = {{site.title | escape}} %}
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="manifest" href="/manifest.webmanifest">
+
+{% if page.title %}
+{% assign title = {{page.title | escape}} %}
+<title>{{title}} - {{site.title | escape}}</title>
+<meta property="og:title" content="{{title}}"/>
+{% else %}
+<title>{{site.title | escape}}</title>
+{% endif %}
 
 {% if page.cover %}
 <meta name="twitter:card" content="summary_large_image">
@@ -10,7 +18,7 @@
 <meta name="twitter:card" content="summary" />
 {% endif %}
 
-<meta property="og:site_name" content="{{site.title | escape}}"/>
+<meta property="og:site_name" content="{{siteTitle}}"/>
 
 {% if site.twitter %}
   <meta name="twitter:site" content="{{site.twitter}}" />
@@ -19,6 +27,7 @@
 {% if page.excerpt %}
 {% assign description = {{page.excerpt | strip_html | strip | escape}} %}
 <meta name="description" content="{{ description }}">
+<meta name="og:description" content="{{ description }}">
 {% endif %}
 
 {% if page.date %}
