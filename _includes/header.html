@@ -4,7 +4,7 @@
     <div class="mdl-layout-spacer"></div>
     <nav class="mdl-navigation">
       {% for item in site.data.navigation %}
-      <a class="mdl-navigation__link mdi mdi-{{item.icon}}" id="nav-{{item.icon}}" href="{{item.url}}">
+      <a class="mdl-navigation__link mdi mdi-{{item.icon}}" aria-label="{{item.title}}" id="nav-{{item.icon}}" href="{{item.url}}">
       </a>
       {% endfor %}
       {% for item in site.data.navigation %}

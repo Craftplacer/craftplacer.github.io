@@ -1,0 +1,14 @@
+{
+  "short_name": "Craftplacer",
+  "name": "Craftplacer's Site",
+  "start_url": "/",
+  "background_color": "#131425",
+  "scope": "/",
+  "theme_color": "#131425",
+  "shortcuts": [
+    {
+      "name": "Posts",
+      "url": "/posts"
+    }
+  ]
+}
