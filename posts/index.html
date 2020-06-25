@@ -3,10 +3,27 @@ layout: optimized
 title: Posts
 ---
 
+<style>
+  h2 {
+    display: flex;
+  }
+  h2 > .mdl-button {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+</style>
+
 <h2>
   Posts
+  <div class="mdl-layout-spacer"></div>
+  <a class="mdl-button mdl-js-button mdl-button--icon mdi mdi-label" id="tags-link" href="tags">
+  </a>
 </h2>
 
 {% for post in site.posts %}
   {% include post-card.html %}
 {% endfor %}
+
+<div class="mdl-tooltip" data-mdl-for="tags-link">
+  Tags
+</div>

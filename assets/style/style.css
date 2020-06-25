@@ -1,0 +1,113 @@
+a {
+  text-decoration: none;
+}
+
+a.mdl-card {
+  color: inherit;
+}
+
+p > a:hover {
+  color: rgb(236, 144, 251);
+  background: rgba(255,255,255,0.125);
+  text-decoration: underline;
+}
+
+p > a:hover, code {
+  border-radius: 2px;
+  padding: 2px 4px;
+  margin: -2px -4px;
+}
+
+p > code, .highlighter-rouge {
+  background: rgba(0,0,0,0.5);
+  color: rgba(255,255,255,0.75);
+}
+
+figure.highlight {
+  background: rgba(0,0,0,0.5);
+  border-radius: 4px;
+  margin-left: 0;
+  margin-right: 0;
+  padding-block-start: 0.5em;
+  padding-block-end: 0.5em;
+  padding-inline-start: 40px;
+  padding-inline-end: 40px;
+}
+
+
+.post-field {
+  width: 100%;
+}
+.post-fields {
+  margin-top: -8px;
+}
+
+@media (max-width: 479px) {
+  .post-fields {
+    display: block;
+  }
+}
+@media (min-width: 480px) {
+  .post-field:not(:last-child) {
+    border-right: rgba(255,255,255,0.25) solid 1px;
+    margin-right: 8px;
+  }
+  .post-fields {
+    display: flex;
+  }
+}
+
+.post-field > i {
+  font-size: 16px;
+  line-height: 16px;
+  width: 16px;
+  height: 16px;
+}
+
+.post-card, .project-card {
+  width: 100%;
+  margin-bottom: 12px;
+  min-height: 0;
+}
+
+/* Post Headers & Covers */
+.post-header {
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+
+.post-header, .post-card {
+  background-size: cover;
+}
+
+.post-card-cover {
+  background-color: rgba(31, 31, 48, 0.8);
+}
+
+.post-header-cover {
+  padding-bottom: 8px;
+  background-color: rgba(31, 31, 48, 0.75);
+  height: 100%;
+  width: 100%;
+
+  text-shadow: black 0px 0px 2px;
+}
+
+.post-header, .post-header-cover {
+  margin-left: -50%;
+  margin-right: -50%;
+  padding-left: 50%;
+  padding-right: 50%;
+}
+
+/* Size images in articles */
+article img {
+  width: 100%;
+}
+
+.pre-nav {
+  opacity: 0.5;
+}
+.pre-nav:after {
+  content: " / ";
+}

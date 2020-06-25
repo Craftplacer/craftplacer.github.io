@@ -4,6 +4,20 @@ title: About
 permalink: /about/
 ---
 
+<style>
+  .contact-card {
+    padding: 8px;
+    min-height: unset;
+    display: block;
+  }
+  .contact-card * {
+    vertical-align: middle;
+  }
+  .contact-card > .mdi {
+    line-height: 24px;
+  }
+</style>
+
 <h2>About me</h2>
 
 <p>
@@ -14,17 +28,19 @@ permalink: /about/
   Contact & Profiles <i style="font-size:small">I'm everywhere</i>
 </h4>
 
-<p>
+<div class="mdl-grid">
   {% for contact in site.data.contact %}
-      <a
-        href="{{ contact.link }}"
-        style="color:#{{contact.color | default: "EEE" }}"
-        {% if contact.link contains "mas.to" %}
-          rel="me"
-        {% endif %}
-      >{{contact.platform}}</a>
+    {% assign icon = contact.icon | default: "mdi-checkbox-blank-circle" %}
+    {% assign color = contact.color | default: "unset" %}
+    {% assign background = contact.bg | default: "var(--dark-6)" %}
+    <a class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-js-button mdl-js-ripple-effect contact-card" href="{{ contact.link }}" style="color:{{color}};background:{{background}}">
+      <i class="mdi {{icon}}"></i>
+      <span>
+        {{contact.platform}}
+      </span>
+    </a>
   {% endfor %}
-</p>
+</div>
 
 <script>
   let e = document.getElementsByTagName("a");

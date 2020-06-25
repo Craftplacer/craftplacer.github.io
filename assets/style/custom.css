@@ -16,27 +16,8 @@ html, .mdl-layout__drawer {
   color: var(--foreground);
 }
 
-
-
 .mdl-layout__drawer .mdl-navigation .mdl-navigation__link:hover {
     background: var(--dark-1);
-}
-
-/* Drawer Button */
-.mdl-layout__drawer-button > i.material-icons {
-  display: none;
-}
-
-.mdl-layout__drawer-button:before {
-  display: inline-block;
-  font: normal normal normal 24px/1 "Material Design Icons";
-  font-size: 24px;
-  position: relative;
-  top: -4px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  content: "\F035C";
 }
 
 .mdl-navigation__link {
@@ -47,41 +28,7 @@ html, .mdl-layout__drawer {
   border: none;
 }
 
-a {
-  text-decoration: none;
-}
 
-a.mdl-card {
-  color: inherit;
-}
-
-p > a:hover {
-  color: rgb(236, 144, 251);
-  background: rgba(255,255,255,0.125);
-  text-decoration: underline;
-}
-
-p > a:hover, code {
-  border-radius: 2px;
-  padding: 2px 4px;
-  margin: -2px -4px;
-}
-
-p > code, .highlighter-rouge {
-  background: rgba(0,0,0,0.5);
-  color: rgba(255,255,255,0.75);
-}
-
-figure.highlight {
-  background: rgba(0,0,0,0.5);
-  border-radius: 4px;
-  margin-left: 0;
-  margin-right: 0;
-  padding-block-start: 0.5em;
-  padding-block-end: 0.5em;
-  padding-inline-start: 40px;
-  padding-inline-end: 40px;
-}
 
 .mdl-card {
   background: var(--dark-6);
@@ -91,52 +38,15 @@ figure.highlight {
   color: inherit;
 }
 
-
-.post-field {
-  width: 100%;
-}
-.post-fields {
-  margin-top: -8px;
-}
-
-@media (max-width: 479px) {
-  .post-fields {
-    display: block;
-  }
-}
-@media (min-width: 480px) {
-  .post-field:not(:last-child) {
-    border-right: rgba(255,255,255,0.25) solid 1px;
-    margin-right: 8px;
-  }
-  .post-fields {
-    display: flex;
-  }
-}
-
-.post-field > i {
-  font-size: 16px;
-}
-
-.post-card, .project-card {
-  width: 100%;
-  margin-bottom: 12px;
-  min-height: 0;
-
-}
-
 h2, h3, h4, h5, h6 {
   color: rgba(255,255,255,0.5);
 }
 
-.mdl-navigation__link.mdi {
-  font-size: 24px;
-  line-height: 24px;
-  padding: 8px;
-}
 
+
+/* Fix tab colors */
 .mdl-tabs__tab-bar {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+  border-bottom-color: rgba(255, 255, 255, 0.22);
 }
 
 .mdl-tabs.is-upgraded .mdl-tabs__tab.is-active {
@@ -147,36 +57,30 @@ h2, h3, h4, h5, h6 {
   color: var(--foreground2);
 }
 
-.post-header {
-  margin-bottom: 1rem;
-  border-radius: 4px;
+/* Fix list items */
+.mdl-list__item {
+  font-family: inherit;
+  color: var(--foreground);
 }
 
-.post-header, .post-card {
-  background-size: cover;
+.mdl-list__item--two-line .mdl-list__item-primary-content .mdl-list__item-sub-title {
+  color: var(--foreground2);
 }
 
-.post-card-cover {
-  background-color: rgba(31, 31, 48, 0.8);
+/* Override cursor for list items with links */
+a.mdl-list__item {
+  cursor: pointer;
 }
 
-.post-header-cover {
-  padding-bottom: 8px;
-  background-color: rgba(31, 31, 48, 0.75);
-  height: 100%;
-  width: 100%;
-
-  text-shadow: black 0px 0px 2px;
+/* Material Design Icons Support */
+.mdi {
+  line-height: 24px;
+  font-size: 24px;
+}
+.mdi.mdl-list__item-avatar, .mdi.mdl-navigation__link {
+  padding: 8px;
 }
 
-.post-header, .post-header-cover {
-  margin-left: -50%;
-  margin-right: -50%;
-  padding-left: 50%;
-  padding-right: 50%;
-}
-
-/* Size images in articles */
-article img {
-  width: 100%;
+.mdi.mdl-button--icon::before {
+  padding: 4px;
 }
