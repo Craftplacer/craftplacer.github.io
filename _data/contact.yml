@@ -149,3 +149,8 @@
   link: https://www.pixiv.net/en/users/52713920
   bg: "#1F1F1F"
   color: "#0095FA"
+
+- platform: asciinema
+  bg: "#000"
+  color: "#D40000"
+  link: https://asciinema.org/~Craftplacer
