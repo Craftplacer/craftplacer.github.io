@@ -25,7 +25,8 @@
 
 - platform: Pleroma
   link: https://fedi.absturztau.be/Craftplacer
-  color: "#EAA59A"
+  color: "#F8A2A1"
+  bg: "#182230"
 
 - platform: NicoNico
   link: https://www.nicovideo.jp/user/85862482
@@ -60,6 +61,7 @@
 - platform: SoundCloud
   link: https://soundcloud.com/craftplacer
   bg: "#FF5400"
+  color: "#FFF"
   icon: mdi-soundcloud
 
 - platform: Mixcloud
@@ -70,6 +72,7 @@
 - platform: Twitch
   link: https://www.twitch.tv/craftplacer
   bg: "#9146FF"
+  color: "#FFF"
   icon: mdi-twitch
 
 # Games
@@ -94,6 +97,7 @@
 - platform: GitHub
   link: https://github.com/Craftplacer
   icon: mdi-github
+  color: "#FFF"
   bg: "#24292E"
 
 - platform: GitLab
@@ -109,7 +113,8 @@
 # Forum
 - platform: MessengerGeek
   link: https://wink.messengergeek.com/u/craftplacer
-  color: "#f0d941"
+  bg: "#000"
+  color: "#EED13A"
 
 - platform: XDA Forums
   link: https://forum.xda-developers.com/member.php?u=8076675
@@ -118,6 +123,7 @@
 # "I exist"
 - platform: StackOverflow
   link: https://stackoverflow.com/users/7972419/craftplacer
+  bg: "##36393C"
   color: "#f48024"
   icon: "mdi-stack-overflow"
 
@@ -130,6 +136,7 @@
 - platform: GameBanana
   link: https://gamebanana.com/members/1536641
   color: "#ffe033"
+  bg: "#131A20"
 
 - platform: Crowdin
   link: https://crowdin.com/profile/Craftplacer
