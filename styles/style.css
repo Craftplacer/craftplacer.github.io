@@ -8,7 +8,7 @@ a.mdl-card {
 
 p > a:hover {
   color: rgb(236, 144, 251);
-  background: rgba(255,255,255,0.125);
+  background: var(--foreground-125);
   text-decoration: underline;
 }
 
@@ -20,7 +20,7 @@ p > a:hover, code {
 
 p > code, .highlighter-rouge {
   background: rgba(0,0,0,0.5);
-  color: rgba(255,255,255,0.75);
+  color: var(--fg-87);
 }
 
 figure.highlight {
@@ -81,12 +81,12 @@ figure.highlight {
 }
 
 .post-card-cover {
-  background-color: rgba(31, 31, 48, 0.8);
+  background-color: var(--bg-75);
 }
 
 .post-header-cover {
   padding-bottom: 8px;
-  background-color: rgba(31, 31, 48, 0.75);
+  background-color: var(--bg-75);
   height: 100%;
   width: 100%;
 
@@ -110,4 +110,8 @@ article img {
 }
 .pre-nav:after {
   content: " / ";
+}
+
+#darkmode-toggle {
+  opacity: .125;
 }
