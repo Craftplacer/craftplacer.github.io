@@ -39,7 +39,7 @@ permalink: /about/
   {% for contact in site.data.contact %}
     {% assign icon = contact.icon | default: "mdi-checkbox-blank-circle" %}
     {% assign color = contact.color | default: "unset" %}
-    {% assign background = contact.bg | default: "var(--dark-6)" %}
+    {% assign background = contact.bg | default: "var(--bg-6)" %}
     <a class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-js-button mdl-js-ripple-effect contact-card" href="{{ contact.link }}" style="color:{{color}};background:{{background}}">
       <i class="mdi {{icon}}"></i>
       <span>
