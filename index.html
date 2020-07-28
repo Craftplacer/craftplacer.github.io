@@ -2,6 +2,25 @@
 layout: optimized
 title:  "Home"
 ---
+<style>
+  body {
+    background-image: url("/assets/images/pattern.png");
+    background-blend-mode: soft-light;
+    animation: moving 80s infinite linear;
+  }
+
+  @keyframes moving {
+    0% {
+      background-position-x: 0.00%;
+      background-position-y: 0.00%;
+    }
+    100% {
+      background-position-x: 100.00%;
+      background-position-y: 100.00%;
+    }
+  }
+</style>
+
 <p>
   Hewwo world! <b>:3</b>
 </p>

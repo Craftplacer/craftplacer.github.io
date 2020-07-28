@@ -1,0 +1,34 @@
+---
+layout: craftbot-command
+command:
+  name: user language
+  overloads:
+  - description: Changes your language.
+    remarks: 
+    aliases:
+    - language
+    parameters: []
+  - description: Changes your language.
+    remarks: 
+    aliases:
+    - language
+    - lang
+    parameters:
+    - name: code
+      description: 
+      remarks: 
+      type: String
+      optional: false
+      remainder: false
+related:
+- name: user
+- name: user biography
+- name: user image
+- name: user color
+- name: user gender
+- &o0
+  name: user birthday
+- *o0
+- name: user export
+
+---

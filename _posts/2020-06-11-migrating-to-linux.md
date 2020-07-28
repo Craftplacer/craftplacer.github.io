@@ -3,7 +3,7 @@ layout: article
 title: Migrating to GNU/Linux
 date: 2020-06-11
 tags: linux
-cover: /assets/images/debian.jpg
+cover: /images/debian.jpg
 ---
 
 Recently, I migrated to GNU/Linux, to be more exact, Debian.

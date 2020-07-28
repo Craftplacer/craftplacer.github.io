@@ -1,0 +1,37 @@
+---
+layout: optimized
+
+libraries:
+- title: nekos.moe
+  iconUrl: https://nekos.moe/static/favicon/favicon.ico
+  githubUrl: https://example.org/
+- title: Discourse
+  iconUrl: https://www.discourse.org/a/img/favicon.png
+  githubUrl:
+---
+
+<style>
+    img {
+      vertical-align: initial;
+    }
+</style>
+
+<h2>
+  <a class="pre-nav" href="/projects">Projects</a>
+  API wrappers
+</h2>
+
+<div class="mdl-list">
+  {% for library in page.libraries %}
+  <a class="mdl-list__item" href="{{library.githubUrl}}">
+    <span class="mdl-list__item-primary-content">
+      <div class="mdl-list__item-avatar">
+        <img src="{{library.iconUrl}}" width="24" height="24">
+      </div>
+      <span>
+        {{ library.title }}
+      </span>
+    </span>
+  </a>
+  {% endfor %}
+</div>

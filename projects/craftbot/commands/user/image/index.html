@@ -1,0 +1,33 @@
+---
+layout: craftbot-command
+command:
+  name: user image
+  overloads:
+  - description: Changes your profile picture.
+    remarks: 
+    aliases:
+    - image
+    - img
+    - picture
+    - pic
+    parameters:
+    - name: imageUrl
+      description: 
+      remarks: 
+      type: String
+      optional: true
+      remainder: false
+related:
+- name: user
+- name: user biography
+- name: user color
+- name: user gender
+- &o0
+  name: user birthday
+- *o0
+- &o1
+  name: user language
+- *o1
+- name: user export
+
+---

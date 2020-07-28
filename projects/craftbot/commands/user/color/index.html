@@ -1,0 +1,31 @@
+---
+layout: craftbot-command
+command:
+  name: user color
+  overloads:
+  - description: Changes your profile color.
+    remarks: 
+    aliases:
+    - color
+    - clr
+    parameters:
+    - name: color
+      description: 
+      remarks: 
+      type: Nullable`1
+      optional: true
+      remainder: false
+related:
+- name: user
+- name: user biography
+- name: user image
+- name: user gender
+- &o0
+  name: user birthday
+- *o0
+- &o1
+  name: user language
+- *o1
+- name: user export
+
+---

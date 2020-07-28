@@ -1,0 +1,31 @@
+---
+layout: craftbot-command
+command:
+  name: user gender
+  overloads:
+  - description: Changes your profile gender.
+    remarks: 
+    aliases:
+    - gender
+    - sex
+    parameters:
+    - name: gender
+      description: Which gender that should be set on your profile, e.g. 'male' or 'female'
+      remarks: 
+      type: String
+      optional: false
+      remainder: false
+related:
+- name: user
+- name: user biography
+- name: user image
+- name: user color
+- &o0
+  name: user birthday
+- *o0
+- &o1
+  name: user language
+- *o1
+- name: user export
+
+---

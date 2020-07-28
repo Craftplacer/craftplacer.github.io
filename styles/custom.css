@@ -1,80 +1,10 @@
-html, body, h1, h2, h3, h4, h5, h6, .mdl-layout__title, .mdl-layout-title {
-  font-family: "Roboto Mono", monospace;
-}
-
-:root {
-  --bg: #141425;
-  --bg-1: #1F1F30;
-  --bg-6: #2D2D3C;
-  --bg-75: rgba(20, 20, 37, .75);
-  --fg-125: rgba(255, 255, 255, .125);
-  --fg-54: rgba(255, 255, 255, .54);
-  --fg-87: rgba(255, 255, 255, .87);
-}
-
-body, .mdl-layout__drawer {
-  background: var(--bg);
-  color: var(--fg-87);
-}
-
-.mdl-layout__header {
-  background: var(--bg-6);
-}
-
-.mdl-layout__header, .mdl-layout__header-row .mdl-navigation__link {
-  color: var(--fg-87);
-}
-
-.mdl-layout__drawer .mdl-navigation .mdl-navigation__link:hover {
-  background: var(--bg-1);
-}
-
-.mdl-navigation__link {
-  color: var(--fg-87);
-}
-
-.mdl-layout__drawer {
-  border: none;
-}
-
-.mdl-card {
-  background: var(--bg-6);
-}
-
 .mdl-card__title, .mdl-card__supporting-text {
   color: inherit;
-}
-
-h2, h3, h4, h5, h6 {
-  color: var(--fg-54);
 }
 
 /* Make navigation links accessible */
 .mdl-navigation .mdl-button--icon {
     padding: 8px;
-}
-
-/* Fix tab colors */
-.mdl-tabs__tab-bar {
-  border-bottom-color: var(--fg-125);
-}
-
-.mdl-tabs.is-upgraded .mdl-tabs__tab.is-active {
-  color: var(--fg-87);
-}
-
-.mdl-tabs__tab {
-  color: var(--fg-54);
-}
-
-/* Fix list items */
-.mdl-list__item {
-  font-family: inherit;
-  color: var(--fg-87);
-}
-
-.mdl-list__item--two-line .mdl-list__item-primary-content .mdl-list__item-sub-title {
-  color: var(--fg-54);
 }
 
 /* Override cursor for list items with links */

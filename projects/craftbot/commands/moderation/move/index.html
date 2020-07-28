@@ -1,0 +1,27 @@
+---
+layout: craftbot-command
+command:
+  name: moderation move
+  overloads:
+  - description: Moves one message from one channel to another.
+    remarks: The messages have to be inside the same server.
+    aliases:
+    - move
+    parameters:
+    - name: message
+      description: 
+      remarks: 
+      type: DiscordMessage
+      optional: false
+      remainder: false
+    - name: channel
+      description: 
+      remarks: 
+      type: DiscordChannel
+      optional: false
+      remainder: false
+related:
+- name: moderation kick
+- name: moderation ban
+
+---
