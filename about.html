@@ -5,17 +5,6 @@ permalink: /about/
 ---
 
 <style>
-  .contact-card {
-    padding: 8px;
-    min-height: unset;
-    display: block;
-  }
-  .contact-card * {
-    vertical-align: middle;
-  }
-  .contact-card > .mdi {
-    line-height: 24px;
-  }
   .abuseipdb {
     text-align: center;
   }
@@ -23,31 +12,66 @@ permalink: /about/
     filter: contrast(0);
     width: 200px;
   }
+
+  .center {
+	text-align: center;
+  }
+
+  .avatar {
+	border-radius: 50%;
+	height: 128px;
+  }
 </style>
 
-<h2>About me</h2>
-
-<p>
-  Weeb Developer from Germany.
-</p>
-
-<h4>
-  Contact & Profiles <i style="font-size:small">I'm everywhere</i>
-</h4>
+<div class="center">
+	<img class="avatar" src="https://cdn.libravatar.org/avatar/f09eac630e6afb02e897b2444407611b?s=128">
+</div>
 
 <div class="mdl-grid">
-  {% for contact in site.data.contact %}
-    {% assign icon = contact.icon | default: "mdi-checkbox-blank-circle" %}
-    {% assign color = contact.color | default: "unset" %}
-    {% assign background = contact.bg | default: "var(--bg-6)" %}
-    <a class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-js-button mdl-js-ripple-effect contact-card" href="{{ contact.link }}" style="color:{{color}};background:{{background}}">
-      <i class="mdi {{icon}}"></i>
-      <span>
-        {{contact.platform}}
-      </span>
-    </a>
-  {% endfor %}
+	<div class="mdl-cell mdl-cell--12-col mdl-cell--6-col-desktop">
+		<h4>
+			E-Mail
+		</h4>
+		
+		<a class="despam" href="mailto:{{site.data.about.email}}">
+			<code class="despam">
+				{{ site.data.about.email }}
+			</code>
+		</a>
+	</div>
+
+	<div class="mdl-cell mdl-cell--12-col mdl-cell--6-col-desktop">
+		<h4>
+			PGP <a href="/Craftplacer.asc" class="mdi mdi-download"></a>
+		</h4>
+		
+		<code>
+			{{ site.data.about.pgp }}
+		</code>
+	</div>
 </div>
+
+<h4>Contact & Profiles <i style="font-size:small">I'm everywhere</i></h4>
+
+{% for section in site.data.contact %}
+	<p>
+		<span class="contact-section-title">
+			{{section.title}}:
+		</span>
+		<br>
+
+		{% for contact in section.contacts %}
+			<!--{% assign icon = contact.icon | default: "mdi-checkbox-blank-circle" %}
+			<i class="mdi {{icon}}"></i>
+			mdl-cell--4-col contact-card class="mdl-cell "-->
+			{% assign color = contact.color | default: "unset" %}
+
+			<a href="{{ contact.link }}" style="color:{{color}}">
+				{{contact.platform}}
+			</a>
+		{% endfor %}
+	</p>
+{% endfor %}
 
 <hr>
 
@@ -61,13 +85,15 @@ permalink: /about/
 </div>
 
 <script>
-  let e = document.getElementsByTagName("a");
-  const p = "mailto:";
+  let e = document.getElementsByClassName("despam");
+  let p = "mailto:";
+
   for (i in e) {
-    var l = e[i];
-    if (l.href.startsWith(p)) {
-      l.href = p + window.atob(l.href.split(p)[1]);
-      break;
-    }
+	let l = e[i];
+	
+	if (l.href && l.href.startsWith(p))
+		l.href = p + window.atob(l.href.split(p)[1]); 
+	else
+    	l.innerText = window.atob(l.innerText);
   }
 </script>

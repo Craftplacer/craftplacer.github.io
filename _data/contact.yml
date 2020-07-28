@@ -1,163 +1,160 @@
-- platform: Email
-  link: mailto:Y3JhZnRwbGFjZXJAd2FpZnUuY2x1Yg==
-  icon: mdi-email
+- title: Chat
+  contacts:
+  - platform: Telegram
+    link: https://t.me/Craftplacer
+    color: "#32afed"
+    icon: mdi-telegram
 
-# Chat
-- platform: Telegram
-  link: https://t.me/Craftplacer
-  color: "#32afed"
-  icon: mdi-telegram
+  - platform: Discord
+    link: https://discord.gg/qMKfcKc
+    color: "#7289da"
+    icon: mdi-discord
 
-- platform: Discord
-  link: https://discord.gg/qMKfcKc
-  color: "#7289da"
-  icon: mdi-discord
+  - platform: Keybase
+    link: https://keybase.io/craftplacer
+    color: "#33a0ff"
 
-- platform: Keybase
-  link: https://keybase.io/craftplacer
-  color: "#33a0ff"
+  - platform: Jabber
+    link: xmpp:craftplacer@jabber.absturztau.be?message
 
-# Social
-- platform: Twitter
-  link: https://twitter.com/Craftplacer
-  color: "#1DA1F2"
-  icon: mdi-twitter
+- title: Social
+  contacts:
+  - platform: Twitter
+    link: https://twitter.com/Craftplacer
+    color: "#1DA1F2"
+    icon: mdi-twitter
 
-- platform: Pleroma
-  link: https://fedi.absturztau.be/Craftplacer
-  color: "#F8A2A1"
-  bg: "#182230"
+  - platform: Pleroma
+    link: https://fedi.absturztau.be/Craftplacer
+    color: "#F8A2A1"
+    bg: "#182230"
 
-- platform: NicoNico
-  link: https://www.nicovideo.jp/user/85862482
+  - platform: NicoNico
+    link: https://www.nicovideo.jp/user/85862482
 
-- platform: pr0gramm
-  link: https://pr0gramm.com/user/Craftplacer
-  color: "#d23c22"
+  - platform: pr0gramm
+    link: https://pr0gramm.com/user/Craftplacer
+    color: "#d23c22"
 
-- platform: Reddit
-  link: https://www.reddit.com/user/Craftplacer
-  color: "#FF4500"
-  icon: mdi-reddit
+  - platform: Reddit
+    link: https://www.reddit.com/user/Craftplacer
+    color: "#FF4500"
+    icon: mdi-reddit
 
-- platform: Newgrounds
-  link: https://craftplacer.newgrounds.com/
-  color: "#f27e2b"
+  - platform: Newgrounds
+    link: https://craftplacer.newgrounds.com/
+    color: "#f27e2b"
 
-# File Sharing
-- platform: MEGA
-  link: https://mega.nz/C!TUEWzaJA
-  color: "#d90007"
+  - platform: MySpace
+    link: https://myspace.windows93.net/index.php?id=6618
+    color: "#6699cc"
 
-- platform: MEGAdrop
-  link: https://mega.nz/megadrop/w9dPSM9kTwo
-  color: "#d90007"
+- title: File Sharing
+  contacts:
+  - platform: MEGA
+    link: https://mega.nz/C!TUEWzaJA
+    color: "#d90007"
 
-# Music
-- platform: ListenBrainz
-  link: https://listenbrainz.org/user/Craftplacer
-  color: "#9A3281"
+  - platform: MEGAdrop
+    link: https://mega.nz/megadrop/w9dPSM9kTwo
+    color: "#d90007"
 
-- platform: SoundCloud
-  link: https://soundcloud.com/craftplacer
-  bg: "#FF5400"
-  color: "#FFF"
-  icon: mdi-soundcloud
+- title: Music
+  contacts:
+  - platform: ListenBrainz
+    link: https://listenbrainz.org/user/Craftplacer
+    color: "#9A3281"
 
-- platform: Mixcloud
-  link: https://www.mixcloud.com/Craftplacer/
-  color: "#5000ff"
+  - platform: SoundCloud
+    link: https://soundcloud.com/craftplacer
+    color: "#FF5400"
+    icon: mdi-soundcloud
 
-# Streaming
-- platform: Twitch
-  link: https://www.twitch.tv/craftplacer
-  bg: "#9146FF"
-  color: "#FFF"
-  icon: mdi-twitch
+  - platform: Mixcloud
+    link: https://www.mixcloud.com/Craftplacer/
+    color: "#5000ff"
 
-# Games
-- platform: Steam
-  link: https://steamcommunity.com/id/craftplacer/
-  icon: mdi-steam
+- title: Streaming
+  contacts:
+  - platform: Twitch
+    link: https://www.twitch.tv/craftplacer
+    color: "#9146FF"
+    icon: mdi-twitch
 
-- platform: Etterna
-  link: https://etternaonline.com/user/Craftplacer
-  color: "#6732ae"
+- title: Games
+  contacts:
+  - platform: Steam
+    link: https://steamcommunity.com/id/craftplacer/
+    icon: mdi-steam
 
-- platform: osu!
-  link: https://osu.ppy.sh/users/8233638
-  color: "#e6649f"
+  - platform: Etterna
+    link: https://etternaonline.com/user/Craftplacer
+    color: "#6732ae"
 
-# Anime
-- platform: Kitsu
-  link: https://kitsu.io/users/craftplacer
-  color: "#e96c55"
+  - platform: osu!
+    link: https://osu.ppy.sh/users/8233638
+    color: "#e6649f"
 
-# Git
-- platform: GitHub
-  link: https://github.com/Craftplacer
-  icon: mdi-github
-  color: "#FFF"
-  bg: "#24292E"
+- title: Anime
+  contacts:
+  - platform: Kitsu
+    link: https://kitsu.io/users/craftplacer
+    color: "#e96c55"
 
-- platform: GitLab
-  link: https://gitlab.com/Craftplacer
-  icon: mdi-gitlab
-  bg: "#292961"
-  color: "#E24329"
+- title: Git
+  contacts:
+  - platform: GitHub
+    link: https://github.com/Craftplacer
+    icon: mdi-github
 
-- platform: MySpace
-  link: https://myspace.windows93.net/index.php?id=6618
-  color: "#6699cc"
+  - platform: GitLab
+    link: https://gitlab.com/Craftplacer
+    icon: mdi-gitlab
+    color: "#E24329"
 
-# Forum
-- platform: MessengerGeek
-  link: https://wink.messengergeek.com/u/craftplacer
-  bg: "#000"
-  color: "#EED13A"
+- title: Forum
+  contacts:
+  - platform: MessengerGeek
+    link: https://wink.messengergeek.com/u/craftplacer
+    color: "#EED13A"
 
-- platform: XDA Forums
-  link: https://forum.xda-developers.com/member.php?u=8076675
-  color: "#c08000"
+  - platform: XDA Forums
+    link: https://forum.xda-developers.com/member.php?u=8076675
+    color: "#c08000"
 
-# "I exist"
-- platform: StackOverflow
-  link: https://stackoverflow.com/users/7972419/craftplacer
-  bg: "##36393C"
-  color: "#f48024"
-  icon: "mdi-stack-overflow"
+- title: Other
+  contacts:
+  - platform: StackOverflow
+    link: https://stackoverflow.com/users/7972419/craftplacer
+    color: "#f48024"
+    icon: "mdi-stack-overflow"
 
-- platform: DeviantArt
-  link: https://www.deviantart.com/craftplacer
-  color: "#00e59b"
-  bg: "#000"
-  icon: "mdi-deviantart"
+  - platform: DeviantArt
+    link: https://www.deviantart.com/craftplacer
+    color: "#00e59b"
+    icon: "mdi-deviantart"
 
-- platform: GameBanana
-  link: https://gamebanana.com/members/1536641
-  color: "#ffe033"
-  bg: "#131A20"
+  - platform: GameBanana
+    link: https://gamebanana.com/members/1536641
+    color: "#ffe033"
 
-- platform: Crowdin
-  link: https://crowdin.com/profile/Craftplacer
-  color: "#6eaa68"
+  - platform: Crowdin
+    link: https://crowdin.com/profile/Craftplacer
+    color: "#6eaa68"
 
-- platform: HackerOne
-  link: hackerone.com/craftplacer
-  color: "#e10e71"
+  - platform: HackerOne
+    link: hackerone.com/craftplacer
+    color: "#e10e71"
 
-- platform: Trello
-  link: https://trello.com/craftplacer
-  bg: "#026aa7"
-  color: "#fff"
-  icon: "mdi-trello"
+  - platform: Trello
+    link: https://trello.com/craftplacer
+    color: "#026aa7"
+    icon: "mdi-trello"
 
-- platform: Pixiv
-  link: https://www.pixiv.net/en/users/52713920
-  bg: "#1F1F1F"
-  color: "#0095FA"
+  - platform: Pixiv
+    link: https://www.pixiv.net/en/users/52713920
+    color: "#0095FA"
 
-- platform: asciinema
-  bg: "#000"
-  color: "#D40000"
-  link: https://asciinema.org/~Craftplacer
+  - platform: asciinema
+    color: "#D40000"
+    link: https://asciinema.org/~Craftplacer
