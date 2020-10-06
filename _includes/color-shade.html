@@ -1,0 +1,28 @@
+<div class="palette-card mdl-cell mdl-cell--12-col mdl-cell--{{include.columns}}-col-desktop">
+	{% for shade in color.lightShades %}
+		{% assign fg = shade.fg | default: color.fg %}
+		<div class="palette-shade--light" style="color:{{fg}};background:{{shade.hex}}">
+			<a class="palette-color__code">
+				{{ shade.hex }}
+			</a>
+		</div>
+	{% endfor %}
+
+	<div class="palette-shade--main" style="color:{{color.fg}};background:{{color.hex}}">
+		<span class="palette-color__name">
+			{{ color.name }}
+		</span><br />
+		<a class="palette-color__code">
+			{{ color.hex }}
+		</a>
+	</div>
+
+	{% for shade in color.darkShades %}
+		{% assign fg = shade.fg | default: color.fg %}
+		<div class="palette-shade--dark" style="color:{{fg}};background:{{shade.hex}}">
+			<a class="palette-color__code">
+				{{ shade.hex }}
+			</a>
+		</div>
+	{% endfor %}
+</div>

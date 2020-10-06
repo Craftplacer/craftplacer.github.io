@@ -1,0 +1,18 @@
+---
+layout: optimized
+---
+
+<div class="mdl-grid">
+	{% for color in page.palette %}
+	{% assign cols = page.columns | default: 2 %}
+	{% assign cols = 12 | divided_by: cols | floor %}
+	{% include color-shade.html columns=cols %}
+	{% endfor %}
+</div>
+
+<div id="snackbar" class="mdl-js-snackbar mdl-snackbar">
+	<div class="mdl-snackbar__text"></div>
+	<button class="mdl-snackbar__action" type="button"></button>
+</div>
+
+<script defer src="/scripts/palette.js"></script>
