@@ -1,0 +1,116 @@
+---
+layout: optimized
+---
+
+<style>
+    .prefix {
+      opacity: 0.5;
+    }
+    .command {
+    }
+    .syntax {
+      display: flex;
+
+
+      font-size: 14pt;
+      background: rgba(0,0,0,0.25);
+      border-bottom: 1px solid rgba(0,0,0,0.25);
+    }
+    .parameter {
+      margin-left: 0.5em;
+    }
+    .parameter-info > .header {
+      font-weight: 900;
+    }
+    .parameter-info > .header::after {
+      content: ":";
+    }
+
+    .badge {
+      border-radius: 24px;
+      padding: 0 8px;
+    }
+
+    .optional {
+      background: gray;
+      color: #000;
+    }
+    
+    .syntax {
+      padding: 12px;
+      margin-left: -12px;
+      margin-right: -12px;
+      margin-block-end: 1em;
+    }
+    
+    .remarks {
+      color: #F57F17;
+    }
+</style>
+
+<h2>
+  CraftBot Command Reference
+</h2>
+
+{% for overload in page.command.overloads %}
+    <div class="syntax">
+      <span class="prefix">cb!</span>
+      <span class="command">
+        {{page.command.name}}
+      </span>
+      {% for parameter in overload.parameters %}
+        <span class="parameter">
+          {% if parameter.optional %}
+            ({{parameter.name}})
+          {% else %}
+            &lt{{parameter.name}}&gt
+          {% endif %}
+        </span>
+      {% endfor %}
+    </div>
+
+    {% if overload.description != empty %}
+      <p>
+          {{ overload.description }}
+      </p>
+    {% endif %}
+    {% if overload.remarks != empty %}
+      <p class="remarks">
+          {{ overload.remarks }}
+      </p>
+    {% endif %}
+
+    {% for parameter in overload.parameters %}
+      <p class="parameter-info">
+          <span class="header">
+            <span class="name">
+              {{parameter.name}}
+            </span>
+            <span class="badge mdl-color--red-300 mdl-color-text--black">{{parameter.type}}</span>
+            {% if parameter.optional %}
+              <span class="badge mdl-color--grey-500 mdl-color-text--black">optional</span>
+            {% endif %}
+            {% if parameter.remainder %}
+              <span class="badge mdl-color--light-blue-300 mdl-color-text--black">remainder</span>
+            {% endif %}
+          </span>
+          <span class="description">
+            {{parameter.description}}
+          </span>
+      </p>
+    {% endfor %}
+{% endfor %}
+
+{% if page.related %}
+  <hr>
+  <h3>
+    Related commands
+  </h3>
+  <ul>
+    {% for command in page.related %}
+      <li>
+        {{ command.name }}
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
