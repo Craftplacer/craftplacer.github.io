@@ -1,11 +1,21 @@
 title: Craftplacer's Site
+shortTitle: crtplr
 url: "https://craftplacer.github.io"
 permalink: /posts/:title
-lang: en
-twitter: "@Craftplacer"
 
 plugins:
   - jekyll-feed
+
+collections:
+  cookbook:
+    output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
 
 exclude:
   - .sass-cache/

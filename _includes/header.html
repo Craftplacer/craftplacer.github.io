@@ -1,7 +1,8 @@
 <header class="mdl-layout__header">
   <div class="mdl-layout__header-row">
-    <a class="mdl-layout-title" href="/">{{ site.title | escape }}</a>
-    <div class="mdl-layout-spacer"></div>
+	<a class="mdl-layout-title mdl-layout--large-screen-only" href="/">{{ site.title | escape }}</a>
+	<a class="mdl-layout-title mdl-layout--small-screen-only" href="/">{{ site.shortTitle | escape }}</a>
+	<div class="mdl-layout-spacer"></div>
     <nav class="mdl-navigation">
       {% for item in site.data.navigation %}
       <a class="mdl-button mdl-js-button mdl-button--icon mdi mdi-{{item.icon}}" aria-label="{{item.title}}" id="nav-{{item.icon}}" href="{{item.url}}">
