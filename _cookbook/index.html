@@ -1,0 +1,13 @@
+---
+layout: optimized
+title: Cookbook
+ignore: true
+---
+
+<h2>Craftplacer's Cookbook for Software and Programming</h2>
+
+{% for post in site.cookbook %}
+  {% unless post.ignore %}
+  	{% include post-card.html %}
+  {% endunless %}
+{% endfor %}
