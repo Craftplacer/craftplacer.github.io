@@ -1,14 +1,43 @@
-- title: CraftBot
-  description: Chat bot for various services.
-  url: craftbot
+- section: More or less actively maintained
+  projects:
+  - title: CraftBot
+    description: Bot for various chat services like Discord and Telegram.
+    url: craftbot
+    header:
+      bg: "#3D5AFE"
+      fg: "#FFF"
 
-- title: Tweak Utility
-  description: Windows tweaking utility, inspired by similar software.
-  url: https://github.com/Craftplacer/TweakUtility
+  - title: Tweak Utility
+    description: Extensible Windows tweaking utility, inspired by similar software.
+    url: https://github.com/Craftplacer/TweakUtility
+    header:
+      bg: "#3D5AFE"
+      fg: "#FFF"
 
-- title: Obsidian
-  description: Minecraft Server written in .NET Core.
-  url: https://github.com/Naamloos/Obsidian
+  - title: Kaiteki
+    description: Fediverse micro-blogging services client written in Flutter.
+    url: https://github.com/Craftplacer/kaiteki
+    header:
+      text: "快適"
+      bg: "#FF4081"
+      fg: "#FFF"
 
-- title: .NET API Wrappers
-  url: api
+  - title: Obsidian
+    description: Minecraft server written in .NET Core.
+    url: https://github.com/Naamloos/Obsidian
+
+  - title: .NET API Wrappers
+    description: Pre-built libaries for web services
+    url: api
+    header:
+      text: ".NET"
+      bg: "#470ED4"
+      fg: "#FFF"
+
+- section: Abandoned
+  projects:
+    - title: Messenger Suite
+      description: Projects that were once developed for Windows Live Messenger.
+
+    - title: Indigo
+      description: A Scratch 2 modification adding various new blocks to code with.
