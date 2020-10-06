@@ -12,19 +12,12 @@ permalink: /about/
     filter: contrast(0);
     width: 200px;
   }
-
-  .center {
-	text-align: center;
-  }
-
-  .avatar {
-	border-radius: 50%;
-	height: 128px;
-  }
 </style>
 
-<div class="center">
-	<img class="avatar" src="https://cdn.libravatar.org/avatar/f09eac630e6afb02e897b2444407611b?s=128">
+<div class="avatar-container">
+	<div class="avatar">
+		<img src="https://cdn.libravatar.org/avatar/f09eac630e6afb02e897b2444407611b?s=128">
+	</div>
 </div>
 
 <div class="mdl-grid">
@@ -44,34 +37,30 @@ permalink: /about/
 		<h4>
 			PGP <a href="/Craftplacer.asc" class="mdi mdi-download"></a>
 		</h4>
-		
-		<code>
-			{{ site.data.about.pgp }}
-		</code>
+		<pre>{{site.data.about.pgp}}</pre>
 	</div>
 </div>
 
 <h4>Contact & Profiles <i style="font-size:small">I'm everywhere</i></h4>
 
-{% for section in site.data.contact %}
-	<p>
-		<span class="contact-section-title">
-			{{section.title}}:
-		</span>
-		<br>
-
-		{% for contact in section.contacts %}
-			<!--{% assign icon = contact.icon | default: "mdi-checkbox-blank-circle" %}
-			<i class="mdi {{icon}}"></i>
-			mdl-cell--4-col contact-card class="mdl-cell "-->
-			{% assign color = contact.color | default: "unset" %}
-
-			<a href="{{ contact.link }}" style="color:{{color}}">
-				{{contact.platform}}
-			</a>
-		{% endfor %}
-	</p>
-{% endfor %}
+<div class="mdl-grid">
+	{% for section in site.data.contact %}
+		{% if section.expand %}
+		<div class="mdl-cell mdl-cell--12-col">
+		{% else %}
+		<div class="mdl-cell mdl-cell--12-col mdl-cell--4-col-desktop">
+		{% endif %}
+			<p>
+				<span class="contact-section-title">{{section.title}}:</span>
+				<br>
+				{% for contact in section.contacts %}
+					{% assign color = contact.color | default: "unset" %}
+					<a href="{{contact.link}}" style="color:{{color}}">{{contact.platform}}</a>
+				{% endfor %}
+			</p>
+		</div>
+	{% endfor %}
+</div>
 
 <hr>
 
