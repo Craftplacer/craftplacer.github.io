@@ -2,7 +2,7 @@
   projects:
   - title: CraftBot
     description: Bot for various chat services like Discord and Telegram.
-    url: craftbot
+    url: https://github.com/Craftplacer/CraftBot
     header:
       bg: "#3D5AFE"
       fg: "#FFF"
