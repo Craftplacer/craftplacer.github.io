@@ -1,0 +1,23 @@
+$icon-size: 24px;
+$padding: 4px;
+$size: $icon-size + ($padding * 2);
+
+.qt-icon-button {
+    @extend .qt-button;
+
+    border-radius: 50%;
+    line-height: $icon-size;
+
+    min-width: $size;
+    min-height: $size;
+    max-width: $size;
+    max-height: $size;
+
+    padding: $padding;
+
+    display: flex;
+
+    &:before {
+        margin: auto;
+    }
+}

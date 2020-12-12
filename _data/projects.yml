@@ -1,5 +1,21 @@
 - section: More or less actively maintained
   projects:
+  - title: Kaiteki
+    description: Fediverse micro-blogging services client written in Flutter.
+    url: https://github.com/Craftplacer/kaiteki
+    logo: "/assets/images/kaiteki.png"
+    header:
+      bg: "#1e2133"
+      fg: "#ff9daf"
+
+  - title: Obsidian
+    description: Minecraft server written in .NET Core.
+    url: https://github.com/Naamloos/Obsidian
+    logo: "/assets/images/obsidian.png"
+    header:
+      bg: "#000"
+      fg: "#FFF"
+
   - title: CraftBot
     description: Bot for various chat services like Discord and Telegram.
     url: https://github.com/Craftplacer/CraftBot
@@ -14,30 +30,19 @@
       bg: "#3D5AFE"
       fg: "#FFF"
 
-  - title: Kaiteki
-    description: Fediverse micro-blogging services client written in Flutter.
-    url: https://github.com/Craftplacer/kaiteki
-    header:
-      text: "快適"
-      bg: "#FF4081"
-      fg: "#FFF"
-
-  - title: Obsidian
-    description: Minecraft server written in .NET Core.
-    url: https://github.com/Naamloos/Obsidian
-
-  - title: .NET API Wrappers
-    description: Pre-built libaries for web services
-    url: api
-    header:
-      text: ".NET"
-      bg: "#470ED4"
-      fg: "#FFF"
+  # - title: .NET API Wrappers
+  #   description: Pre-built libaries for web services
+  #   url: api
+  #   header:
+  #     text: ".NET"
+  #     bg: "#470ED4"
+  #     fg: "#FFF"
 
 - section: Abandoned
   projects:
     - title: Messenger Suite
       description: Projects that were once developed for Windows Live Messenger.
+      url: messenger
 
     - title: Indigo
       description: A Scratch 2 modification adding various new blocks to code with.

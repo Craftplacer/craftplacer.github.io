@@ -1,0 +1,59 @@
+---
+layout: optimized
+title: Messenger Suite
+links:
+- icon: "mdi-application"
+  title: "Messenger Activity Monitor"
+  description: "Changes your personal message automatically according to which window has focus"
+  github: "https://github.com/Craftplacer/MessengerActivityMonitor"
+  link: "#"
+
+- icon: "mdi-application"
+  title: "Messenger Rich Presence"
+  description: "Mirrors your Messenger status on Discord"
+  github: "https://github.com/Craftplacer/MessengerRichPresence"
+  link: "#"
+
+- icon: "mdi-puzzle"
+  title: "Greentexts"
+  description: ">be me"
+  link: "/assets/files/greentexts.plsc"
+
+- icon: "mdi-puzzle"
+  title: "Better Emoticon Shortcodes"
+  link: "https://paste.gg/p/Craftplacer/3c42c3f0192c40ae9a1ccac3de4a6880"
+  description: "Hacks in a longer keyboard shortcode for emoticons"
+
+- icon: "mdi-book"
+  title: "Messenger .NET"
+  link: "https://github.com/Craftplacer/MessengerDotNet"
+  description: "An object oriented .NET library for all APIs that Windows Live Messenger exposes"
+---
+
+<h2>
+    Messenger Suite
+</h2>
+<p>
+    The Messenger Suite is a collection of my programs I've written for <a
+        href="https://en.wikipedia.org/wiki/Windows_Live_Messenger">Windows Live Messenger</a> and <a
+        href="https://en.wikipedia.org/wiki/Messenger_Plus!">Messenger Plus!</a>.
+</p>
+
+<p>
+<ul class="qt-card qt-card--wide slist qt-list">
+    {% for item in page.links %}
+    <li class="qt-list-item">
+      <a class="qt-list-item--left interactable" href="{{item.link}}">
+          <span class="qt-list-item--icon mdi mdi-24px {{item.icon}}"></span>
+          <span class="qt-list-item--text">{{item.title}}</span>
+          <span class="qt-list-item--secondary-text">{{item.description}}</span>
+      </a>
+      {% if item.github %}
+      <a class="qt-button" href="{{item.github}}">
+          GitHub
+      </a>
+      {% endif %}
+    </li>
+    {% endfor %}
+</ul>
+</p>

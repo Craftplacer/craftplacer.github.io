@@ -1,0 +1,39 @@
+$qt-header-max-size: 48px;
+$qt-header-min-size: 20px;
+$qt-header-addition-end: $qt-header-max-size - $qt-header-min-size;
+
+@mixin qt-type-h1 {
+    font-weight: 100;
+    font-size: $qt-header-max-size;
+}
+@mixin qt-type-h2 {
+    font-weight: 100;
+    font-size: $qt-header-min-size + ($qt-header-addition-end * .78);
+}
+@mixin qt-type-h3 {
+    font-weight: 300;
+    font-size: $qt-header-min-size + ($qt-header-addition-end * .54);
+}
+@mixin qt-type-h4 {
+    font-weight: 300;
+    font-size: $qt-header-min-size + ($qt-header-addition-end * .27);
+}
+@mixin qt-type-h5 {
+    font-weight: 300;
+    font-size: $qt-header-min-size + ($qt-header-addition-end * .08);
+}
+@mixin qt-type-h6 {
+    font-weight: 600;
+    font-size: $qt-header-min-size;
+}
+
+h1 { @include qt-type-h1(); }
+h2 { @include qt-type-h2(); }
+h3 { @include qt-type-h3(); }
+h4 { @include qt-type-h4(); }
+h5 { @include qt-type-h5(); }
+h6 { @include qt-type-h6(); }
+
+body {
+    font-size: 16px;
+}

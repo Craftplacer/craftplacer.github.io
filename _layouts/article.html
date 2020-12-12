@@ -1,19 +1,15 @@
 ---
 layout: optimized
+comments: true
 ---
-{% if page.cover %}
-<style>
-  .post-header {
-    background-image: url("{{ page.cover }}");
-    padding-top: 200px;
-  }
-</style>
-{% endif %}
 
 <article class="post">
   <header class="post-header">
-    <div class="post-header-cover">
-      <h1 class="post-title">
+    {% if page.cover %}
+    <div class="post-cover" style="background-image:url('{{page.cover}}');">
+    </div>
+    {% endif %}
+    <h1 class="post-title">
         {{ page.title | escape }}
       </h1>
       <div class="post-fields">
@@ -48,12 +44,8 @@ layout: optimized
           </div>
         {% endif %}
       </div>
-    </div>
   </header>
   <div class="post-content">
     {{ content }}
   </div>
-  <section class="comments">
-    <script async src="https://comments.app/js/widget.js?2" data-comments-app-website="YTaA8W00" data-limit="5" data-color="E040FB" data-dislikes="1"></script>
-  </section>
 </article>

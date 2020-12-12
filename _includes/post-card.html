@@ -1,13 +1,13 @@
-<a class="mdl-card mdl-shadow--2dp mdl-js-button mdl-js-ripple-effect post-card"
+<a class="qt-card qt-card--wide qt-card--short post-card"
   {% if post.cover %}
     style="background-image:url({{post.cover}})"
   {% endif %}
   href="{{post.url}}">
   <div class="post-card-cover">
-    <div class="mdl-card__title">
-      <h2 class="mdl-card__title-text">{{post.title}}</h2>
+    <div class="qt-card--header">
+      <span>{{post.title}}</span>
     </div>
-    <div class="mdl-card__supporting-text">
+    <div class="qt-card--description">
       {{post.excerpt}}
     </div>
   </div>

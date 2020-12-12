@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+// nobody likes you microsoft
+:focus {
+	// overrides the focus outline set by the user agent
+	outline: none;
+}

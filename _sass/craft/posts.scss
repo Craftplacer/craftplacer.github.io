@@ -1,0 +1,63 @@
+.post-field { width: 100%; }
+.post-fields { margin-top: -8px; }
+
+@media (max-width: 479px) {
+	.post-fields {
+		display: block;
+	}
+}
+@media (min-width: 480px) {
+	.post-field:not(:last-child) {
+		border-right: rgba(255,255,255,0.25) solid 1px;
+		margin-right: 8px;
+	}
+	.post-fields { display: flex; }
+}
+
+.post-field > i {
+	font-size: 16px;
+	line-height: 16px;
+	width: 16px;
+	height: 16px;
+}
+
+.post-card {
+	width: 100%;
+	margin-bottom: 12px;
+	min-height: 0;
+}
+
+.post-header {
+	margin-bottom: 1rem;
+	border-radius: 4px;
+}
+
+.post-header,
+.post-card { background-size: cover; }
+
+.post-card-cover { background-color: transparentize($nya-bg-0, 0.25); }
+
+.post-cover {
+	min-height: 144px;
+	background-size: cover;
+	background-position: center 5%;
+	border-radius: $nya-rounding;
+}
+
+.post-title {
+	margin-top: 0;
+}
+
+// Size and align images in articles
+article img, article video {
+	max-height: 420px;
+    margin: auto;
+    display: flex;
+}
+
+.comments {
+	display: flex;
+    min-height: 128px;
+    align-items: center;
+    justify-content: center;
+}

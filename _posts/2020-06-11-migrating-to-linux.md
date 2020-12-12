@@ -3,7 +3,8 @@ layout: article
 title: Migrating to GNU/Linux
 date: 2020-06-11
 tags: linux
-cover: /images/debian.jpg
+cover: /assets/images/posts/768db1c2.jpg
+comments: true
 ---
 
 Recently, I migrated to GNU/Linux, to be more exact, Debian.
@@ -27,7 +28,7 @@ You can't customize padding, styling or anything in that regard. Sure, you can c
 
 Since I was more used to GNOME, I installed the minimal install (no GNOME accessories, but some I installed myself later), and went on my way.
 
-![Screenshot of my GNOME desktop](/images/gnome-desktop.webp)
+![Screenshot of my GNOME desktop](/images/posts/gnome-desktop.webp)
 
 *here's how it looks, by the way.*
 

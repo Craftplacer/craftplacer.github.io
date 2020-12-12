@@ -1,0 +1,55 @@
+body {
+	background: $nya-bg-0;
+	color: $nya-fg;
+
+	font-family: $nya-body-font;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $nya-header-font;
+	font-weight: 900 !important;
+}
+
+hr {
+	border-color: $nya-bg-12;
+}
+
+a {
+	&:link, &:visited {
+		color: $nya-accent;
+	}
+}
+
+summary {
+	text-decoration: underline;
+	cursor: pointer;
+	padding: 4px 0;
+	font-weight: bold;
+}
+
+code,
+pre {
+	background: $nya-code--bg;
+	color: $nya-code--fg;
+
+	font-size: 14px;
+	font-family: $nya-code--font;
+	font-weight: bold;
+
+	padding: 4px 8px;
+	border-radius: 4px;
+}
+
+ul.slist {
+	list-style-type: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+}
+
+.slist li {
+	display: flex;
+	text-align: inherit;
+}

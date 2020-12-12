@@ -1,0 +1,47 @@
+// Normal, flat
+.qt-button {
+	@include interactable();
+	
+	border-radius: $nya-rounding;
+	padding: 0 16px;
+	line-height: 36px;
+	border: none;
+
+	font-family: $nya-body_font;
+
+	color: inherit;
+}
+
+.qt-button--outline {
+	@extend .qt-button;
+	border: $nya-bg-12 1px solid;
+}
+
+// Raised
+.qt-button--raised {
+	@extend .qt-button;
+	@include elevation-2dp();
+}
+.qt-button--raised:hover {
+	background: $nya-bg-12;
+}
+.qt-button--raised:active {
+	background: $nya-bg-24;
+}
+
+// Primary
+.qt-button--primary {
+	@extend .qt-button--raised;
+	background-color: $nya-primary;
+	color: $nya-primary-fg;
+}
+
+.qt-button--primary:hover {
+    background-color: $nya-primary-200;
+    color: $nya-primary-200-fg;
+}
+
+.qt-button--primary:active {
+    background-color: $nya-primary-100;
+    color: $nya-primary-100-fg;
+}

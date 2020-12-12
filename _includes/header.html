@@ -1,19 +1,11 @@
-<header class="mdl-layout__header">
-  <div class="mdl-layout__header-row">
-	<a class="mdl-layout-title mdl-layout--large-screen-only" href="/">{{ site.title | escape }}</a>
-	<a class="mdl-layout-title mdl-layout--small-screen-only" href="/">{{ site.shortTitle | escape }}</a>
-	<div class="mdl-layout-spacer"></div>
-    <nav class="mdl-navigation">
-      {% for item in site.data.navigation %}
-      <a class="mdl-button mdl-js-button mdl-button--icon mdi mdi-{{item.icon}}" aria-label="{{item.title}}" id="nav-{{item.icon}}" href="{{item.url}}">
-      </a>
-      {% endfor %}
-      {% for item in site.data.navigation %}
-      <div class="mdl-tooltip" data-mdl-for="nav-{{item.icon}}">
-        {{item.title}}
-      </div>
-      {% endfor %}
-
-    </nav>
+<header class="qt-header">
+  <div class="qt-header--left">
+	  <a href="/">{{ site.title | escape }}</a>
   </div>
+  <nav class="qt-header--right">
+	  {% for item in site.data.navigation %}
+      <a class="qt-icon-button mdi mdi-24px mdi-{{item.icon}}" aria-label="{{item.title}}" id="nav-{{item.icon}}" href="{{item.url}}">
+      </a>
+    {% endfor %}
+  </nav>
 </header>

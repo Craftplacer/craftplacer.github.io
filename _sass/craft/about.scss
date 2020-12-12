@@ -1,0 +1,20 @@
+.contact-section-title {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.avatar-container {
+	display: flex;
+  justify-content: center;
+}
+
+.avatar {
+	background: $nya-bg-4;
+	// @include shadow-4dp();
+}
+
+.avatar, .avatar img {
+	width: 128px;
+	height: 128px;
+	border-radius: 50%;
+}

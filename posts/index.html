@@ -15,15 +15,19 @@ title: Posts
 
 <h2>
   Posts
-  <div class="mdl-layout-spacer"></div>
-  <a class="mdl-button mdl-js-button mdl-button--icon mdi mdi-label" id="tags-link" href="tags">
-  </a>
 </h2>
-
-{% for post in site.posts %}
-  {% include post-card.html %}
-{% endfor %}
-
-<div class="mdl-tooltip" data-mdl-for="tags-link">
-  Tags
+<div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--9-col">
+    {% for post in site.posts %}
+    {% include post-card.html %}
+    {% endfor %}
+  </div>
+  <div class="mdl-cell mdl-cell--3-col">
+     <li class="qt-list-item">
+    <a class="qt-list-item--left interactable" href="/feed.xml">
+        <span class="qt-list-item--icon mdi mdi-24px mdi-rss"></span>
+        <span class="qt-list-item--text">RSS Feed</span>
+      </a>
+    </li>
+  </div>
 </div>

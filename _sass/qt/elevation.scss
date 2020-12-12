@@ -1,0 +1,7 @@
+@mixin elevation-2dp() { @include shadow-2dp(); background-color: $nya-bg-2; }
+@mixin elevation-3dp() { @include shadow-3dp(); background-color: $nya-bg-3; }
+@mixin elevation-4dp() { @include shadow-4dp(); background-color: $nya-bg-4; }
+@mixin elevation-6dp() { @include shadow-6dp(); background-color: $nya-bg-6; }
+@mixin elevation-8dp() { @include shadow-8dp(); background-color: $nya-bg-8; }
+@mixin elevation-16dp() { @include shadow-16dp(); background-color: $nya-bg-16; }
+@mixin elevation-24dp() { @include shadow-24dp(); background-color: $nya-bg-24; }

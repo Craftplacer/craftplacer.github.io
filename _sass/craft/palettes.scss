@@ -1,0 +1,32 @@
+.palette-card {
+	border-radius: 2px;
+	@include elevation-2dp();
+	display: flex;
+	flex-direction: column;
+}
+.palette-shade {
+	padding: 12px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 100%;
+}
+.palette-shade--dark { @extend .palette-shade; }
+.palette-shade--main { @extend .palette-shade; }
+.palette-shade--light { @extend .palette-shade; }
+.palette-color__name {
+	font-weight: bold;
+	width: -webkit-fill-available;
+	width: -moz-available;
+}
+.palette-color__code { display: flex; }
+a.palette-color__code { color: inherit; }
+.mdi.palette-color__code {
+	line-height: inherit;
+	font-size: inherit;
+
+	&:before {
+		opacity: .5;
+		margin-right: 4px;
+	}
+}

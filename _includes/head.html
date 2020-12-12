@@ -2,19 +2,16 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+{% if page.hidden %}
+<meta name="robots" content="noindex" />
+{% endif %}
+
 {% if page.title %}
 	{% assign title = {{page.title | escape}} %}
 	<title>{{title}} - {{siteTitle}}</title>
 	<meta property="og:title" content="{{title}}"/>
 {% else %}
 	<title>{{siteTitle}}</title>
-{% endif %}
-
-{% if page.cover %}
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:image" content="{{site.url}}{{page.cover}}">
-{% else %}
-	<meta name="twitter:card" content="summary" />
 {% endif %}
 
 <meta property="og:site_name" content="{{siteTitle}}"/>
@@ -33,7 +30,8 @@
 <meta property="article:published_time" content="{{page.date | date_to_xmlschema }}"/>
 {% endif %}
 
-<link rel="stylesheet" href="/styles/custom.css">
-<link rel="stylesheet" href="/styles/style.css">
-<script defer src="/scripts/mdl/material.min.js"></script>
-<link rel="stylesheet" href="/styles/mdi/materialdesignicons.min.css">
+<link rel="stylesheet" href="/assets/styles/style.css">
+<link rel="stylesheet" href="/assets/styles/grid.css">
+<link rel="stylesheet" href="/assets/styles/mdi/materialdesignicons.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Quicksand:wght@700&display=swap" rel="stylesheet">

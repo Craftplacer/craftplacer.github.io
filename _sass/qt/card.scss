@@ -1,0 +1,48 @@
+$padding: 16px;
+
+.qt-card {
+    @include elevation-2dp();
+    
+    display: flex;
+    flex-direction: column;
+
+	border-radius: $nya-rounding;
+}
+
+.qt-card, a.qt-card {
+    color: $nya-fg;
+}
+
+.qt-card:not(.qt-card--wide) {
+    max-width: 330px;
+}
+
+// .qt-card:not(.qt-card--xpadding) {
+// 	padding: $padding;
+// }
+
+.qt-card:not(.qt-card--short) {
+    min-height: 200px;
+}
+
+.qt-card--header {
+    padding: $padding;
+    font-size: 24px;
+    font-family: $nya-header-font;
+
+    border-top-left-radius: $nya-rounding;
+    border-top-right-radius: $nya-rounding;
+}
+
+.qt-card--header-expand {
+    display: flex;
+    min-height: 144px;
+}
+
+.qt-card--header-expand * {
+    align-self: flex-end;
+}
+
+.qt-card--description {
+    padding: $padding;
+}

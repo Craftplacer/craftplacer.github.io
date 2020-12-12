@@ -1,0 +1,46 @@
+
+
+$nya-base: #ED859E;
+$nya-accent: change-color($nya-base, $saturation: 100, $lightness: 75);
+
+$nya-primary-dark: $nya-primary-600;
+$nya-primary-dark-fg: $nya-primary-600-fg;
+
+$nya-primary: $nya-primary-300;
+$nya-primary-fg: $nya-primary-300-fg;
+
+$nya-primary-light: $nya-primary-50;
+$nya-primary-light-fg: $nya-primary-50-fg;
+
+$nya-fg: #fff;
+$nya-fg-secondary: rgba(255, 255, 255, 0.76);
+
+// TODO: make this use SCSS functions
+$nya-bg: #121212;
+$nya-bg-0: $nya-bg;
+$nya-bg-1: #1e1e1e;
+$nya-bg-2: #222222;
+$nya-bg-3: #242424;
+$nya-bg-4: #272727;
+$nya-bg-6: #2c2c2c;
+$nya-bg-8: #2e2e2e;
+$nya-bg-12: #323232;
+$nya-bg-16: #353535;
+$nya-bg-24: #373737;
+
+$nya-fg: #FFFFFF;
+
+$nya-code--bg: #282C34;
+$nya-code--fg: #ABB2BF;
+
+// TINTED BACKGROUND
+// $nya-bg-0: change-color($nya-base, $saturation: 30, $lightness: 10);
+// $nya-bg-1: lighten($nya-bg-0, 5%);
+// $nya-bg-2: lighten($nya-bg-0, 7%);
+// $nya-bg-3: lighten($nya-bg-0, 8%);
+// $nya-bg-4: lighten($nya-bg-0, 9%);
+// $nya-bg-6: lighten($nya-bg-0, 11%);
+// $nya-bg-8: lighten($nya-bg-0, 12%);
+// $nya-bg-12: lighten($nya-bg-0, 14%);
+// $nya-bg-16: lighten($nya-bg-0, 15%);
+// $nya-bg-24: lighten($nya-bg-0, 16%);

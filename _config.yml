@@ -1,7 +1,10 @@
-title: Craftplacer's Site
-shortTitle: crtplr
+title: "Craftplacer's Site"
+shortTitle: "crtplr"
+author: "Craftplacer"
 url: "https://craftplacer.github.io"
-permalink: /posts/:title
+permalink: "/posts/:title"
+encoding: utf-8
+theme: null
 
 plugins:
   - jekyll-feed
@@ -11,8 +14,7 @@ collections:
     output: true
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
     values:
       layout: "default"

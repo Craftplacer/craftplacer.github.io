@@ -1,0 +1,28 @@
+.qt-header {
+    @include elevation-4dp();
+    padding: 0 16px;
+    display: flex;
+    min-height: 56px;
+}
+
+.qt-header--left {
+    flex-grow: 1;
+
+    font-size: 20px;
+    font-weight: 300;
+    font-family: $nya-header-font;
+}
+
+.qt-header--left, .qt-header--right {
+    display: flex;
+    align-items: center;
+
+    * {
+        color: inherit;
+    }
+}
+
+// Add margin between icons on the right
+.qt-header--right * {
+    margin-left: 12px;
+}

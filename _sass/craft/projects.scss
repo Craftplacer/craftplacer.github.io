@@ -1,0 +1,14 @@
+.project-card .mdl-card__title {
+    align-items: flex-end;
+}
+
+.project-card__logo {
+	max-height: 32px;
+}
+
+.project-card {
+	.mdl-card--expand {
+		flex-grow: 0;
+		min-height: 175px;
+	}
+}

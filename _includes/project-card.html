@@ -1,0 +1,19 @@
+<a class="qt-card qt-card--wide project-card" href="{{project.url}}">
+    {% if project.header %}
+    <div class="qt-card--header qt-card--header-expand project-card__header" style="background:{{project.header.bg}};color:{{project.header.fg}}">
+    {% else %}
+    <div class="qt-card--header qt-card--header-expand project-card__header">
+    {% endif %}
+        {% if project.logo %}
+            <img class="project-card__logo" src="{{project.logo}}" alt="{{project.title}}"></img>
+        {% else %}
+            <span>{{project.title}}</span>
+        {% endif %}
+    </div>
+
+    {% if project.description %}
+    <div class="qt-card--description">
+        {{project.description}}
+    </div>
+    {% endif %}
+</a>
