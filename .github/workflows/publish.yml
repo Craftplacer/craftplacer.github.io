@@ -1,0 +1,21 @@
+name: Publish website
+
+on:
+  push:
+    branches: [ master ]
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/cache@v1
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+      - uses:  helaili/jekyll-action@2.0.4
+        env:
+          JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
