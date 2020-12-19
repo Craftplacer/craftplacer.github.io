@@ -1,5 +1,7 @@
 title: "Craftplacer's Site"
 shortTitle: "crtplr"
+description: "This is Craftplacer's personal page, containing blog posts and various other things."
+
 author: "Craftplacer"
 url: "https://craftplacer.github.io"
 permalink: "/posts/:title"
