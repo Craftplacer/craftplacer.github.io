@@ -75,15 +75,19 @@ hidden: true
 </div>
 
 <script>
-  let e = document.getElementsByClassName("despam");
-  let p = "mailto:";
+	let e = document.getElementsByClassName("despam");
+	let p = "mailto:";
 
-  for (i in e) {
-	let l = e[i];
-	
-	if (l.href && l.href.startsWith(p))
-		l.href = p + window.atob(l.href.split(p)[1]); 
-	else
-    	l.innerText = window.atob(l.innerText);
-  }
+	for (var i = 0; i < e.length; i++) {
+		let l = e[i];
+
+		try {
+			if (l.href && l.href.startsWith(p))
+				l.href = p + window.atob(l.href.split(p)[1]); 
+			else
+				l.innerText = window.atob(l.innerText);
+		} catch (e) {
+			console.warn("Failed to decode string", l);
+		}
+	}
 </script>
