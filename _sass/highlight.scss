@@ -1,0 +1,49 @@
+
+code,
+pre {
+	// background: $nya-code--bg;
+	// color: $nya-code--fg;
+
+	font-size: 14px;
+	font-family: $nya-code--font;
+	font-weight: bold;
+
+	border-radius: 4px;
+}
+
+.highlight {
+  	padding: 4px 8px;
+}
+
+.code-file {
+	background: $nya-code--bg;
+	font-family: $nya-code--font;
+	font-size: 14px;
+	border-radius: $nya-rounding;
+	display: flex;
+	flex-direction: column;
+
+	.filename {
+		display: flex;
+		padding: 6px;
+		font-weight: bold;
+		border-bottom: lighten($nya-code--bg, 12) 1px solid;
+	}
+
+  .filename:before {
+    font-size: 20px;
+    content: "\F0224";
+    margin-right: 6px;
+    font-family: "Material Design Icons";
+    font-weight: normal;
+  }
+
+	figure {
+		margin: 0;
+    overflow-x: scroll;
+
+		pre {
+			margin: 0;
+		}
+	}
+}
