@@ -1,0 +1,21 @@
+---
+layout: optimized
+title: Palettes
+index: true
+---
+
+<h2>
+  Palettes
+</h2>
+
+{% for palette in site.palettes %}
+  {% unless palette.index %}
+  <ul>
+      <li>
+          <a href="{{palette.url}}">
+            {{palette.title}}
+          </a> 
+      </li>
+  </ul>
+  {% endunless %}
+{% endfor %}
