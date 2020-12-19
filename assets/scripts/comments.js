@@ -5,7 +5,7 @@ if (button == null) {
 } else {
     button.onclick = function () {
         var script = document.getElementById('comments-script');
-        script.tagName = 'script';
+        script.nodeName = 'script';
 
         button.parentNode.removeChild(button);
     }
