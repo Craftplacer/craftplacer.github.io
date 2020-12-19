@@ -17,16 +17,16 @@ These are all recent changes made in the last weeks.
             <summary>Posts now show their counts, age and visibility</summary>
             <p>Those are rather insignificant changes, but probably welcome ones.</p>
             <p>I'm not sure about the design of the counts (especially regarding the layout, padding and so on), but we'll see how it will evolve as the app matures.</p>
-            <p><img src="/assets/images/posts/0f56e28a.png"/></p>
+            <p><img src="/assets/images/posts/0f56e28a.png" alt="A screenshot showing a post, with the content 'if your read this, you're cute!', with additional user interface elements like an icon indicating the post's visiblity, as well as numbers next to the reply and favorite button"/></p>
         </details>
     </li>
     <li>
         <details>
             <summary>You can now pick instance emojis</summary>
             <p>In Kaiteki, you can now tap the little emoji icon in the toolbar and pick emojis. Compared to Husky, it's tabbed using the provided category information provided by Pleroma and Misskey.</p>
-            <p><img src="/assets/images/posts/b810fed4.png"/></p>
+            <p><img src="/assets/images/posts/b810fed4.png" alt="A screenshot showing a menu filled with emojis."/></p>
             <p>This was some what annoying to implement at first, because the way I did it initially caused to memory leak. (shown below)</p>
-            <p><img src="/assets/images/posts/bf191c70.png"/></p>
+            <p><img src="/assets/images/posts/bf191c70.png" alt="A screenshot showing a memory usage graph with upwards trend."/></p>
             <p>I settled on tabbing the emojis per pack so it's more efficient.</p>
         </details>
     </li>
