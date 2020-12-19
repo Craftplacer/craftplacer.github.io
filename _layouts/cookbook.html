@@ -1,0 +1,58 @@
+---
+layout: optimized
+---
+
+<a class="qt-list-item interactable" href="/cookbook">
+  <div class="qt-list-item--left">
+    <span class="qt-list-item--icon mdi mdi-24px mdi-arrow-left"></span>
+    <span class="qt-list-item--text">Go back to the cookbook</span>
+  </div>
+</a>
+
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">
+        {{ page.title | escape }}
+    </h1>
+
+    <div class="post-fields">
+
+      <ul class="slist">
+        {% if page.category %}
+        <li>
+          <i class="mdi mdi-folder mdi-24px icon-mr"></i>
+          {{ page.category }}
+        </li>
+        {% endif %}
+        {% if page.tags != empty %}
+        <li>
+          <i class="mdi mdi-label mdi-24px icon-mr"></i>
+          {% if page.tags %}
+            {{ page.tags | join: ', ' }}
+          {% else %}
+            <i>
+              No tags
+            </i>
+          {% endif %}
+        </li>
+        {% endif %}
+        {% if page.source-url %}
+        <li>
+          <i class="mdi mdi-link mdi-24px icon-mr"></i>
+          <a href="{{page.source-url}}">
+            {% if page.source-title %}
+              {{ page.source-title }}
+            {% else %}
+              {{ page.source-url }}
+            {% endif %}
+          </a>
+        </li>
+        {% endif %}
+      </ul>
+    </div>
+  </header>
+  <hr>
+  <div class="post-content">
+    {{ content }}
+  </div>
+</article>
