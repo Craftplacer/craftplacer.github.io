@@ -11,6 +11,8 @@
 	align-items: center;
 	height: 100%;
 }
+
+
 .palette-shade--dark { @extend .palette-shade; }
 .palette-shade--main { @extend .palette-shade; }
 .palette-shade--light { @extend .palette-shade; }
@@ -19,14 +21,15 @@
 	width: -webkit-fill-available;
 	width: -moz-available;
 }
-.palette-color__code { display: flex; }
-a.palette-color__code { color: inherit; }
-.mdi.palette-color__code {
-	line-height: inherit;
-	font-size: inherit;
+.palette-color__code {
+	display: flex;
+	align-items: center;
+	font-family: $nya-code--font;
+}
+a.palette-color__code {
+	color: inherit;
+}
 
-	&:before {
-		opacity: .5;
-		margin-right: 4px;
-	}
+.palette--copy-icon:before {
+	margin-right: 6px;
 }
