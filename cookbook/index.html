@@ -1,0 +1,21 @@
+---
+layout: optimized
+title: Cookbook
+---
+
+<h2>Craftplacer's Cookbook for Software and Programming</h2>
+
+<ul class="slist qt-list">
+{% for post in site.cookbook %}
+	{% unless post.ignore %}
+	<li>
+		<a class="qt-list-item interactable" href="{{post.url}}">
+		<div class="qt-list-item--left">
+			<span class="qt-list-item--text">{{post.title}}</span>
+			<span class="qt-list-item--secondary-text">{{ post.tags | sort_natural | join: ', ' }}</span>
+		</div>
+	</a>
+	</li>
+	{% endunless %}
+{% endfor %}
+</ul>
