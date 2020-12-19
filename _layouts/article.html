@@ -13,7 +13,7 @@ comments: true
         {{ page.title | escape }}
       </h1>
       <div class="post-fields">
-        {% if page.date != empty %}
+        {% if page.date %}
           <div class="post-date post-field">
             <i class="mdi mdi-calendar"></i>
             <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
