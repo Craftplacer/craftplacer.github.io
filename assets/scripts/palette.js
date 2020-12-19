@@ -9,17 +9,9 @@ for (var i = 0; i < elements.length; i++) {
 	}
 
 	e.href = "#";
-	e.classList.add("mdi", "mdi-content-copy", "mdi-24px");
+	e.classList.add("mdi", "mdi-content-copy", "mdi-24px", "palette--copy-icon");
 }
 
 function copy(element) {
-	var snackbarContainer = document.querySelector('#snackbar');
-
-	navigator.clipboard.writeText(element.innerText).then(function () {
-		var data = { message: 'Copied to clipboard' };
-		snackbarContainer.MaterialSnackbar.showSnackbar(data);
-	}, function () {
-		var data = { message: 'Failed to copy' };
-		snackbarContainer.MaterialSnackbar.showSnackbar(data);
-	});
+	navigator.clipboard.writeText(element.innerText);
 }
