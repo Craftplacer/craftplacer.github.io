@@ -1,5 +1,4 @@
 .post-field { width: 100%; }
-.post-fields { margin-top: -8px; }
 
 @media (max-width: 479px) {
 	.post-fields {
@@ -51,13 +50,51 @@
 // Size and align images in articles
 article img, article video {
 	max-height: 420px;
-    margin: auto;
-    display: flex;
+    max-width: 100%;
+	margin: auto;
+	display: flex;
 }
 
 .comments {
 	display: flex;
-    min-height: 128px;
-    align-items: center;
-    justify-content: center;
+	min-height: 128px;
+	align-items: center;
+	justify-content: center;
+}
+
+.post-category-badge {
+	background: $nya-bg-12;
+	border-radius: 24px;
+	text-transform: uppercase;
+	padding: 6px 12px;
+	font-weight: bold;
+	margin-bottom: 12px;
+  display: flex;
+  width: min-content;
+}
+
+
+
+.code-file {
+	background: $nya-code--bg;
+	font-family: $nya-code--font;
+	font-size: 14px;
+	border-radius: $nya-rounding;
+	display: flex;
+	flex-direction: column;
+
+	.filename {
+		display: flex;
+		padding: 6px;
+		font-weight: bold;
+		border-bottom: lighten($nya-code--bg, 12) 1px solid;
+	}
+
+	figure {
+		margin: 0;
+
+		pre {
+			margin: 0;
+		}
+	}
 }
