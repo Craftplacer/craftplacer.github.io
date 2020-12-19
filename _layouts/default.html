@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
   <head>
-    {%- include head.html -%}
+    {%- include html/head.html -%}
   </head>
   <body>
-    {%- include header.html -%}
+    {%- include html/header.html -%}
     <main>
       {{ content }}
     </main>
@@ -13,4 +13,5 @@
     {%- include comments.html-%}
     {% endif %}
   </body>
+  {%- include html/foot.html -%}
 </html>
