@@ -11,7 +11,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 hr {
-	border-color: $nya-bg-12;
+	border: $nya-bg-12 1px solid;
 }
 
 a {
@@ -27,19 +27,6 @@ summary {
 	font-weight: bold;
 }
 
-code,
-pre {
-	background: $nya-code--bg;
-	color: $nya-code--fg;
-
-	font-size: 14px;
-	font-family: $nya-code--font;
-	font-weight: bold;
-
-	padding: 4px 8px;
-	border-radius: 4px;
-}
-
 ul.slist {
 	list-style-type: none;
     margin-block-start: 0;
@@ -52,4 +39,30 @@ ul.slist {
 .slist li {
 	display: flex;
 	text-align: inherit;
+}
+
+main {
+	width: 100%;
+}
+
+table {
+	border: $nya-bg-12 1px solid;
+	padding: 12px;
+	border-collapse: collapse;
+	// width: 100%;
+
+	* {
+		border-radius: $nya-rounding;
+	}
+
+	td, th {
+		padding: 6px 12px;
+	}
+	thead, tbody{
+		border-bottom: $nya-bg-12 1px solid;
+	}
+}
+
+.icon-mr {
+	margin-right: 6px;
 }
