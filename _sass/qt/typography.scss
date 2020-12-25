@@ -2,6 +2,8 @@ $qt-header-max-size: 32px;
 $qt-header-min-size: 20px;
 $qt-header-addition-end: $qt-header-max-size - $qt-header-min-size;
 
+$qt-body-size: 16px;
+
 @mixin qt-type-h1 {
     font-weight: 100;
     font-size: $qt-header-max-size;
@@ -26,6 +28,9 @@ $qt-header-addition-end: $qt-header-max-size - $qt-header-min-size;
     font-weight: 600;
     font-size: $qt-header-min-size;
 }
+@mixin qt-type-overline {
+    font-size: $qt-body-size * 0.625;
+}
 
 h1 { @include qt-type-h1(); }
 h2 { @include qt-type-h2(); }
@@ -35,5 +40,5 @@ h5 { @include qt-type-h5(); }
 h6 { @include qt-type-h6(); }
 
 body {
-    font-size: 16px;
+    font-size: $qt-body-size;
 }
