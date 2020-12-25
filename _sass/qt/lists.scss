@@ -5,24 +5,24 @@
 .qt-list-item {
     display: flex;
     vertical-align: middle;
-    flex-grow: 1;
-    min-height: 48px;
     align-items: center;
+    flex-grow: 1;
+
+    min-height: 48px;
+
+    padding-left: 16px;
 }
 
 .qt-list-item--left {
     flex-grow: 1;
-    padding-left: 16px;
 
     display: block;
     align-items: center;
-}
-.qt-list-item--right {
+
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
-.qt-list-item--left .qt-list-item--icon {
-    margin-right: 32px;
-}
 .qt-list-item--right .qt-list-item--icon {
     margin: 0 16px;
 }
@@ -33,7 +33,7 @@
 }
 
 .qt-list-item--icon {
-    margin: 16px 0 16px 0;
+    margin: 16px 32px 16px 0;
     color: inherit;
 
     font-size: 24px;
@@ -46,16 +46,27 @@
     margin: 8px 16px 0 8px;
 }
 
-.qt-list-item--text {
-    margin-top: 16px;
+.qt-list-item--overline,
+.qt-list-item--text,
+.qt-list-item--secondary-text {
+    display: block;
 }
 
-.qt-list-item--text, .qt-list-item--secondary-text {
-    display: block;
+// default text styling
+.qt-list-item--overline {
+    @include qt-type-overline();
+    color: $nya-fg-secondary;
+}
+
+.qt-list-item--overline:not(.no-casing) {
+    text-transform: uppercase;
+}
+
+.qt-list-item--text {
+    color: $nya-fg;
 }
 
 .qt-list-item--secondary-text {
     color: $nya-fg-secondary;
     font-size: 12px;
-    margin-bottom: 12px;
 }
