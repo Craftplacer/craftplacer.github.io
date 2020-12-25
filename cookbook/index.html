@@ -10,11 +10,12 @@ title: Cookbook
 	{% unless post.ignore %}
 	<li>
 		<a class="qt-list-item interactable" href="{{post.url}}">
-		<div class="qt-list-item--left">
-			<span class="qt-list-item--text">{{post.title}}</span>
-			<span class="qt-list-item--secondary-text">{{ post.tags | sort_natural | join: ', ' }}</span>
-		</div>
-	</a>
+			<div class="qt-list-item--left">
+				<span class="qt-list-item--overline">{{ post.category }}</span>
+				<span class="qt-list-item--text">{{post.title}}</span>
+				<span class="qt-list-item--secondary-text">{{ post.tags | sort_natural | join: ', ' }}</span>
+			</div>
+		</a>
 	</li>
 	{% endunless %}
 {% endfor %}
