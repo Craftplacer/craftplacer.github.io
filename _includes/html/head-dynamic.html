@@ -37,7 +37,8 @@
 	"@type": "BlogPosting",
 	"headline": "{{page.title}}",
 	"image": [ "{{site.baseurl}}{{page.cover}}" ],
-	"datePublished": "{{page.date | date_to_xmlschema }}"
+	"datePublished": "{{page.date | date_to_xmlschema }}",
+	"publisher": {%- include json-ld/craftplacer.json -%}
 }
 </script>
 {% endif %}
