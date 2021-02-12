@@ -1,11 +1,19 @@
 .contact-section-title {
 	font-weight: bold;
-	text-decoration: underline;
+	margin-top: 0;
+	margin-bottom: 0.5em;
 }
 
 .avatar-container {
 	display: flex;
-  justify-content: center;
+	justify-content: center;
+}
+
+.contact-unused:not(:hover) {
+	opacity: 0.25;
+	// text-decoration: line-through;
+	// text-decoration-color: transparentize($color: $nya-fg, $amount: 0.5);
+	// text-decoration-thickness: 0.2rem;
 }
 
 .avatar {
@@ -17,4 +25,8 @@
 	width: 128px;
 	height: 128px;
 	border-radius: 50%;
+}
+
+.contact-favicon {
+	margin-right: 6px;
 }

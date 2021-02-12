@@ -51,14 +51,19 @@ hidden: true
 		{% else %}
 		<div class="mdl-cell mdl-cell--12-col mdl-cell--4-col-desktop">
 		{% endif %}
-			<p>
-				<span class="contact-section-title">{{section.title}}:</span>
-				<br>
+			<h6 class="contact-section-title">
+				{{section.title}}
+			</h6>
+			<ul class="slist">
 				{% for contact in section.contacts %}
+				<li>
 					{% assign color = contact.color | default: "unset" %}
-					<a href="{{contact.link}}" style="color:{{color}}">{{contact.platform}}</a>
+					<a href="{{contact.link}}" class="{% if contact.unused %}contact-unused{% endif %}" style="color:{{color}}">
+						<img src="/assets/images/favicons/{{contact.favicon}}" width="16" height="16" class="contact-favicon">{{contact.platform}}
+					</a>
+				</li>
 				{% endfor %}
-			</p>
+			</ul>
 		</div>
 	{% endfor %}
 </div>
