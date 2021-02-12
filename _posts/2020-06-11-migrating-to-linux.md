@@ -10,6 +10,8 @@ comments: true
 Recently, I migrated to GNU/Linux, to be more exact, Debian.
 Here's why and how it went.
 
+<!--more-->
+
 Normally, I don't do this, I usually dual-boot. But since Windows 10 seemed to have "corrupted" my network controller (which carried on Linux too, maybe hardware fault or something). I decided to completely drop Windows.
 
 I got myself a self-burned Debian CD and installed it on my SSD.

@@ -7,6 +7,8 @@ tags: kaiteki
 
 This is the first edition of Kaiteki's devlog, this is intended to be a weekly format showing what changes I've made over the last week to Kaiteki.
 
+<!--more-->
+
 These are all recent changes made in the last weeks.
 
 ## New changes
