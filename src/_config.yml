@@ -5,7 +5,10 @@ permalink: "/blog/:title"
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-  
+
+include:
+  - .well-known
+
 collections:
   cookbook:
     output: true
@@ -14,7 +17,7 @@ defaults:
   - scope:
       path: ""
     values:
-      layout: "default"
+      layout: "page"
       sitemap-include: true
       include-title: true
       
@@ -22,6 +25,13 @@ defaults:
       path: "/css/"
     values:
       sitemap-include: false
+
+  - scope:
+      path: "_posts"
+    values:
+      layout: "post"
+      comments: true
+      allow-indexing: true
       
   - scope:
       path: "_cookbook"

@@ -1,5 +1,4 @@
 ---
-hide: true
 ---
 
 pre, code {
@@ -25,16 +24,15 @@ $sidebar-width: ($page-width - $content-width) / 2;
 	#content, #nav, #sidebar {
 		vertical-align: top;
 
-		& > .panel > div { margin: 12px; }
-	}
-	
-	#content {
 		& > .panel {
 			width: $content-width;
 			max-width: $content-width;
+			margin-bottom: 16px;
+
+			& > div { margin: 12px; }
 		}
 	}
-	
+
 	#nav, #sidebar {
 		& > .panel {
 			width: $sidebar-width;
@@ -217,6 +215,12 @@ code, pre {
 			margin: 0;
 			font-size: 8pt;
 			text-align: left;
+		}
+	}
+
+	td {
+		& > ul {
+			margin: 0;
 		}
 	}
 }
