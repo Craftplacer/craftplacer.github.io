@@ -14,6 +14,9 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-gems-
 
+    - name: "Checkout"
+      uses: actions/checkout@v2
+      
     - name: "Checkout (Kaiteki)"
       uses: actions/checkout@v2
       with:
@@ -24,12 +27,9 @@ jobs:
       uses: helaili/jekyll-action@v2
       with:
         jekyll_src: './kaiteki/src/'
-        jekyll_build_options: "-d ./src/projects/kaiteki"
+        target_path: './src/projects/kaiteki'
         build_only: true
         
-    - name: "Checkout"
-      uses: actions/checkout@v2
-
     - name: "Build & Deploy"
       uses: helaili/jekyll-action@v2
       with:
