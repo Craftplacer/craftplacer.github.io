@@ -1,1 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://craftplacer.moe//feed.xml" rel="self" type="application/atom+xml" /><link href="https://craftplacer.moe//" rel="alternate" type="text/html" /><updated>2021-11-28T11:36:41+00:00</updated><id>https://craftplacer.moe//feed.xml</id><title type="html">craftplacer.moe</title></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://craftplacer.moe//feed.xml" rel="self" type="application/atom+xml" /><link href="https://craftplacer.moe//" rel="alternate" type="text/html" /><updated>2021-11-28T13:42:19+00:00</updated><id>https://craftplacer.moe//feed.xml</id><title type="html">craftplacer.moe</title><entry><title type="html">Suspicious websites with Craft</title><link href="https://craftplacer.moe//blog/sus-websites" rel="alternate" type="text/html" title="Suspicious websites with Craft" /><published>2021-11-28T00:00:00+00:00</published><updated>2021-11-28T00:00:00+00:00</updated><id>https://craftplacer.moe//blog/sus-websites</id><content type="html" xml:base="https://craftplacer.moe//blog/sus-websites">&lt;p&gt;My website has been online for more than a year, starting off with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.github.io&lt;/code&gt; until migrating to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.moe&lt;/code&gt; TLD. One thing I did was to register my website as a property on &lt;a href=&quot;&quot;&gt;Google Search Console&lt;/a&gt;. This allows me to see is what sites link to mine, which also exposes websites who actually scape other kinds of data. Let’s take a look together:&lt;/p&gt;
+
+&lt;h2 id=&quot;github-wiki-seepage&quot;&gt;&lt;a href=&quot;https://github-wiki-see.page/&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;github-wiki-see.page&lt;/code&gt;&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;This is a (in my opinion: poor) crawler for GitHub wikis (as it says on the tin). The &lt;a href=&quot;https://github-wiki-see.page/m/Craftplacer/Kaiteki/wiki/Unable-to-login-using-Kaiteki-Web&quot;&gt;reference&lt;/a&gt; to my site was from one of the wiki help pages I wrote for Kaiteki. I find this kind of service highly questionable, but oh well.&lt;/p&gt;
+
+&lt;h2 id=&quot;stackmunchercom&quot;&gt;&lt;a href=&quot;https://stackmuncher.com/&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;stackmuncher.com&lt;/code&gt;&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;stackmuncher.com&lt;/code&gt; is apparently some kind of scraper for GitHub profiles apparently intended for employers. I find this annoying enough, by this &lt;strong&gt;not&lt;/strong&gt; being opt-in.&lt;/p&gt;
+
+&lt;p&gt;From my past experience, I already got subscribed to a company newsletter and received emails out of nowhere from someone called “Sean Bowley” from a company called “iO Associates”, looking for developers based in Germany (for some really weird reason, only Germany, with their emails containing German greetings). I had no prior contact to them, and it seems like they just scraped my profile off GitHub. Even funnier, by German law I’m not allowed to work for them, and they’d knew this if they didn’t scraped my contact in a half-assed way and instead contacted me personally, asking me professionally.&lt;/p&gt;
+
+&lt;p&gt;I didn’t hear back from them after sending a reply saying exactly that.&lt;/p&gt;
+
+&lt;h2 id=&quot;repoarchivecom&quot;&gt;&lt;a href=&quot;https://repoarchive.com/&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;repoarchive.com&lt;/code&gt;&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;Yet another GitHub scraper.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;About RepoArchive.com&lt;/strong&gt;&lt;/p&gt;
+
+  &lt;p&gt;As the name suggests, RepoArchive.com contains the archive of millions of repositories.&lt;/p&gt;
+
+  &lt;p&gt;RepoArchive.com does not store any data, but only uses cache data for a period of time. The idea behind RepoArchive.com is simply to give users a better reading experience.&lt;/p&gt;
+
+  &lt;p&gt;So while surfing RepoArchive.com, enjoy the visuality we created for some boring stuff.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;fediverse-instances&quot;&gt;Fediverse instances&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://pl.veryamt.com/&quot;&gt;https://pl.veryamt.com/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://bbs.kawa-kun.com/&quot;&gt;https://bbs.kawa-kun.com/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://firebird.zone/&quot;&gt;https://firebird.zone/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Those domains are all instances that let Google index remote statuses and/or user profiles of mine. I find letting search engines index Fediverse instances highly questionable as it is privacy-invading and makes content removal harder, but that’s another topic for another blog post.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;If you want your data to be scraped 10x a day, use GitHub.&lt;/p&gt;
+
+&lt;p&gt;If you’re on Fediverse, expect your posts and your profile be indexed by Google, &lt;strong&gt;&lt;em&gt;even if&lt;/em&gt;&lt;/strong&gt; your instance disallows it.&lt;/p&gt;
+
+&lt;p&gt;But Craft, did you really not expect to be indexed? I did, but obviously &lt;em&gt;everyone&lt;/em&gt; takes a part of what content they &lt;em&gt;re-&lt;/em&gt;distribute.&lt;/p&gt;</content><author><name></name></author><summary type="html">My website has been online for more than a year, starting off with .github.io until migrating to the .moe TLD. One thing I did was to register my website as a property on Google Search Console. This allows me to see is what sites link to mine, which also exposes websites who actually scape other kinds of data. Let’s take a look together:</summary></entry></feed>
