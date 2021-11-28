@@ -1,38 +1,49 @@
 name: Jekyll
 
 on:
-  push
+  workflow_dispatch:
+  push:
+  schedule:
+    - cron: '0 0 * * 1'
 
 jobs:
   jekyll:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/cache@v2
-      with:
-        path: vendor/bundle
-        key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
-        restore-keys: |
-          ${{ runner.os }}-gems-
+     - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.6 # can change this to 2.7 or whatever version you prefer
 
-    - name: "Checkout"
+    - name: Checkout
       uses: actions/checkout@v2
       
-    - name: "Checkout (Kaiteki)"
+    - name: 'Checkout (Kaiteki)'
       uses: actions/checkout@v2
       with:
         repository: 'Kaiteki-Fedi/Website'
-        path: "./kaiteki"
+        path: './kaiteki'
 
-    - name: "Build (Kaiteki)"
-      uses: helaili/jekyll-action@v2
+    - name: 'Create directories'
+      run: 'mkdir -p ./publish/projects/kaiteki'
+
+    - name: 'Build (Kaiteki)'
+      uses: limjh16/jekyll-action-ts@v2
       with:
         jekyll_src: './kaiteki/src/'
-        target_path: './src/projects/kaiteki'
-        build_only: true
+        format_output: true
+        custom_opts: '-d ./publish/projects/kaiteki'
         
-    - name: "Build & Deploy"
-      uses: helaili/jekyll-action@v2
+    - name: Build
+      uses: limjh16/jekyll-action-ts@v2
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
         jekyll_src: './src/'
-        target_branch: 'gh-pages'
+        format_output: true
+        custom_opts: '-d ./publish'
+
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./publish
+        cname: craftplacer.moe
