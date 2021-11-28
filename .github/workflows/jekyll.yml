@@ -24,26 +24,26 @@ jobs:
         repository: 'Kaiteki-Fedi/Website'
         path: './kaiteki'
 
+    - name: Build
+      uses: limjh16/jekyll-action-ts@v2
+      with:
+        jekyll_src: './src/'
+        format_output: true
+        custom_opts: '-d ./publish/'
+
     - name: 'Create directories'
-      run: 'mkdir -p ./publish/projects/kaiteki'
+      run: 'mkdir -p ./publish/projects/kaiteki/'
 
     - name: 'Build (Kaiteki)'
       uses: limjh16/jekyll-action-ts@v2
       with:
         jekyll_src: './kaiteki/src/'
         format_output: true
-        custom_opts: '-d ./publish/projects/kaiteki'
-        
-    - name: Build
-      uses: limjh16/jekyll-action-ts@v2
-      with:
-        jekyll_src: './src/'
-        format_output: true
-        custom_opts: '-d ./publish'
+        custom_opts: '-d ./publish/projects/kaiteki/'
 
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./publish
+        publish_dir: ./publish/
         cname: craftplacer.moe
