@@ -10,10 +10,10 @@ jobs:
   jekyll:
     runs-on: ubuntu-latest
     steps:
-     - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: 2.6 # can change this to 2.7 or whatever version you prefer
+    - name: Setup Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 2.6
 
     - name: Checkout
       uses: actions/checkout@v2
