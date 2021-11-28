@@ -2,7 +2,7 @@
 title: Suspicious websites with Craft
 ---
 
-My website has been online for more than a year, starting off with `.github.io` until migrating to the `.moe` TLD. One thing I did was to register my website as a property on [Google Search Console](). This allows me to see is what sites link to mine, which also exposes websites who actually scape other kinds of data. Let's take a look together:
+My website has been online for more than a year, starting off with `.github.io` until migrating to the `.moe` TLD. One thing I did was to register my website as a property on [Google Search Console](https://search.google.com/search-console). This allows me to see is what sites link to mine, which also exposes websites who actually scape other kinds of data. Let's take a look together:
 
 ## [`github-wiki-see.page`](https://github-wiki-see.page/)
 
