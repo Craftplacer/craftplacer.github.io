@@ -1,0 +1,29 @@
+html { font-family: "Arial", sans-serif; font-size: 8pt; background-color: #F4D9D9; background-image: url("/img/bg.gif"); }
+
+.cute-border, .panel { background: #FFF7F7; border-color: #f4b7c8; }
+
+#content table, #content td, #content th { border-color: #f4b7c8; }
+
+#content th { background: #F4D9D9; }
+
+h2:target { border-color: #E098AC; }
+
+hr { border-top-color: #f4b7c8; }
+
+a { color: #EF7094; }
+
+a:visited { color: #8E4A5D; }
+
+.light-text { color: #E098AC; }
+
+#nav .section { color: #E098AC; }
+
+.warning { background: #F4F0D9; border-color: #F4DAB7; }
+
+.small-wide-heading { color: #E098AC; border-bottom-color: #E098AC; }
+
+::selection { color: black; background: #E098AC; }
+
+::-moz-selection { color: white; background: #E098AC; }
+
+/*# sourceMappingURL=pink.css.map */

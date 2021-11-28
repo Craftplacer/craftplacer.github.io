@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Date command sequences</title>
+        <link rel="stylesheet" type="text/css" href="/css/styles.css">
+        <link rel="stylesheet" type="text/css" href="/css/pink.css">
+        <link rel="stylesheet" type="text/css" href="/css/mobile.css">
+        
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <table id="layout">
+            <tr>
+                <td id="nav">
+                    <div class="panel">
+                        <div>
+                            <ul>
+	<li><img src="/img/pink/home.gif" alt="" class="nav-icon"> <a href="/">Home</a></li>
+	<li><img src="/img/pink/bullet.gif" alt="" class="nav-icon"> <a href="/guestbook">Guestbook</a></li>
+	<li><img src="/img/pink/bullet.gif" alt="" class="nav-icon"> <a href="/about-site">About this site</a></li>
+</ul>
+
+<hr>
+
+<p class="section">Me</p>
+<ul>
+	<li><img src="/img/pink/blog.gif" alt="" class="nav-icon"> <a href="/blog">Blog</a></li>
+	<li><img src="/img/pink/diary.gif" alt="" class="nav-icon"> <a href="/diary">Diary</a></li>
+	<li><img src="/img/pink/cookbook.gif" alt="" class="nav-icon"> <a href="/cookbook">Cookbook</a></li>
+	<li><img src="/img/pink/about.gif" alt="" class="nav-icon"> <a href="/about-me">About me</a></li>
+</ul>
+
+<hr>
+
+<p class="section">Favorites</p>
+<ul>
+	<li><img src="/img/pink/bullet.gif" alt="" class="nav-icon"> <a href="/favorites/music">Music</a></li>
+	<li><img src="/img/pink/bullet.gif" alt="" class="nav-icon"> <a href="/favorites/websites">Websites</a></li>
+</ul>
+
+<hr>
+	
+<p class="section">World Wide Web</p>
+<ul>
+	<li><img src="/img/pink/directory.gif" alt="" class="nav-icon"> <a href="/directory">Directory</a></li>
+	<li><img src="/img/pink/services.gif" alt="" class="nav-icon"> <a href="/services">Services</a></li>
+</ul>
+
+<hr>
+
+<p class="section">Projects</p>
+<ul>
+	<li><img src="/img/kaiteki.gif" alt="" class="nav-icon"> <a href="/projects/kaiteki">Kaiteki</a></li>
+	<li><img src="/img/pink/bullet.gif" alt="" class="nav-icon"> <a href="/projects/contributions">Contributions</a></li>
+	<li><img src="/img/pink/web-design.gif" alt="" class="nav-icon"> <a href="/projects/web-design">Web design</a></li>
+</ul>
+
+<hr>
+
+<ul>
+	<li><img src="/img/pink/sitemap.gif" alt="" class="nav-icon"> <a href="/sitemap">Sitemap</a> (<a href="/sitemap.xml">XML</a>)</li>
+</ul>
+                        </div>
+                    </div>
+                </td>
+                <td id="content">
+                    <div class="panel">
+                        <div>
+                            
+                            <h1>Date command sequences</h1>
+                            
+                            
+<p>From: <a href="{page.source-url}">date(1) — Linux manual page</a></p>
+
+
+<h2 id="escape-codes-and-specials">Escape codes and specials</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%%</code></td>
+      <td><code class="language-plaintext highlighter-rouge">%</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%t</code></td>
+      <td>(tab)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%n</code></td>
+      <td>(newline)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="numerics">Numerics</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Description</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%Y</code></td>
+      <td>Year</td>
+      <td><code class="language-plaintext highlighter-rouge">2020</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%m</code></td>
+      <td>Month</td>
+      <td><code class="language-plaintext highlighter-rouge">01</code>..<code class="language-plaintext highlighter-rouge">12</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%H</code></td>
+      <td>Hour (24h)</td>
+      <td><code class="language-plaintext highlighter-rouge">00</code>..<code class="language-plaintext highlighter-rouge">23</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%I</code></td>
+      <td>Hour (12h)</td>
+      <td><code class="language-plaintext highlighter-rouge">01</code>..<code class="language-plaintext highlighter-rouge">12</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%S</code></td>
+      <td>Seconds</td>
+      <td><code class="language-plaintext highlighter-rouge">00</code>..<code class="language-plaintext highlighter-rouge">60</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%N</code></td>
+      <td>Nanoseconds</td>
+      <td><code class="language-plaintext highlighter-rouge">000000000</code>..<code class="language-plaintext highlighter-rouge">999999999</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="odd-numerics">Odd numerics</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Description</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%s</code></td>
+      <td>Seconds since <a href="https://en.wikipedia.org/wiki/Unix_time">Unix epoch</a></td>
+      <td>N/A</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%j</code></td>
+      <td>Day of the year</td>
+      <td><code class="language-plaintext highlighter-rouge">001</code>..<code class="language-plaintext highlighter-rouge">366</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%d</code></td>
+      <td>Day of the month</td>
+      <td><code class="language-plaintext highlighter-rouge">01</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%u</code></td>
+      <td>Day of the week <em>(1 is Monday)</em></td>
+      <td><code class="language-plaintext highlighter-rouge">1</code>..<code class="language-plaintext highlighter-rouge">7</code></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%u</code></td>
+      <td>Week number of year <em>(Sunday is the first week day)</em></td>
+      <td><code class="language-plaintext highlighter-rouge">00</code>..<code class="language-plaintext highlighter-rouge">53</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%V</code></td>
+      <td>ISO week number of year <em>(Monday is the first week day)</em></td>
+      <td><code class="language-plaintext highlighter-rouge">01</code>..<code class="language-plaintext highlighter-rouge">53</code></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%q</code></td>
+      <td>Year quarter</td>
+      <td><code class="language-plaintext highlighter-rouge">1</code>..<code class="language-plaintext highlighter-rouge">4</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%C</code></td>
+      <td>Century</td>
+      <td><code class="language-plaintext highlighter-rouge">20</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%y</code></td>
+      <td>Last two digits of year</td>
+      <td><code class="language-plaintext highlighter-rouge">00</code>..<code class="language-plaintext highlighter-rouge">99</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="spaced-padded">Spaced padded</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Description</th>
+      <th>Range</th>
+      <th>Manual equivalent</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%k</code></td>
+      <td>Hour (24h)</td>
+      <td><code class="language-plaintext highlighter-rouge">0</code>..<code class="language-plaintext highlighter-rouge">23</code></td>
+      <td><code class="language-plaintext highlighter-rouge">%_H</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%l</code></td>
+      <td>Hour (12h)</td>
+      <td><code class="language-plaintext highlighter-rouge">1</code>..<code class="language-plaintext highlighter-rouge">12</code></td>
+      <td><code class="language-plaintext highlighter-rouge">%_I</code></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%e</code></td>
+      <td>Day of the month</td>
+      <td><code class="language-plaintext highlighter-rouge">01</code></td>
+      <td><code class="language-plaintext highlighter-rouge">%_d</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="strings">Strings</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Description</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%a</code></td>
+      <td>Abbreviated weekday</td>
+      <td><code class="language-plaintext highlighter-rouge">Sun</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%A</code></td>
+      <td>Full weekday</td>
+      <td><code class="language-plaintext highlighter-rouge">Sunday</code></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%b</code> / <code class="language-plaintext highlighter-rouge">%h</code></td>
+      <td>Abbreviated month</td>
+      <td><code class="language-plaintext highlighter-rouge">Jan</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%B</code></td>
+      <td>Full month</td>
+      <td><code class="language-plaintext highlighter-rouge">January</code></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%p</code></td>
+      <td>Locale’s AM/PM</td>
+      <td><code class="language-plaintext highlighter-rouge">PM</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%P</code></td>
+      <td>Locale’s AM/PM (lowercase)</td>
+      <td><code class="language-plaintext highlighter-rouge">pm</code></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%Z</code></td>
+      <td>Alphabetic time zone abbreviation</td>
+      <td><code class="language-plaintext highlighter-rouge">EDT</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="timezones">Timezones</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Description</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%z</code></td>
+      <td>+hhmm numeric time zone</td>
+      <td><strong><code class="language-plaintext highlighter-rouge">-0400</code></strong></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%:z</code></td>
+      <td>+hh:mm numeric time zone</td>
+      <td><strong><code class="language-plaintext highlighter-rouge">-04</code></strong><code class="language-plaintext highlighter-rouge">:00</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%::z</code></td>
+      <td>+hh:mm:ss numeric time zone</td>
+      <td><strong><code class="language-plaintext highlighter-rouge">-04</code></strong><code class="language-plaintext highlighter-rouge">:00:00</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%:::z</code></td>
+      <td>numeric time zone with <code class="language-plaintext highlighter-rouge">:</code> to necessary precision</td>
+      <td><strong><code class="language-plaintext highlighter-rouge">-04</code></strong><code class="language-plaintext highlighter-rouge">, +05:30</code></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%Z</code></td>
+      <td>Alphabetic time zone abbreviation</td>
+      <td><code class="language-plaintext highlighter-rouge">EDT</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="templates">Templates</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Description</th>
+      <th>Example</th>
+      <th>Manual equivalent</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%c</code></td>
+      <td>Locale’s date and time</td>
+      <td><code class="language-plaintext highlighter-rouge">Thu Mar  3 23:05:25 2005</code></td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%x</code></td>
+      <td>Locale’s date</td>
+      <td><code class="language-plaintext highlighter-rouge">12/31/99</code></td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%X</code></td>
+      <td>Locale’s time</td>
+      <td><code class="language-plaintext highlighter-rouge">23:13:48</code></td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%r</code></td>
+      <td>Locale’s time (12h)</td>
+      <td><code class="language-plaintext highlighter-rouge">11:11:04 PM</code></td>
+      <td>N/A</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%R</code></td>
+      <td>24h time</td>
+      <td><code class="language-plaintext highlighter-rouge">11:11</code></td>
+      <td><code class="language-plaintext highlighter-rouge">%H:%M</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%T</code></td>
+      <td>Time</td>
+      <td><code class="language-plaintext highlighter-rouge">11:11:04</code></td>
+      <td><code class="language-plaintext highlighter-rouge">%H:%M:%S</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%D</code></td>
+      <td>Date</td>
+      <td><code class="language-plaintext highlighter-rouge">12/19/20</code></td>
+      <td><code class="language-plaintext highlighter-rouge">%m/%d/%y</code></td>
+    </tr>
+  </tbody>
+</table>
+
+                        </div>
+                    </div>
+                </td>
+                <td id="sidebar">
+                    <div class="panel">
+                        <div>
+                            
+<p class="light-text">Best viewed with Firefox 2+ on 1024x768+</p>
+
+<p class="light-text">This page was updated on 2021-11-28 10:34</p>
+
+<hr>
+
+<p class="light-text">Kyouko is drawn by <a href="https://www.pixiv.net/en/users/4790435">はる</a></p>
+
+<hr>
+
+<p class="light-text">
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img class="web-button" alt="Creative Commons License" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 International License</a>
+</p>
+
+<hr> 
+
+<div class="badge-case">
+    <a href="https://notepad-plus-plus.org/"><img src="/img/88x31/notepadpp.gif" alt="Made with Notepad++" class="web-button"></a>
+    
+    <a href="https://gelbooru.com/index.php?page=post&s=list&tags=rating%3asafe+2girls+kiss+-1boy"><img src="/img/88x31/animegay.gif" alt="anime is gay as hell but I approve!" class="web-button"></a>
+</div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <img id="kyouko" src="/img/kyouko.gif" alt="">
+    </body>
+</html>
