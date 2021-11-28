@@ -1,0 +1,30 @@
+title: craftplacer.moe
+baseurl: ""
+url: "https://craftplacer.moe/"
+permalink: "/blog/:title"
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  
+collections:
+  cookbook:
+    output: true
+    
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+      sitemap-include: true
+      include-title: true
+      
+  - scope:
+      path: "/css/"
+    values:
+      sitemap-include: false
+      
+  - scope:
+      path: "_cookbook"
+    values:
+      layout: "cookbook"
+      allow-indexing: true

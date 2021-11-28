@@ -1,0 +1,63 @@
+---
+hide: true
+---
+
+@media only screen and (max-width: 576px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    #layout {
+        border-spacing: 0;
+        width: 100%;
+        max-width: 100%;
+    
+        & > * > tr {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        #nav, #content, #sidebar {
+            width: inherit;
+            border-radius: 0;
+        }
+        
+        #nav {
+            &, & ul {
+                margin-block-start: 0;
+                margin-block-end: 0;
+                padding-inline-start: 0;
+            }
+            
+            ul {
+                display: flex;
+                margin-block-start: 0;
+                margin-block-end: 0;
+                padding-inline-start: 0;
+            }
+                
+            img {
+                display: none;
+            }
+            
+            hr {
+                display: none;
+            }
+            
+            p.section, li {
+                margin: 0.25em 0.5em;
+            }
+                
+            p.section {
+                display: flex;
+                
+                margin-block-start: 0;
+                margin-block-end: 0;
+            }
+        }
+    }
+    
+    #kyouko {
+        display: none;
+    }
+}

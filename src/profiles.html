@@ -1,0 +1,19 @@
+---
+title: Profiles
+---
+
+<div class="three-columns">
+	{% for section in site.data.contact.detailed %}
+	<h3>{{section.title}}</h3>
+
+	<ul>
+		{% for contact in section.contacts %}
+		<li>
+			<a href="{{contact.link}}">{{contact.platform}}</a>
+		</li>
+		{% endfor %}
+	</ul>
+	{% endfor %}
+</div>
+
+<p><i>some profiles are omitted because I rarely use them...</i></p>

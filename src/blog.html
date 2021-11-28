@@ -1,0 +1,23 @@
+---
+title: Blog
+---
+<table class="blog-post-list">
+	<thead>
+		<tr>
+			<th style="text-align:left; width: 80%;">Blog post</th>
+			<th style="text-align:center">Published on</th>
+		</tr>
+	</thead>
+	<tbody>
+		{% for post in site.posts %}
+		<tr>
+			<td><a href="{{ post.url }}">{{ post.title }}</a></td>
+			<td style="text-align:center">{{ post.date| date: "%a, %b %d, %y" }}</td>
+		</tr>
+		{% endfor %}
+	</tbody>
+</table>
+
+<p style="text-align:right">
+	<a href="/feed.xml"><img src="/img/atom.gif" alt="Atom Feed" style="border:none"></a>
+</p>

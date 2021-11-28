@@ -1,0 +1,145 @@
+front:
+  - platform: Discord
+    link: https://discord.gg/qMKfcKc
+
+  - platform: Telegram
+    link: https://t.me/Craftplacer
+
+  - platform: XMPP
+    link: xmpp:craftplacer@jabber.absturztau.be?message
+
+  - platform: Matrix
+    link: https://matrix.to/#/@craftplacer:snug.moe
+
+  - platform: Fediverse
+    link: https://pl.craftplacer.moe/Craftplacer
+
+  - platform: GitHub
+    link: https://github.com/Craftplacer
+
+  - platform: AniList
+    link: https://anilist.co/user/craftplacer
+
+detailed:
+- title: Chat
+  contacts:
+  - platform: Keybase
+    link: https://keybase.io/craftplacer
+
+  - platform: Windows Live Messenger
+    link: msnim:add?contact=craftplacer@outlook.de
+
+- title: Fediverse
+  contacts:
+  - platform: fedi.absturztau.be
+    link: https://fedi.absturztau.be/Craftplacer
+
+  - platform: neckbeard.xyz
+    link: https://neckbeard.xyz/Craftplacer
+
+  - platform: letsalllovela.in
+    link: https://letsalllovela.in/Craftplacer
+
+  - platform: misskey.io
+    link: https://misskey.io/Craftplacer
+    
+  - platform: quietplace.xyz
+    link: https://quietplace.xyz/@Craftplacer
+
+- title: Social
+  contacts:
+  - platform: YouTube
+    link: https://www.youtube.com/channel/UCFDP4gw9WZK7soCAvfgwvQQ
+
+  - platform: pr0gramm
+    link: https://pr0gramm.com/user/Craftplacer
+    
+  - platform: NicoNico
+    link: https://www.nicovideo.jp/user/85862482
+    favicon: niconico.png
+    unused: true
+
+  - platform: Twitter
+    link: https://twitter.com/Craftplacer
+
+  - platform: Reddit
+    link: https://www.reddit.com/user/Craftplacer
+    unused: true
+    
+  - platform: DeviantArt
+    link: https://www.deviantart.com/craftplacer
+    unused: true
+
+  - platform: MySpace
+    link: https://myspace.windows93.net/index.php?id=6618
+    unused: true
+
+- title: File Sharing
+  contacts:
+  - platform: MEGA
+    link: https://mega.nz/C!TUEWzaJA
+
+  - platform: MEGAdrop
+    link: https://mega.nz/megadrop/w9dPSM9kTwo
+
+- title: Music
+  contacts:
+  - platform: MusicBrainz
+    link: https://musicbrainz.org/user/Craftplacer
+
+  - platform: ListenBrainz
+    link: https://listenbrainz.org/user/Craftplacer
+
+  - platform: SoundCloud
+    link: https://soundcloud.com/craftplacer
+
+  - platform: Mixcloud
+    link: https://www.mixcloud.com/Craftplacer/
+
+- title: Streaming
+  contacts:
+  - platform: Twitch
+    link: https://www.twitch.tv/craftplacer
+
+- title: Games
+  contacts:
+  - platform: Steam
+    link: https://steamcommunity.com/id/craftplacer/
+
+  - platform: Etterna
+    link: https://etternaonline.com/user/Craftplacer
+
+  - platform: osu!
+    link: https://osu.ppy.sh/users/8233638
+
+- title: Anime
+  contacts:
+  - platform: Kitsu
+    link: https://kitsu.io/users/craftplacer
+
+- title: Git
+  contacts:
+  - platform: GitLab
+    link: https://gitlab.com/Craftplacer
+
+  - platform: Pleroma's GitLab
+    link: https://git.pleroma.social/Craftplacer
+
+- title: Forums
+  contacts:
+  - platform: Enigmatico's Forum
+    link: https://mewmew.elinformati.co/forum/memberlist.php?mode=viewprofile&u=51
+
+  - platform: StackOverflow
+    link: https://stackoverflow.com/users/7972419/craftplacer
+
+  - platform: XDA Forums
+    link: https://forum.xda-developers.com/member.php?u=8076675
+
+  - platform: WinClassic
+    link: https://winclassic.boards.net/user/1855
+
+- title: Other
+  contacts:
+  - platform: asciinema
+    link: https://asciinema.org/~Craftplacer

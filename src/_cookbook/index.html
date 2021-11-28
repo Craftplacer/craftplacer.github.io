@@ -1,0 +1,26 @@
+---
+title: "Cookbook"
+cookbook-exclude: true
+layout: default
+---
+
+<p>My cookbook contains short-hand recipes for programming and working with software.</p>
+
+<table class="blog-post-list">
+	<thead>
+		<tr>
+			<th style="text-align:left; width: 80%;">Recipe</th>
+			<th style="text-align:center">Tags</th>
+		</tr>
+	</thead>
+	<tbody>
+		{% for post in site.cookbook %}
+		{% unless post.cookbook-exclude %}
+		<tr>
+			<td><a href="{{ post.url }}">{{ post.title }}</a></td>
+			<td style="text-align:center">{{ post.tags | join: ", " }}</td>
+		</tr>
+		{% endunless %}
+		{% endfor %}
+	</tbody>
+</table>

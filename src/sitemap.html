@@ -1,0 +1,30 @@
+---
+title: Sitemap
+sitemap-include: false
+---
+
+<p>Every page you <i>might</i> wanna visit</p>
+
+{% assign pages = site.html_pages | sort: "url" | sort: "dir" %}
+{% for page in pages %}
+	{% if dir != page.dir %}
+	{% if dir %}
+	</ul>
+	{% endif %}
+	<h2 class="small-wide-heading">{{page.dir}}</h2>
+	<ul>
+	{% assign dir = page.dir %}
+	{% endif %}
+	{% if page.sitemap-include %}
+	<li>
+		{{page.sitemap-include}}
+		<a href="{{ page.url }}">
+			{% if page.title %}
+			{{ page.title }}
+			{% else %}
+			{{ page.dir }}<b>{{ page.name }}</b>
+			{% endif %}
+		</a>
+	</li>
+	{% endif %}
+{% endfor %}

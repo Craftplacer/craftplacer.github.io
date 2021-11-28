@@ -1,0 +1,45 @@
+- host: nixnet.services
+  maintainer:
+    name: Amolith
+    website: https://nixnet.services/
+  services:
+    pleroma: https://nixnet.social/
+    misskey: https://mk.nixnet.social/
+    xmpp: https://docs.nixnet.services/XMPP
+    nitter: https://nitter.nixnet.services/
+    etherpad: https://notes.nixnet.services/
+    mumble: https://docs.nixnet.services/Mumble
+    privatebin: https://bin.nixnet.services/
+    gitea: https://docs.nixnet.services/Gitea
+    hedgedoc: https://pad.nixnet.services/
+
+- host: snug.moe
+  maintainer:
+    name: vib
+    website: https://mk.vibbe.xyz/@vib
+  services:
+    misskey: https://snug.moe/
+    matrix: https://element.snug.moe/
+    xmpp: https://snug.moe/
+
+- host: koyu.space
+  maintainer:
+    name: Leonie
+    website: https://web.koyu.space/
+  services:
+    mastodon: https://koyu.space/
+    misskey: https://misskey.koyu.space/
+    nitter: https://nitter.koyu.space/
+    etherpad: https://etherpad.koyu.space/
+    mumble: mumble://mumble.koyu.space?title=koyu.space%20Mumble&version=1.2.0
+
+- host: mezzo.moe
+  requires-invite: true
+  maintainer:
+    name: Mezzodrinker
+    website: https://social.mezzo.moe/@mezzodrinker
+  services:
+    mumble: mumble://mumble.koyu.space/
+    privatebin: https://bin.mezzo.moe/
+    gitea: https://git.mezzo.moe/
+    nextcloud: https://nocloud.mezzo.moe/

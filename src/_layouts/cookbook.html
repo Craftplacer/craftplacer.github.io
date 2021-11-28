@@ -1,0 +1,9 @@
+---
+layout: default
+---
+
+{% if page.source-url %}
+<p>From: <a href="{page.source-url}">{{ page.source-title }}</a></p>
+{% endif %}
+
+{{ content }}

@@ -1,0 +1,69 @@
+---
+hide: true
+---
+
+$dark: #E098AC;
+$main: #f4b7c8;
+
+html {
+	font-family: "Arial", sans-serif;
+	font-size: 8pt;
+	background-color: #F4D9D9;
+	background-image: url("/img/bg.gif");
+}
+
+.cute-border {
+	background: #FFF7F7;
+	border-color: $main;
+}
+
+.panel {
+	@extend .cute-border;
+}
+
+#content {
+	table, td, th {
+		border-color: $main;
+	}
+	
+	th {
+		background: #F4D9D9;
+	}
+}
+
+h2:target {
+	border-color: $dark;
+}
+
+hr {
+	border-top-color: $main;
+}
+
+a { color: #EF7094; }
+a:visited { color: #8E4A5D; }
+
+.light-text { color: $dark; }
+
+#nav .section {
+	color: $dark;
+}
+
+.warning {
+	background: #F4F0D9;
+	border-color: #F4DAB7;
+}
+
+.small-wide-heading {
+	color: $dark;
+	border-bottom-color: $dark;
+}
+
+::selection {
+  color: black;
+  background: $dark;
+}
+
+::-moz-selection {
+  color: white;
+  background: $dark;
+}
