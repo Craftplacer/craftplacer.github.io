@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/craftplacer
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://craftplacer.moe
+  * I am craftplacer (https://keybase.io/craftplacer) on keybase.
+  * I have a public key ASDEbnGsArdLrVGCNfo2FDV1Y_ul-bYujFi3hOPwuQYtQAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120c74cfa838bcfb295cf9a5866e8452c6042f6996fc46169b6dfc9e605a156f3b70a",
+      "host": "keybase.io",
+      "kid": "0120c46e71ac02b74bad518235fa3614357563fba5f9b62e8c58b784e3f0b9062d400a",
+      "uid": "004ff8b43aaf8b02aff462188f86c019",
+      "username": "craftplacer"
+    },
+    "merkle_root": {
+      "ctime": 1638090811,
+      "hash": "9b4bab5335a56eb3a02083de9478fc5ce7fe651e5c268b9ba04dc06c2165f72c699f2f5a018b315826bc47964366ff6c869c0553b0451372eb65ce32b62d8682",
+      "hash_meta": "912f4947a485e657299f307ce8e5afbd571dfca4baad6823ca35af2ed1d415b8",
+      "seqno": 21315613
+    },
+    "service": {
+      "entropy": "4kBi806PIyYP1DCJW0OuzL24",
+      "hostname": "craftplacer.moe",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.8.0"
+  },
+  "ctime": 1638090818,
+  "expire_in": 504576000,
+  "prev": "e2cf314fe3b9bd9d2eb5fbbb294c140d60cb2cce8fde31d5607cced95ad19c26",
+  "seqno": 47,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgxG5xrAK3S61RgjX6NhQ1dWP7pfm2LoxYt4Tj8LkGLUAKp3BheWxvYWTESpcCL8Qg4s8xT+O5vZ0utfu7KUwUDWDLLM6P3jHVYHzO2VrRnCbEIJFW5aMNqCapgW0X6Exop8ejPMGJTdHbnxVIXynXZOK9AgHCo3NpZ8RA3R4AAZe3+q6hphiJaUh7l+aOPB7gYrY/L5hF/NNgZQ7Y+hKAyDEVnw0abKmvvKk01vUX3srTEJcQ2H/eRfzcCKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEICvgyvGcgGgQ9zvVaAErgkSeL4yX+pTOdbhjDM/oSdH5o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/craftplacer
+
+==================================================================
