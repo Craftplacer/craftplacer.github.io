@@ -28,16 +28,13 @@ function fetchDiary() {
 function encrypt() {
     var xhr = new XMLHttpRequest();
     xhr.open('GET', 'content.html', true);
-
-    var container = document.getElementById('diary-container');
+    
     var password = document.getElementById('password').value;
 
-    xhr.onloadstart = function () { container.innerText = "Loading..."; };
-    xhr.onerror = function () { container.innerText = 'Encryption failed.'; };
-    
     xhr.onload = function () {
         var encrypted = CryptoJS.AES.encrypt(xhr.responseText, password);
-        container.innerText = encrypted;
+        navigator.clipboard.writeText(encrypted);
+        alert("👌");
     };
 
     xhr.send(null);
