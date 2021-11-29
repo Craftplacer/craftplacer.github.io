@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Home</title>
+        <title>Wrap text with a HTML tag inside Visual Studio Code using Emmet</title>
         <link rel="stylesheet" type="text/css" href="/css/styles.css">
         <link rel="stylesheet" type="text/css" href="/css/pink.css">
         <link rel="stylesheet" type="text/css" href="/css/mobile.css">
         
-<meta name="robots" content="noindex,nofollow">
-<meta name="googlebot-news" content="nosnippet">
-
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
@@ -70,37 +67,32 @@
                 <td id="content">
                     <div class="panel">
     <div>
-        
-        <h1 id="welcome-to-my-site">Welcome to my site!</h1>
+        <article>
+            <h1>Wrap text with a HTML tag inside Visual Studio Code using Emmet</h1>
+            
+            <p><b>From:</b> <a href="https://stackoverflow.com/a/46854557/7972419">How to do tag wrapping in VS code?</a></p>
+            
+            <p>There’s a command called “<strong>Emmet: Wrap with Abbreviation</strong>”, which allows typing in an Emmet abbreviation to add HTML tags around text.</p>
 
-<p style="text-align:center"><marquee>The first and only website you wanna visit ヾ(•ω•`)o</marquee></p>
-<p style="text-align:center"><i>A new place of what the web used to be and a part of <b>me</b></i></p>
+<p>This can be turned into a keyboard shortcut:</p>
 
-<table class="sections">
-    <thead>
-        <tr>
-            <th><h2>Latest blog posts</h2></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>
-                <ul>
-    
-    
-    <li>(2021-11-28) <a href="/blog/sus-websites">Suspicious websites with Craft</a></li>
-    
-</ul>
-            </td>
-            <td>
-            </td>
-        </tr>
-    </tbody>
-</table>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ctrl+shift+9"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"command"</span><span class="p">:</span><span class="w"> </span><span class="s2">"editor.emmet.action.wrapWithAbbreviation"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"when"</span><span class="p">:</span><span class="w"> </span><span class="s2">"editorHasSelection"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"args"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"abbreviation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"span"</span><span class="p">,</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+</span><span class="p">}</span><span class="err">,</span><span class="w">
+</span></code></pre></div></div>
 
+<p><em>This section can be pasted into Visual Studio Code’s keyboard shortcuts config, you can open it by executing <strong>Preferences: Open Keyboard Shortcuts (JSON)</strong></em></p>
+
+        </article>
     </div>
 </div>
+
+
                 </td>
                 <td id="sidebar">
                     <div class="panel">
