@@ -2,7 +2,7 @@
 ---
 
 pre, code {
-	font-family: "Consolas", "Lucida Console", "Roboto Mono", monospace;
+	font-family: "Roboto Mono", "Cascadia Code", "Consolas", "Lucida Console", monospace;
 }
 
 body {
@@ -49,6 +49,7 @@ $sidebar-width: ($page-width - $content-width) / 2;
 			width: 16px;
 			height: 16px;
 			vertical-align: middle;
+			image-rendering: crisp-edges;
 		}
 		li { margin: 0.25em 0; }
 		.section { font-weight: bold; }
@@ -56,8 +57,9 @@ $sidebar-width: ($page-width - $content-width) / 2;
 }
 
 .web-button {
-	min-width: 88;
-	min-height: 31;
+	width: 88px;
+	height: 31px;
+	image-rendering: crisp-edges;
 }
 
 .cute-border {
@@ -209,7 +211,6 @@ code, pre {
 
 	th {
 		width: 50%;
-		background:#f4b7c8 !important;
 
 		* {
 			margin: 0;
@@ -222,5 +223,45 @@ code, pre {
 		& > ul {
 			margin: 0;
 		}
+	}
+}
+
+summary {
+	font-weight: bold;
+	cursor: pointer;
+}
+
+details[open] > summary { margin-bottom: 1em; }
+
+.note-background {
+	$line-height: 16px;
+	
+	& > div { margin: 0px !important; }
+
+	& > div > table {
+		&, & > tbody > tr > td { border: none !important; }
+
+		.note-left-margin {
+			width: 24px;
+			border-right: #ef7094 2px solid !important;
+		}
+
+		tbody > .note-content > td {
+			padding: 0 6px !important;
+			font-size: 14px;
+
+			p:nth-child(1) { margin-top: 0; }
+
+			h1, h2, h3, h4, h5, h6 {
+				text-decoration: underline;
+				font-size: inherit;
+			}
+
+			pre, p, h1, h2, h3, h4, h5, h6 { margin: $line-height 0; }
+			code { line-height: $line-height * 0.8; }
+
+			line-height: $line-height;
+		}
+
 	}
 }
