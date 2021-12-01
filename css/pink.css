@@ -26,4 +26,16 @@ a:visited { color: #8E4A5D; }
 
 ::-moz-selection { color: white; background: #E098AC; }
 
+.sections th { background: #f4b7c8 !important; }
+
+.note-background { font-family: 'azukifontL', cursive; }
+
+.note-background > div > table .note-left-margin { border-right: #ef7094 2px solid !important; }
+
+.note-background > div > table tbody > .note-content > td { background-image: url("/img/pink/note-bg.gif"); }
+
+@font-face { font-family: 'azukifontL'; font-style: normal; font-weight: normal; src: url("/font/azukiL.ttf"); }
+
+@font-face { font-family: 'azukifontL'; font-style: normal; font-weight: bold; src: url("/font/azukiLB.ttf"); }
+
 /*# sourceMappingURL=pink.css.map */

@@ -1,4 +1,169 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://craftplacer.moe//feed.xml" rel="self" type="application/atom+xml" /><link href="https://craftplacer.moe//" rel="alternate" type="text/html" /><updated>2021-11-29T20:45:54+00:00</updated><id>https://craftplacer.moe//feed.xml</id><title type="html">craftplacer.moe</title><entry><title type="html">Suspicious websites with Craft</title><link href="https://craftplacer.moe//blog/sus-websites" rel="alternate" type="text/html" title="Suspicious websites with Craft" /><published>2021-11-28T00:00:00+00:00</published><updated>2021-11-28T00:00:00+00:00</updated><id>https://craftplacer.moe//blog/sus-websites</id><content type="html" xml:base="https://craftplacer.moe//blog/sus-websites">&lt;p&gt;My website has been online for more than a year, starting off with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.github.io&lt;/code&gt; until migrating to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.moe&lt;/code&gt; TLD. One thing I did was to register my website as a property on &lt;a href=&quot;https://search.google.com/search-console&quot;&gt;Google Search Console&lt;/a&gt;. This allows me to see is what sites link to mine, which also exposes websites who actually scape other kinds of data. Let’s take a look together:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://craftplacer.moe//feed.xml" rel="self" type="application/atom+xml" /><link href="https://craftplacer.moe//" rel="alternate" type="text/html" /><updated>2021-12-01T00:20:13+00:00</updated><id>https://craftplacer.moe//feed.xml</id><title type="html">craftplacer.moe</title><entry><title type="html">Principles of *proper* web development</title><link href="https://craftplacer.moe//blog/principles-of-proper-web-dev" rel="alternate" type="text/html" title="Principles of *proper* web development" /><published>2021-11-29T00:00:00+00:00</published><updated>2021-11-29T00:00:00+00:00</updated><id>https://craftplacer.moe//blog/principles-of-proper-web-dev</id><content type="html" xml:base="https://craftplacer.moe//blog/principles-of-proper-web-dev">&lt;p&gt;When you publish something on the web there are many options, but most people are sometimes met with frustration visiting websites. Those range from the website slowly building up, interactive elements that interrupt the user, and countless others. This guide will show you the best tips towards writing a modern and lightweight site.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; This is not a complete HTML beginner guide, only a guide as orientation what to aim for.&lt;/p&gt;
+
+&lt;h2 id=&quot;dont-blindly-use-templates-or-tools&quot;&gt;Don’t blindly use templates or tools&lt;/h2&gt;
+
+&lt;p&gt;Understand what the user receives on their end, in terms of HTML, CSS and JS.&lt;/p&gt;
+
+&lt;p&gt;Using a random JS powered framework for a simple site means yours going into &lt;strong&gt;&lt;em&gt;trash&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;“Why?”&lt;/em&gt;, you may ask?&lt;/p&gt;
+
+&lt;p&gt;It could’ve been avoided by taking a different approach and actually save load times, improve client-side performance &lt;del&gt;and make some nerds who get angry over the bloated internet of today a bit more happy&lt;/del&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;build-on-html5-improve-with-css-and-enhance-with-js&quot;&gt;Build on HTML5, improve with CSS and enhance with JS&lt;/h2&gt;
+
+&lt;p&gt;HTML5 is the greatest standardized version of HTML as of yet and brings many useful features. With this, CSS should be seen as supplemental and JavaScript as optional.&lt;/p&gt;
+
+&lt;h3 id=&quot;writing-for-html-first&quot;&gt;Writing for HTML first&lt;/h3&gt;
+
+&lt;p&gt;A simple web page with a blog article can be done with this structure:&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;My great blog post - MySite.com&lt;span class=&quot;nt&quot;&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;nav&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Add navigation here --&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/nav&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;main&amp;gt;&lt;/span&gt;   
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;article&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;My great blog post&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Great paragraph isn't it?&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;/article&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/main&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;footer&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Add some uninteresting footer here --&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/footer&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Structuring your site is using easy-to-understand tags like &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;nav&amp;gt;&lt;/code&gt;&lt;/a&gt;, &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;header&amp;gt;&lt;/code&gt;&lt;/a&gt;, &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;main&amp;gt;&lt;/code&gt;&lt;/a&gt; and &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;footer&amp;gt;&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Using &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;article&amp;gt;&lt;/code&gt;&lt;/a&gt; tag can improve machine-readability and for example help the reader mode of your web browser recognize what part of the page is actually the blog post.&lt;/p&gt;
+
+&lt;p&gt;Accessibility and machine-readability can be also improved by “perfecting” the HTML source code of your pages.&lt;/p&gt;
+
+&lt;h3 id=&quot;styling-with-css-second&quot;&gt;Styling with CSS second&lt;/h3&gt;
+
+&lt;p&gt;You now reached your point where you have content, but a really ugly default browser styles with Times New Roman. Congratulations. But don’t be afraid, you can change this now:&lt;/p&gt;
+
+&lt;p&gt;A simple trick to get rid of the ugly font is first of all to tell our browser to use a different one with the snippet down below:&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;html&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;'Arial'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sans-serif&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;And ✨ magic ✨ ensues and now your page has nice sans serif text. But what does the snippet actually do? In short, it tells that the browser should use the “Arial” font on the HTML tag, that is, basically our entire page. What if we don’t have “Arial”? Our browser now sees &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sans-serif&lt;/code&gt; which instructs it to use the next available sans serif font.&lt;/p&gt;
+
+&lt;h4 id=&quot;centered-layout&quot;&gt;Centered-layout&lt;/h4&gt;
+
+&lt;p&gt;Ok, alright, we got ugly font gone now, but what about layout? We don’t like reading text spanning over our entire screen. That’s also no problem, here’s a simple fix to that, a fixed-width layout:&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;body&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;max-width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;900px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;auto&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This tells our browser to constrain the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;body&amp;gt;&lt;/code&gt; of our page to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;900px&lt;/code&gt; max or lower, while using the available whitespace distributed to the left and right sides, making the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;body&amp;gt;&lt;/code&gt; &lt;em&gt;centered&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;turning-an-ul-tag-into-a-navigation-bar&quot;&gt;Turning an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ul&lt;/code&gt; tag into a navigation bar&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Split_Navigation&quot;&gt;This article from the &lt;strong&gt;Mozilla Developer Network&lt;/strong&gt; about &lt;strong&gt;“Split Navigation”&lt;/strong&gt;&lt;/a&gt;, explains everything you need to know.&lt;/p&gt;
+
+&lt;h4 id=&quot;keeping-it-plain-html-compatible&quot;&gt;Keeping it plain HTML compatible&lt;/h4&gt;
+
+&lt;p&gt;Don’t forget to check how your site looks &lt;strong&gt;without&lt;/strong&gt; your CSS styling. Yes I’m serious. If it looks okay, go on. If it’s all over the place, you need some reworking to do.&lt;/p&gt;
+
+&lt;p&gt;At this point, it’s recommended that you read more into CSS itself. Like hinted at before, I’m against frameworks, and write things yourself if you want/can. But don’t hesitate to use CSS pre-processors like &lt;a href=&quot;https://sass-lang.com/&quot;&gt;Sass&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;making-it-interactive-with-js-third&quot;&gt;Making it interactive with JS third&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;TLDR:&lt;/strong&gt; Have strong reasons why you want to include JavaScript in your page before you do it, e.g. your site is a web-app or it makes functionality better than over old HTML form submissions.&lt;/p&gt;
+
+&lt;p&gt;Now static websites are boring somewhat, but if you think about it:&lt;/p&gt;
+
+&lt;p&gt;Do you really need JavaScript in most cases?&lt;/p&gt;
+
+&lt;p&gt;It really depends on what your needs are: if you’d like to have fluid webpage updates because the user interacts with for example a comments section a lot, then maybe JavaScript is really the best.&lt;/p&gt;
+
+&lt;p&gt;But can some work be alleviated by your backend? If the answer is yes, then you should try avoiding JavaScript at first and only use it when necessary.&lt;/p&gt;
+
+&lt;p&gt;On this site, JavaScript is only loaded conditionally on some pages, like the &lt;a href=&quot;/diary&quot;&gt;diary page&lt;/a&gt; or the comments like on &lt;a href=&quot;/guestbook&quot;&gt;the guestbook&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;informing-machines-about-your-content&quot;&gt;Informing machines about your content&lt;/h2&gt;
+
+&lt;p&gt;One term used throughout this guide was &lt;strong&gt;machine-readability&lt;/strong&gt;. This is where we don’t want to make our source code overly complicated for machines and humans understand, and even more want to provide extra machines information about our site.&lt;/p&gt;
+
+&lt;h3 id=&quot;adding-metadata-to-make-previews-on-communication-platforms-more-appealing&quot;&gt;Adding metadata to make previews on communication platforms more appealing&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/blog/web-previews/discord-web-embed-with-legend.png&quot; alt=&quot;A picture showing an embed provided by Discord with number annotations showing 1. Kaiteki; 2. Home; 3. The comfy Fediverse client; 4. (The logo); 5. (The color stripe)&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Site name&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;Provided by &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;meta property=&quot;og:site_name&quot; content=&quot;Kaiteki&quot;/&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Page title&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;Provided by &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;meta property=&quot;og:title&quot; content=&quot;Home&quot;/&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Page description&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;Provided by:&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;meta name=&quot;description&quot; content=&quot;The comfy Fediverse client&quot;/&amp;gt;&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;meta property=&quot;og:description&quot; content=&quot;The comfy Fediverse client&quot;&amp;gt;&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Additional image&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;Provided by &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;meta property=&quot;og:image&quot; content=&quot;https://craftplacer.moe/projects/kaiteki/img/kaiteki.png&quot;/&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Website color&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;Provided by &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;meta name=&quot;theme-color&quot; content=&quot;#FF7890&quot;&amp;gt;&lt;/code&gt;, &lt;a href=&quot;https://developers.google.com/web/updates/2014/11/Support-for-theme-color-in-Chrome-39-for-Android&quot;&gt;read more on this here&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;a href=&quot;/cookbook/website-metadata&quot;&gt;Continue reading on this subject on the cookbook recipe “Website Metadata”&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;but-i-dont-want-to-copy--paste-everything-written-in-html&quot;&gt;But I don’t want to copy &amp;amp; paste everything written in HTML!&lt;/h2&gt;
+
+&lt;p&gt;Seems you never heard of templating frameworks or site generators, especially static ones.&lt;/p&gt;
+
+&lt;p&gt;This site is built using &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; the most widespread solution for this sorta thing. It uses the &lt;a href=&quot;https://github.com/Shopify/liquid&quot;&gt;Liquid&lt;/a&gt; templating language by Shopify. GitHub is deploying this site using their &lt;a href=&quot;https://pages.github.com/&quot;&gt;Pages&lt;/a&gt; offering, with automatic “source-to-site” deployment.&lt;/p&gt;
+
+&lt;p&gt;The advantages of &lt;abbr title=&quot;static site generators&quot;&gt;SSGs&lt;/abbr&gt; are the following:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;They get generated &lt;strong&gt;only once&lt;/strong&gt; on the server or development/build pipeline and can be cached forever for everyone until updated.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Visitors don’t need to run &lt;strong&gt;&lt;em&gt;any&lt;/em&gt;&lt;/strong&gt; JavaScript to make your site render, making it already one of the faster ones compared to most others.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;check-up-with-lighthouse-for-additional-improvement-tips&quot;&gt;Check up with Lighthouse for additional improvement tips.&lt;/h2&gt;
+
+&lt;p&gt;Chromium ships with a powerful webpage analyser called &lt;a href=&quot;https://developers.google.com/web/tools/lighthouse/&quot;&gt;Lighthouse&lt;/a&gt; which can find several issues in categories: Performance, accessibility, SEO and so forth.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Don’t be lazy, put some effort in minimizing your page and use all the tools at your disposal.&lt;/p&gt;
+
+&lt;p&gt;It benefits search engine ranking and mobile visitors, making your page preferred by visitors over others.&lt;/p&gt;</content><author><name></name></author><summary type="html">When you publish something on the web there are many options, but most people are sometimes met with frustration visiting websites. Those range from the website slowly building up, interactive elements that interrupt the user, and countless others. This guide will show you the best tips towards writing a modern and lightweight site.</summary></entry><entry><title type="html">Suspicious websites with Craft</title><link href="https://craftplacer.moe//blog/sus-websites" rel="alternate" type="text/html" title="Suspicious websites with Craft" /><published>2021-11-28T00:00:00+00:00</published><updated>2021-11-28T00:00:00+00:00</updated><id>https://craftplacer.moe//blog/sus-websites</id><content type="html" xml:base="https://craftplacer.moe//blog/sus-websites">&lt;p&gt;My website has been online for more than a year, starting off with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.github.io&lt;/code&gt; until migrating to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.moe&lt;/code&gt; TLD. One thing I did was to register my website as a property on &lt;a href=&quot;https://search.google.com/search-console&quot;&gt;Google Search Console&lt;/a&gt;. This allows me to see is what sites link to mine, which also exposes websites who actually scape other kinds of data. Let’s take a look together:&lt;/p&gt;
 
 &lt;h2 id=&quot;github-wiki-seepage&quot;&gt;&lt;a href=&quot;https://github-wiki-see.page/&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;github-wiki-see.page&lt;/code&gt;&lt;/a&gt;&lt;/h2&gt;
 

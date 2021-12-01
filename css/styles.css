@@ -1,4 +1,4 @@
-pre, code { font-family: "Consolas", "Lucida Console", "Roboto Mono", monospace; }
+pre, code { font-family: "Roboto Mono", "Cascadia Code", "Consolas", "Lucida Console", monospace; }
 
 body { margin: 0; }
 
@@ -14,13 +14,13 @@ body { margin: 0; }
 
 #layout #nav ul { list-style: none; padding-left: 0; }
 
-#layout #nav img { width: 16px; height: 16px; vertical-align: middle; }
+#layout #nav img { width: 16px; height: 16px; vertical-align: middle; image-rendering: crisp-edges; }
 
 #layout #nav li { margin: 0.25em 0; }
 
 #layout #nav .section { font-weight: bold; }
 
-.web-button { min-width: 88; min-height: 31; }
+.web-button { width: 88px; height: 31px; image-rendering: crisp-edges; }
 
 .cute-border, .panel { border-width: 3px; border-style: double; border-radius: 4px; }
 
@@ -74,10 +74,30 @@ code, pre { text-overflow: auto; }
 
 .sections { border-spacing: 1em 0; border-collapse: separate !important; border: none !important; }
 
-.sections th { width: 50%; background: #f4b7c8 !important; }
+.sections th { width: 50%; }
 
 .sections th * { margin: 0; font-size: 8pt; text-align: left; }
 
 .sections td > ul { margin: 0; }
+
+summary { font-weight: bold; cursor: pointer; }
+
+details[open] > summary { margin-bottom: 1em; }
+
+.note-background > div { margin: 0px !important; }
+
+.note-background > div > table, .note-background > div > table > tbody > tr > td { border: none !important; }
+
+.note-background > div > table .note-left-margin { width: 24px; border-right: #ef7094 2px solid !important; }
+
+.note-background > div > table tbody > .note-content > td { padding: 0 6px !important; font-size: 14px; line-height: 16px; }
+
+.note-background > div > table tbody > .note-content > td p:nth-child(1) { margin-top: 0; }
+
+.note-background > div > table tbody > .note-content > td h1, .note-background > div > table tbody > .note-content > td h2, .note-background > div > table tbody > .note-content > td h3, .note-background > div > table tbody > .note-content > td h4, .note-background > div > table tbody > .note-content > td h5, .note-background > div > table tbody > .note-content > td h6 { text-decoration: underline; font-size: inherit; }
+
+.note-background > div > table tbody > .note-content > td pre, .note-background > div > table tbody > .note-content > td p, .note-background > div > table tbody > .note-content > td h1, .note-background > div > table tbody > .note-content > td h2, .note-background > div > table tbody > .note-content > td h3, .note-background > div > table tbody > .note-content > td h4, .note-background > div > table tbody > .note-content > td h5, .note-background > div > table tbody > .note-content > td h6 { margin: 16px 0; }
+
+.note-background > div > table tbody > .note-content > td code { line-height: 12.8px; }
 
 /*# sourceMappingURL=styles.css.map */
