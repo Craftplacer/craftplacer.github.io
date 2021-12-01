@@ -13,8 +13,6 @@ You can send me a mail @craftplacer.moe with the same name, if you want..
 
 My PGP is `9A79 0D94 BDA3 F64B 90CE`
 
-[vcard]()
-
 ## my profiles
 
 {% include profile-list.html %}
