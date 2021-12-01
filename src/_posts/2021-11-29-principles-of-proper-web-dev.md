@@ -1,6 +1,5 @@
 ---
 title: Principles of *proper* web development
-draft: true
 ---
 
 When you publish something on the web there are many options, but most people are sometimes met with frustration visiting websites. Those range from the website slowly building up, interactive elements that interrupt the user, and countless others. This guide will show you the best tips towards writing a modern and lightweight site.
