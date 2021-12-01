@@ -105,7 +105,7 @@ On this site, JavaScript is only loaded conditionally on some pages, like the [d
 
 ## Informing machines about your content
 
-One term used throughout this guide was **machine-readability**. This is where we don't want to make our source code overly complicated for machines and humans understand, and even more want to provide extra machines information about our site.
+One term used throughout this guide was **machine-readability**. This is where we don't want to make our source code overly complicated for machines and humans to understand, and even more want to provide extra machines information about our site.
 
 ### Adding metadata to make previews on communication platforms more appealing
 
