@@ -4,6 +4,13 @@
 $dark: #E098AC;
 $main: #f4b7c8;
 
+$home-section-background: $dark;
+$home-section-text: black;
+
+$warning-border: #F4DAB7;
+$warning-background: #F4F0D9;
+$warning-text: black;
+
 html {
 	font-family: "Arial", sans-serif;
 	font-size: 8pt;
@@ -48,8 +55,8 @@ a:visited { color: #8E4A5D; }
 }
 
 .warning {
-	background: #F4F0D9;
-	border-color: #F4DAB7;
+	background: $warning-background;
+	border-color: $warning-border;
 }
 
 .small-wide-heading {
@@ -73,7 +80,7 @@ a:visited { color: #8E4A5D; }
 	font-family: 'azukifontL', cursive;
 
 	& > div > table {
-		.note-left-margin { border-right: #ef7094 2px solid !important; }
+		.note-left-margin { border-right-color: #ef7094 !important; }
 		tbody > .note-content > td { background-image: url('/img/pink/note-bg.gif'); }
 	}
 }

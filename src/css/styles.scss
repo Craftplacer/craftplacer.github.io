@@ -170,13 +170,6 @@ a img {
 	font-size: inherit;
 }
 
-p {
-	width: 100%;
-}
-code, pre { 
-	text-overflow: auto;
-}
-
 @media print {
 	#nav, #sidebar, #kyouko { display: none; }
 
@@ -243,7 +236,8 @@ details[open] > summary { margin-bottom: 1em; }
 
 		.note-left-margin {
 			width: 24px;
-			border-right: #ef7094 2px solid !important;
+			border-right-width: 2px !important;
+			border-right-style: solid !important;
 		}
 
 		tbody > .note-content > td {
@@ -264,4 +258,56 @@ details[open] > summary { margin-bottom: 1em; }
 		}
 
 	}
+}
+
+.album-table {
+	&, td {
+		border: none !important;
+	}
+
+	td {
+		width: 25%;
+		vertical-align: top;
+	}
+
+	.album, .single, .artist {
+		margin: 0.5em 0;
+	}
+
+	.album, .single {
+		font-weight: bold;
+	}
+
+	img {
+		width: 135px;
+		height: 135px;
+		background: gray;
+	}
+
+	ul {
+		list-style-type: none;
+		padding: 0;
+	}
+
+	.tags {
+		margin: 2px 0;
+
+		* {
+			margin-right: 2px;
+		}
+	}
+}
+
+.badge {
+	border-width: 1px;
+	border-style: solid;
+	padding: 1px 3px;
+
+	&--gray { @extend .badge; background: gray; color: black; border-color: black; }
+	&--yellow { @extend .badge; background: #ffcc66; color: black; border-color: black; }
+	&--dark-purple { @extend .badge; background: #663366; color: white; border-color: white; }
+	&--livid-purple { @extend .badge; background: #6633ff; color: white; border-color: white; }
+	&--slategray { @extend .badge; background: slategray; color: white; border-color: white; }
+	&--green { @extend .badge; background: #669966; color: white; border-color: white; }
+	&--white { @extend .badge; background: white; color: black; border-color: black; }
 }
