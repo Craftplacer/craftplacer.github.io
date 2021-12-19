@@ -60,10 +60,6 @@ a img { border: none; }
 
 .small-wide-heading { font-weight: bold; border-bottom-width: 1px; border-bottom-style: solid; text-align: left; font-size: inherit; }
 
-p { width: 100%; }
-
-code, pre { text-overflow: auto; }
-
 @media print { #nav, #sidebar, #kyouko { display: none; } #content > .panel { width: unset; max-width: unset; border: none; } html { font-size: unset; } }
 
 .large-table { min-width: 100%; width: unset !important; overflow: auto; }
@@ -88,7 +84,7 @@ details[open] > summary { margin-bottom: 1em; }
 
 .note-background > div > table, .note-background > div > table > tbody > tr > td { border: none !important; }
 
-.note-background > div > table .note-left-margin { width: 24px; border-right: #ef7094 2px solid !important; }
+.note-background > div > table .note-left-margin { width: 24px; border-right-width: 2px !important; border-right-style: solid !important; }
 
 .note-background > div > table tbody > .note-content > td { padding: 0 6px !important; font-size: 14px; line-height: 16px; }
 
@@ -99,5 +95,37 @@ details[open] > summary { margin-bottom: 1em; }
 .note-background > div > table tbody > .note-content > td pre, .note-background > div > table tbody > .note-content > td p, .note-background > div > table tbody > .note-content > td h1, .note-background > div > table tbody > .note-content > td h2, .note-background > div > table tbody > .note-content > td h3, .note-background > div > table tbody > .note-content > td h4, .note-background > div > table tbody > .note-content > td h5, .note-background > div > table tbody > .note-content > td h6 { margin: 16px 0; }
 
 .note-background > div > table tbody > .note-content > td code { line-height: 12.8px; }
+
+.album-table, .album-table td { border: none !important; }
+
+.album-table td { width: 25%; vertical-align: top; }
+
+.album-table .album, .album-table .single, .album-table .artist { margin: 0.5em 0; }
+
+.album-table .album, .album-table .single { font-weight: bold; }
+
+.album-table img { width: 135px; height: 135px; background: gray; }
+
+.album-table ul { list-style-type: none; padding: 0; }
+
+.album-table .tags { margin: 2px 0; }
+
+.album-table .tags * { margin-right: 2px; }
+
+.badge, .badge--white, .badge--green, .badge--slategray, .badge--livid-purple, .badge--dark-purple, .badge--yellow, .badge--gray { border-width: 1px; border-style: solid; padding: 1px 3px; }
+
+.badge--gray { background: gray; color: black; border-color: black; }
+
+.badge--yellow { background: #ffcc66; color: black; border-color: black; }
+
+.badge--dark-purple { background: #663366; color: white; border-color: white; }
+
+.badge--livid-purple { background: #6633ff; color: white; border-color: white; }
+
+.badge--slategray { background: slategray; color: white; border-color: white; }
+
+.badge--green { background: #669966; color: white; border-color: white; }
+
+.badge--white { background: white; color: black; border-color: black; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -8,7 +8,10 @@ function crypt() {
 
 function fetchDiary() {
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'encrypted-content.html', true);
+    xhr.open('GET', 'encrypted-content.html?_=' + new Date().getTime(), true);
+    xhr.setRequestHeader("Cache-Control", "no-cache, no-store, max-age=0");
+    xhr.setRequestHeader("Expires", "Tue, 01 Jan 1980 1:00:00 GMT");
+    xhr.setRequestHeader("Pragma", "no-cache");
 
     var container = document.getElementById('diary-container');
     var password = document.getElementById('password').value;
@@ -27,7 +30,10 @@ function fetchDiary() {
 
 function encrypt() {
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'content.html', true);
+    xhr.open('GET', 'content.html?_=' + new Date().getTime(), true);
+    xhr.setRequestHeader("Cache-Control", "no-cache, no-store, max-age=0");
+    xhr.setRequestHeader("Expires", "Tue, 01 Jan 1980 1:00:00 GMT");
+    xhr.setRequestHeader("Pragma", "no-cache");
     
     var password = document.getElementById('password').value;
 
