@@ -1,6 +1,6 @@
 title: craftplacer.moe
 baseurl: ""
-url: "https://craftplacer.moe/"
+url: "https://craftplacer.moe"
 permalink: "/blog/:title"
 plugins:
   - jekyll-feed
