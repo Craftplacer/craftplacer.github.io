@@ -1,1 +1,1 @@
-Sitemap: https://craftplacer.moe//sitemap.xml
+Sitemap: https://craftplacer.moe/sitemap.xml
