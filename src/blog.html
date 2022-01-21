@@ -4,15 +4,18 @@ title: Blog
 <table class="blog-post-list">
 	<thead>
 		<tr>
-			<th style="text-align:left; width: 80%;">Blog post</th>
+			<th style="text-align:left; width: 60%;">Blog post</th>
 			<th style="text-align:center">Published on</th>
+			<th style="text-align:center">Word count</th>
 		</tr>
 	</thead>
 	<tbody>
 		{% for post in site.posts %}
+		{% assign word_count = post.content | number_of_words | divided_by: 50 | floor | times: 50 %}
 		<tr>
 			<td><a href="{{ post.url }}">{{ post.title }}</a></td>
-			<td style="text-align:center">{{ post.date| date: "%a, %b %d, %y" }}</td>
+			<td style="text-align:center">{{ post.date | date: "%b %d %Y" }}</td>
+			<td>~ {{ word_count }} {% if word_count < 250 %}<span class="blog-short">(short)</span>{%endif%}</td>
 		</tr>
 		{% endfor %}
 	</tbody>
