@@ -1,4 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://craftplacer.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://craftplacer.moe/" rel="alternate" type="text/html" /><updated>2022-01-17T01:05:17+00:00</updated><id>https://craftplacer.moe/feed.xml</id><title type="html">craftplacer.moe</title><entry><title type="html">Principles of *proper* web development</title><link href="https://craftplacer.moe/blog/principles-of-proper-web-dev" rel="alternate" type="text/html" title="Principles of *proper* web development" /><published>2021-11-29T00:00:00+00:00</published><updated>2021-11-29T00:00:00+00:00</updated><id>https://craftplacer.moe/blog/principles-of-proper-web-dev</id><content type="html" xml:base="https://craftplacer.moe/blog/principles-of-proper-web-dev">&lt;p&gt;When you publish something on the web there are many options, but most people are sometimes met with frustration visiting websites. Those range from the website slowly building up, interactive elements that interrupt the user, and countless others. This guide will show you the best tips towards writing a modern and lightweight site.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://craftplacer.moe/feed.xml" rel="self" type="application/atom+xml" /><link href="https://craftplacer.moe/" rel="alternate" type="text/html" /><updated>2022-01-21T06:01:38+00:00</updated><id>https://craftplacer.moe/feed.xml</id><title type="html">craftplacer.moe</title><entry><title type="html">Simplicity sucks</title><link href="https://craftplacer.moe/blog/simplicity-sucks" rel="alternate" type="text/html" title="Simplicity sucks" /><published>2022-01-20T00:00:00+00:00</published><updated>2022-01-20T00:00:00+00:00</updated><id>https://craftplacer.moe/blog/simplicity-sucks</id><content type="html" xml:base="https://craftplacer.moe/blog/simplicity-sucks">&lt;p&gt;&lt;img src=&quot;/img/blog/2022-01-20-simplicity-sucks/graph.gif&quot; alt=&quot;A graph with the y-axis describing the visual appeal and the x-axis describing the simplicity. The graph has a parabola-like trend with the highest point being in the middle.&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I believe a common theme across many websites and software is the following:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Your website is chaotic, has too much content, and simply no organization or layout.&lt;/p&gt;
+
+    &lt;p&gt;&lt;strong&gt;It looks bad.&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Your website is full of content, but still comprehensible.&lt;/p&gt;
+
+    &lt;p&gt;&lt;strong&gt;It is unique from the rest and looks good.&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Your website is uses a off-the-shelf stylesheet.&lt;/p&gt;
+
+    &lt;p&gt;&lt;strong&gt;It isn’t that special, but nobody is going to judge you.&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Your website tries to be innovate and strips out so much styling, that it is literally black on white paper&lt;/p&gt;
+
+    &lt;p&gt;&lt;strong&gt;Some people might like it, but it’s boring.&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Principles of *proper* web development</title><link href="https://craftplacer.moe/blog/principles-of-proper-web-dev" rel="alternate" type="text/html" title="Principles of *proper* web development" /><published>2021-11-29T00:00:00+00:00</published><updated>2021-11-29T00:00:00+00:00</updated><id>https://craftplacer.moe/blog/principles-of-proper-web-dev</id><content type="html" xml:base="https://craftplacer.moe/blog/principles-of-proper-web-dev">&lt;p&gt;When you publish something on the web there are many options, but most people are sometimes met with frustration visiting websites. Those range from the website slowly building up, interactive elements that interrupt the user, and countless others. This guide will show you the best tips towards writing a modern and lightweight site.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; This is not a complete HTML beginner guide, only a guide as orientation what to aim for.&lt;/p&gt;
 
