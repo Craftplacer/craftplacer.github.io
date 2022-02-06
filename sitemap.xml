@@ -2,19 +2,19 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://craftplacer.moe/cookbook/change-drive-with-cd</loc>
-<lastmod>2022-01-31T00:59:33+00:00</lastmod>
+<lastmod>2022-02-06T23:51:18+00:00</lastmod>
 </url>
 <url>
 <loc>https://craftplacer.moe/cookbook/date-formatting</loc>
-<lastmod>2022-01-31T00:59:33+00:00</lastmod>
+<lastmod>2022-02-06T23:51:18+00:00</lastmod>
 </url>
 <url>
 <loc>https://craftplacer.moe/cookbook/html-tag-wrap-in-vscode</loc>
-<lastmod>2022-01-31T00:59:33+00:00</lastmod>
+<lastmod>2022-02-06T23:51:18+00:00</lastmod>
 </url>
 <url>
 <loc>https://craftplacer.moe/cookbook/website-metadata</loc>
-<lastmod>2022-01-31T00:59:33+00:00</lastmod>
+<lastmod>2022-02-06T23:51:18+00:00</lastmod>
 </url>
 <url>
 <loc>https://craftplacer.moe/blog/sus-websites</loc>
@@ -53,6 +53,9 @@
 <loc>https://craftplacer.moe/directory</loc>
 </url>
 <url>
+<loc>https://craftplacer.moe/favorites/extensions</loc>
+</url>
+<url>
 <loc>https://craftplacer.moe/guestbook</loc>
 </url>
 <url>
@@ -81,10 +84,10 @@
 </url>
 <url>
 <loc>https://craftplacer.moe/diary/encrypted-content.html</loc>
-<lastmod>2022-01-31T00:55:36+00:00</lastmod>
+<lastmod>2022-02-06T23:47:18+00:00</lastmod>
 </url>
 <url>
 <loc>https://craftplacer.moe/googleb6f44bcd9c89f6ba.html</loc>
-<lastmod>2022-01-31T00:55:36+00:00</lastmod>
+<lastmod>2022-02-06T23:47:18+00:00</lastmod>
 </url>
 </urlset>
