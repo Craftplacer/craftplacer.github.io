@@ -45,7 +45,7 @@ $sidebar-width: ($page-width - $content-width) / 2;
 			list-style: none;
 			padding-left: 0;
 		}
-		img {
+		img:not(#banner) {
 			width: 16px;
 			height: 16px;
 			vertical-align: middle;
