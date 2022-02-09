@@ -1,6 +1,30 @@
 ---
 title: Blog
 ---
+
+<h2>Micro blogs</h2>
+
+{% assign microblogs = site.posts | where: "category", "microblog" %}
+
+<table>
+	{% tablerow post in microblogs cols: 2 %}
+	{{post.content}}
+	{% endtablerow %}
+</table>
+
+<p style="text-align:right"><a href="shorts">Read more &gt;&gt;</a></p>
+
+<h2>Posts</h2>
+
+{% assign posts_by_category = site.posts | group_by: "category" | sort: "name" %}
+
+{% for category in posts_by_category %}
+
+{% unless category.name == "microblog" %}
+{% if category.name and category.name != "" %}
+<h2 class="small-wide-heading">{{category.name}}</h2>
+{% endif %}
+
 <table class="blog-post-list">
 	<thead>
 		<tr>
@@ -10,7 +34,7 @@ title: Blog
 		</tr>
 	</thead>
 	<tbody>
-		{% for post in site.posts %}
+		{% for post in category.items %}
 		{% assign word_count = post.content | number_of_words | divided_by: 50 | floor | times: 50 %}
 		<tr>
 			<td><a href="{{ post.url }}">{{ post.title }}</a></td>
@@ -20,6 +44,8 @@ title: Blog
 		{% endfor %}
 	</tbody>
 </table>
+{% endunless %}
+{% endfor %}
 
 <p style="text-align:right">
 	<a href="/feed.xml"><img src="/img/atom.gif" alt="Atom Feed" style="border:none"></a>
