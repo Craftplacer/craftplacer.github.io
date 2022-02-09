@@ -1,6 +1,4 @@
----
-title: Reviewing Linux desktop environments
----
+# Reviewing Linux desktop environments
 
 New distro (Devuan), new attempts at trying Linux desktops.
 

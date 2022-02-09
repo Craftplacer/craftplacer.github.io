@@ -1,6 +1,4 @@
----
-title: Android applications are just ugly
----
+# Android applications are just ugly
 
 One common theme I come across certain apps, that aren't made by some big corporation, is the lack of theming, or even worse, being outdated.
 
