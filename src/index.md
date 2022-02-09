@@ -1,6 +1,7 @@
 ---
 title: Home
 include-title: false
+allow-indexing: true
 ---
 
 # Welcome to my site!
@@ -12,7 +13,7 @@ include-title: false
     <thead>
         <tr>
             <th><h2>Latest blog posts</h2></th>
-            <th></th>
+            <th><h2>Latest micro blogs</h2></th>
         </tr>
     </thead>
     <tbody>
@@ -21,6 +22,7 @@ include-title: false
                 {% include latest-posts.html %}
             </td>
             <td>
+                {% include latest-microblogs.html %}
             </td>
         </tr>
     </tbody>

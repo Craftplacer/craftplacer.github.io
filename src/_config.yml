@@ -32,6 +32,13 @@ defaults:
       layout: "post"
       comments: true
       allow-indexing: true
+
+  - scope:
+      path: "_posts/microblogs"
+    values:
+      category: microblog
+      comments: true
+      allow-indexing: true
       
   - scope:
       path: "_cookbook"
