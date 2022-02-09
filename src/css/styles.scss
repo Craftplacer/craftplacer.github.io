@@ -119,9 +119,9 @@ ul { padding-left: 10px; }
 	width: 100%;
 }
 
-h1, h2, h3, h4, h5 {
-	text-align: center;
+h1 { text-align: center;}
 
+h1, h2, h3, h4, h5, h6 {
 	&:target {
 		margin: -1px;
 		padding: 1px;
@@ -183,9 +183,7 @@ a img {
 }
 
 .large-table {
-	min-width: 100%;
 	width: unset !important;
-	overflow: auto;
 
 	th, td {
 		padding: 2px 4px !important;
@@ -227,22 +225,22 @@ summary {
 details[open] > summary { margin-bottom: 1em; }
 
 .note-background {
-	$line-height: 16px;
+	$line-height: 1.5em;
 	
 	& > div { margin: 0px !important; }
 
 	& > div > table {
 		&, & > tbody > tr > td { border: none !important; }
 
-		.note-left-margin {
-			width: 24px;
-			border-right-width: 2px !important;
-			border-right-style: solid !important;
-		}
+		// .note-left-margin {
+		// 	width: 24px;
+		// 	border-right-width: 2px !important;
+		// 	border-right-style: solid !important;
+		// }
 
 		tbody > .note-content > td {
 			padding: 0 6px !important;
-			font-size: 14px;
+			font-size: 1.5em;
 
 			p:nth-child(1) { margin-top: 0; }
 
@@ -251,8 +249,10 @@ details[open] > summary { margin-bottom: 1em; }
 				font-size: inherit;
 			}
 
-			pre, p, h1, h2, h3, h4, h5, h6 { margin: $line-height 0; }
-			code { line-height: $line-height * 0.8; }
+			p, h1, h2, h3, h4, h5, h6 { margin: $line-height 0; }
+			// code { line-height: $line-height * 0.8; }
+			code, pre { margin: 0; font-size: 0.85em;}
+			.highlight { line-height: normal; background: lightblue; padding: 4px; margin-right: 12px; border-radius: 8px; }
 
 			line-height: $line-height;
 		}
@@ -317,5 +317,17 @@ details[open] > summary { margin-bottom: 1em; }
 	
 	li {
 		display: inherit;
+	}
+}
+
+.scroll-x {
+	overflow-x: scroll;
+}
+
+.services-table {
+	td > a > img {
+		min-width: 16px;
+		max-width: unset;
+		min-height: 16px;
 	}
 }
