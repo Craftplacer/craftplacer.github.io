@@ -44,9 +44,9 @@ ul { padding-left: 10px; }
 
 .blog-post-list { width: 100%; }
 
-h1, h2, h3, h4, h5 { text-align: center; }
+h1 { text-align: center; }
 
-h1:target, h2:target, h3:target, h4:target, h5:target { margin: -1px; padding: 1px; border-width: 1px; border-style: dotted; border-radius: 4px; }
+h1:target, h2:target, h3:target, h4:target, h5:target, h6:target { margin: -1px; padding: 1px; border-width: 1px; border-style: dotted; border-radius: 4px; }
 
 .light-text { text-align: center; }
 
@@ -62,7 +62,7 @@ a img { border: none; }
 
 @media print { #nav, #sidebar, #kyouko { display: none; } #content > .panel { width: unset; max-width: unset; border: none; } html { font-size: unset; } }
 
-.large-table { min-width: 100%; width: unset !important; overflow: auto; }
+.large-table { width: unset !important; }
 
 .large-table th, .large-table td { padding: 2px 4px !important; }
 
@@ -84,17 +84,17 @@ details[open] > summary { margin-bottom: 1em; }
 
 .note-background > div > table, .note-background > div > table > tbody > tr > td { border: none !important; }
 
-.note-background > div > table .note-left-margin { width: 24px; border-right-width: 2px !important; border-right-style: solid !important; }
-
-.note-background > div > table tbody > .note-content > td { padding: 0 6px !important; font-size: 14px; line-height: 16px; }
+.note-background > div > table tbody > .note-content > td { padding: 0 6px !important; font-size: 1.5em; line-height: 1.5em; }
 
 .note-background > div > table tbody > .note-content > td p:nth-child(1) { margin-top: 0; }
 
 .note-background > div > table tbody > .note-content > td h1, .note-background > div > table tbody > .note-content > td h2, .note-background > div > table tbody > .note-content > td h3, .note-background > div > table tbody > .note-content > td h4, .note-background > div > table tbody > .note-content > td h5, .note-background > div > table tbody > .note-content > td h6 { text-decoration: underline; font-size: inherit; }
 
-.note-background > div > table tbody > .note-content > td pre, .note-background > div > table tbody > .note-content > td p, .note-background > div > table tbody > .note-content > td h1, .note-background > div > table tbody > .note-content > td h2, .note-background > div > table tbody > .note-content > td h3, .note-background > div > table tbody > .note-content > td h4, .note-background > div > table tbody > .note-content > td h5, .note-background > div > table tbody > .note-content > td h6 { margin: 16px 0; }
+.note-background > div > table tbody > .note-content > td p, .note-background > div > table tbody > .note-content > td h1, .note-background > div > table tbody > .note-content > td h2, .note-background > div > table tbody > .note-content > td h3, .note-background > div > table tbody > .note-content > td h4, .note-background > div > table tbody > .note-content > td h5, .note-background > div > table tbody > .note-content > td h6 { margin: 1.5em 0; }
 
-.note-background > div > table tbody > .note-content > td code { line-height: 12.8px; }
+.note-background > div > table tbody > .note-content > td code, .note-background > div > table tbody > .note-content > td pre { margin: 0; font-size: 0.85em; }
+
+.note-background > div > table tbody > .note-content > td .highlight { line-height: normal; background: lightblue; padding: 4px; margin-right: 12px; border-radius: 8px; }
 
 .album-table, .album-table td { border: none !important; }
 
@@ -127,5 +127,13 @@ details[open] > summary { margin-bottom: 1em; }
 .badge--green { background: #669966; color: white; border-color: white; }
 
 .badge--white { background: white; color: black; border-color: black; }
+
+.invisible-list { padding-inline-start: 0; }
+
+.invisible-list li { display: inherit; }
+
+.scroll-x { overflow-x: scroll; }
+
+.services-table td > a > img { min-width: 16px; max-width: unset; min-height: 16px; }
 
 /*# sourceMappingURL=styles.css.map */

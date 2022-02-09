@@ -28,14 +28,12 @@ a:visited { color: #8E4A5D; }
 
 .sections th { background: #f4b7c8 !important; }
 
-.note-background { font-family: 'azukifontL', cursive; }
-
-.note-background > div > table .note-left-margin { border-right-color: #ef7094 !important; }
-
-.note-background > div > table tbody > .note-content > td { background-image: url("/img/pink/note-bg.gif"); }
+.note-background { font-family: 'azukifontL', cursive; letter-spacing: -1px; }
 
 @font-face { font-family: 'azukifontL'; font-style: normal; font-weight: normal; src: url("/font/azukiL.ttf"); }
 
 @font-face { font-family: 'azukifontL'; font-style: normal; font-weight: bold; src: url("/font/azukiLB.ttf"); }
+
+.blog-short { color: #E098AC; font-weight: bold; }
 
 /*# sourceMappingURL=pink.css.map */
