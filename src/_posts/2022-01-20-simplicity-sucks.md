@@ -1,5 +1,6 @@
 ---
 title: Simplicity sucks
+category: "Hating the world"
 ---
 
 ![A graph with the y-axis describing the visual appeal and the x-axis describing the simplicity. The graph has a parabola-like trend with the highest point being in the middle.](/img/blog/2022-01-20-simplicity-sucks/graph.gif)

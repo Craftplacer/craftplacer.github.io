@@ -1,5 +1,6 @@
 ---
 allow-indexing: false
+category: "Hating the world"
 ---
 
 # Why I hate online social platforms
