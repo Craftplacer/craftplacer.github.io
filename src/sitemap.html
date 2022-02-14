@@ -3,7 +3,9 @@ title: Sitemap
 sitemap-include: false
 ---
 
-<p>Every page you <i>might</i> wanna visit</p>
+<p>Every page you <i>might</i> wanna visit.</p>
+
+<p>An automatically generated sitemap is also available in <a href="/sitemap.xml">XML format</a>.</p>
 
 {% assign pages = site.html_pages | sort: "url" | sort: "dir" %}
 {% for page in pages %}
