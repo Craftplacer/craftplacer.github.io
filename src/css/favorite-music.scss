@@ -1,0 +1,22 @@
+---
+---
+
+.album-table {
+	&, td { border: none !important; }
+	.album, .single, .artist { margin: 0.5em 0; } 
+	.album, .single { font-weight: bold; }
+	ul { list-style-type: none; padding: 0; }
+	td { width: 25%; vertical-align: top; }
+
+	img {
+		width: 135px;
+		height: 135px;
+		background: gray;
+        border: 1px solid black;
+	}
+
+	.tags {
+		margin: 2px 0;
+		* { margin-right: 2px; }
+	}
+}
