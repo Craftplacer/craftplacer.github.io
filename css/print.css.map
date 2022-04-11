@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "print.css",
+	"sources": [
+		"print.scss"
+	],
+	"sourcesContent": [
+		"@media print {\n\t.layout__sidebar, #kyouko { display: none; }\n\n\t.layout__main .panel {\n\t\twidth: unset;\n\t\tmax-width: unset;\n\t\tborder: none;\n\t}\n\n\thtml { font-size: unset; }\n\tbody { background: none; }\n}\n"
+	],
+	"names": [],
+	"mappings": "AAAA,MAAM,MACL,GAAA,AAAA,gBAAgB,EAAE,OAAO,CAAC,EAAE,OAAO,EAAE,IAAI,GAAI,CAE7C,AAAA,aAAa,CAAC,MAAM,CAAC,EACpB,KAAK,EAAE,KAAK,EACZ,SAAS,EAAE,KAAK,EAChB,MAAM,EAAE,IAAI,GACZ,CAED,AAAA,IAAI,CAAC,EAAE,SAAS,EAAE,KAAK,GAAI,CAC3B,AAAA,IAAI,CAAC,EAAE,UAAU,EAAE,IAAI,GAAI,EATiB"
+}

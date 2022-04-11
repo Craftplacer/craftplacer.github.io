@@ -1,39 +1,65 @@
-html { font-family: "Arial", sans-serif; font-size: 8pt; background-color: #F4D9D9; background-image: url("/img/pink/bg.gif"); }
+html { background-color: #ffe6f7; background-image: url("/img/pink/bg.gif"); }
 
-.cute-border, .panel { background: #FFF7F7; border-color: #f4b7c8; }
+pre.highlight { border: 1px solid #8c3971; overflow-x: auto; }
 
-#content table, #content td, #content th { border-color: #f4b7c8; }
+blockquote { border-left: 2px #FF66CC solid; margin: 0; padding: 0 12px; }
 
-#content th { background: #F4D9D9; }
+.panel { background: white; border-color: #ffccee; }
 
-h2:target { border-color: #E098AC; }
+table, td, th { border-color: #ffccee; }
 
-hr { border-top-color: #f4b7c8; }
+th { background: #ffe6f7; }
 
-a { color: #EF7094; }
+h2:target { border-color: #8c3971; }
 
-a:visited { color: #8E4A5D; }
+hr { border-top-color: #ffccee; }
 
-.light-text { color: #E098AC; }
+a:not(:hover) { color: #0000b3; text-decoration: none; }
 
-#nav .section { color: #E098AC; }
+a:hover { text-decoration-style: dashed; }
+
+a:visited { color: #b300b3; }
+
+.light-text { color: #8c3971; }
+
+#nav .section { color: #8c3971; }
 
 .warning { background: #F4F0D9; border-color: #F4DAB7; }
 
-.small-wide-heading { color: #E098AC; border-bottom-color: #E098AC; }
+.small-wide-heading, .image-heading { color: #8c3971; border-bottom: #8c3971 1px solid; margin-top: 3em; margin-bottom: 1em; padding-bottom: 4px; }
 
-::selection { color: black; background: #E098AC; }
+.badge, .badge--accent, .badge--white { border-width: 1px; border-style: solid; padding: 1px 3px; }
 
-::-moz-selection { color: white; background: #E098AC; }
+.badge--white { background: white; color: black; border-color: black; }
 
-.sections th { background: #f4b7c8 !important; }
+.badge--accent { background: #FF66CC; color: white; border-color: white; }
 
-.note-background { font-family: 'azukifontL', cursive; letter-spacing: -1px; }
+.image-heading { font-size: 8px; font-family: "Silkscreen", sans-serif; padding-bottom: 0px; }
 
-@font-face { font-family: 'azukifontL'; font-style: normal; font-weight: normal; src: url("/font/azukiL.ttf"); }
+.image-heading img { position: relative; top: 2px; height: 12px; }
 
-@font-face { font-family: 'azukifontL'; font-style: normal; font-weight: bold; src: url("/font/azukiLB.ttf"); }
+.ntp, .nvp { padding-top: 0 !important; }
 
-.blog-short { color: #E098AC; font-weight: bold; }
+.nbp, .nvp { padding-bottom: 0 !important; }
+
+.nlp { padding-left: 0 !important; }
+
+.nrp { padding-right: 0 !important; }
+
+.ntm { margin-top: 0; }
+
+::selection, ::-moz-selection { color: white; background: #8c3971; }
+
+@font-face { font-family: 'Nunito'; font-style: normal; font-weight: 800; src: url("/font/Nunito/Nunito-ExtraBold.ttf"); font-display: swap; }
+
+@font-face { font-family: 'Nunito'; font-style: italic; font-weight: 800; src: url("/font/Nunito/Nunito-ExtraBoldItalic.ttf"); font-display: swap; }
+
+@font-face { font-family: 'Silkscreen'; font-style: normal; src: url("/font/Silkscreen/slkscr.ttf"); font-display: swap; }
+
+@font-face { font-family: 'Silkscreen'; font-style: normal; font-weight: bold; src: url("/font/Silkscreen/slkscrb.ttf"); font-display: swap; }
+
+.blog-short { color: #8c3971; font-weight: bold; }
+
+h1 { border-bottom: #FF66CC 4px dotted; padding-bottom: 8px; font-weight: bold; font-weight: 800; font-family: 'Nunito', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
 
 /*# sourceMappingURL=pink.css.map */

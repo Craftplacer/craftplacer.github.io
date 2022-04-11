@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "compat.css",
+	"sources": [
+		"compat.scss",
+		"_sass/metrics.scss"
+	],
+	"sourcesContent": [
+		"@import 'metrics.scss';\n\n// Compatibility stylesheet for browsers that don't support inline-block (e.g. Firefox 2).\n\n#nav, #main, #sidebar {\n    position: absolute;\n    top: 0;\n}\n\n#nav { left: 0; }\n#main { left: $sidebar-width + $cell-spacing * 2; } \n#sidebar { left: $sidebar-width + $content-width + $cell-spacing * 4; }\n\n.small-wide-heading {\n    font-size: 11px;\n}",
+		"$cell-spacing: 6px;\n$content-padding: $cell-spacing * 2;\n$page-width: 900px;\n$margins: $cell-spacing * 6;\n$sidebar-width: ($page-width - $margins) * (1 / 5);\n$content-width: ($page-width - $margins) - $sidebar-width * 2;"
+	],
+	"names": [],
+	"mappings": "AAIA,AAAA,IAAI,EAAE,KAAK,EAAE,QAAQ,CAAC,EAClB,QAAQ,EAAE,QAAQ,EAClB,GAAG,EAAE,CAAC,GACT;;AAED,AAAA,IAAI,CAAC,EAAE,IAAI,EAAE,CAAC,GAAI;;AAClB,AAAA,KAAK,CAAC,EAAE,IAAI,EAAE,OAAkC,GAAI;;AACpD,AAAA,QAAQ,CAAC,EAAE,IAAI,EAAE,OAAmD,GAAI;;AAExE,AAAA,mBAAmB,CAAC,EAChB,SAAS,EAAE,IAAI,GAClB"
+}
