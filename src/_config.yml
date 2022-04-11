@@ -1,30 +1,46 @@
 title: craftplacer.moe
+tagline: "The first and only website you wanna visit ヾ(•ω•`)o"
 baseurl: ""
+onion_url: "http://mwas32ahexpkksf64koqzzascy5epm7tl4evkw5kfcc2un2ufixvxcad.onion/"
 url: "https://craftplacer.moe"
-permalink: "/blog/:title"
+twitter:
+  username: Craftplacer
+  card: summary
+
 plugins:
   - jekyll-feed
+  - jekyll-google_search_console_verification_file
+  - jekyll-include_sass
+  - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-titles-from-headings
+  - jekyll-postfiles
 
 include:
   - .well-known
 
 collections:
+  posts:
+    permalink: "/blog/:title"
+    image: '/img/social.png'
+    strip_title: true
+
   cookbook:
     output: true
-    
+    permalink: "/cookbook/:slugified_categories/:title"
+
 defaults:
   - scope:
       path: ""
     values:
       layout: "page"
-      sitemap-include: true
+      allow-indexing: false
       include-title: true
       
   - scope:
       path: "/css/"
     values:
-      sitemap-include: false
+      sitemap: false
 
   - scope:
       path: "_posts"
@@ -32,6 +48,15 @@ defaults:
       layout: "post"
       comments: true
       allow-indexing: true
+      strip_title: true
+
+  - scope:
+      path: "_drafts"
+    values:
+      layout: "post"
+      comments: false
+      allow-indexing: false
+      strip_title: true
 
   - scope:
       path: "_posts/microblogs"
@@ -45,3 +70,11 @@ defaults:
     values:
       layout: "cookbook"
       allow-indexing: true
+
+# Plugin config
+
+google_search_console:
+  verification_file_code: b6f44bcd9c89f6ba
+
+titles_from_headings:
+  collections: true

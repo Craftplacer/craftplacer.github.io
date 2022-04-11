@@ -1,0 +1,54 @@
+@import 'metrics.scss';
+
+body {
+    margin: 0;
+    font-size: 11px;
+}
+
+.layout {
+    width: $page-width - ($cell-spacing * 4);
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+
+    #main, #nav, #sidebar {
+        .panel { margin-bottom: 16px; }
+    }
+
+    #nav {
+        ul { padding-left: 20px; }
+        li {
+            margin: 2px 0;
+            * {
+                position: relative;
+                top: -5px;
+            }
+        }
+        .section { font-weight: bold; }
+    }
+
+    & > * {
+        // position: relative;
+        display: inline-block;
+        margin: $cell-spacing;
+    }
+}
+.layout__main,
+.layout__sidebar {
+    text-align: left;
+    vertical-align: top;
+}
+.layout__main, .layout__main > * {
+    width: $content-width;
+    max-width: $content-width;
+}
+.layout__sidebar {
+    width: $sidebar-width;
+    max-width: $sidebar-width;
+}
+
+.panel {
+    width: 100%;
+    & > div { margin: $content-padding;}
+}

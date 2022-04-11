@@ -1,0 +1,96 @@
+---
+title: Pleroma User Styles
+---
+
+{% assign image_baseurl = "https://raw.githubusercontent.com/Craftplacer/pleroma-user-styles/master/images" %}
+
+Just a little Pleroma-FE adjustments I did while being on there. <a href="https://github.com/Craftplacer/pleroma-user-styles">Check the Git repostiory here</a>.
+
+<h2>
+    <a href="https://craftplacer.github.io/pleroma-user-styles/compact-navigation-bar.user.css">
+        Compact navigation bar
+    </a>
+</h2>
+
+<p class="warning">
+    This style is broken with the newest release of Pleroma-FE!
+</p>
+
+<table class="image-table">
+    <thead>
+        <th>Before</th>
+        <th>After</th>
+    </thead>
+    <tbody>
+        <td><img src="{{image_baseurl}}/compact-navigation-bar/before.png" alt=""></td>
+        <td><img src="{{image_baseurl}}/compact-navigation-bar/after.png" alt=""></td>
+    </tbody>
+</table>
+
+<h2>
+    <a href="https://craftplacer.github.io/pleroma-user-styles/short-user-info.user.css">
+        Short user info
+    </a>
+</h2>
+
+<table class="image-table">
+    <thead>
+        <th>Before</th>
+        <th>After</th>
+    </thead>
+    <tbody>
+        <td><img src="{{image_baseurl}}/short-user-info/before.png" alt=""></td>
+        <td><img src="{{image_baseurl}}/short-user-info/after.png" alt=""></td>
+    </tbody>
+</table>
+
+<h2>
+    <a href="https://craftplacer.github.io/pleroma-user-styles/better-autocompletion-highlight.user.css">
+        Better autocompletion highlight
+    </a>
+</h2>
+
+<table class="image-table">
+    <thead>
+        <th>Before</th>
+        <th>After</th>
+    </thead>
+    <tbody>
+        <td><img src="{{image_baseurl}}/better-autocompletion-highlight/before.png" alt=""></td>
+        <td><img src="{{image_baseurl}}/better-autocompletion-highlight/after.png" alt=""></td>
+    </tbody>
+</table>
+
+<h2>Sliding NSFW warning</h2>
+
+<img class="fill-x" src="https://pl.craftplacer.moe/media/a1732ea429177351ca9d952c52493c65f746735cac29f4d160d51d2999440a54.gif" alt="">
+
+<details>
+    <summary>Source Code</summary>
+    <pre style="overflow-x:auto">.nsfw-placeholder:hover > .image-attachment {
+    opacity: 0;
+}
+
+.nsfw-placeholder:hover:after {
+    background: url("https://udongein.xyz/media/f211cd82149853911fd71d888a188f5d42e9f88a13973c307fb4c1a424bfa9ff.png");
+    background-position: right;
+    
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top: 0;
+    
+    content: "";
+    pointer-events: none;
+    
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-direction: normal;background-size: cover;
+}
+
+@keyframes slide {
+  from {background-position-x: 0%;}
+  to {background-position-x: 100%;}
+}</pre>
+</details>

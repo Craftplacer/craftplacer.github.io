@@ -1,0 +1,35 @@
+---
+title: Home
+include-title: false
+allow-indexing: true
+---
+
+<h1>Welcome to my site!</h1>
+
+<p style="text-align:center"><marquee>The first and only website you wanna visit ヾ(•ω•`)o</marquee></p>
+<p style="text-align:center"><i>A new place of what the web used to be and a part of <b>me</b></i></p>
+
+<p>Sign the <a href="/guestbook">Guestbook</a> while you're at it</p>
+
+<table class="invisible two-columns">
+    <tbody>
+        <tr>
+            <td class="nlp nvp" style="vertical-align: top;">
+                <h2 class="image-heading ntm"><img src="img/pink/blog-header.gif" alt="Latest blog posts"></h2>
+                {% include latest-posts.html %}
+            </td>
+            <td class="nrp nvp" style="vertical-align: top;">
+                <h2 class="image-heading ntm"><img src="img/pink/microblog-header.gif" alt="Latest microblogs"></h2>
+                {% include latest-microblogs.html %}
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<h2 class="image-heading ntm"><img src="img/pink/fedi-header.gif" alt="Latest Fediverse statuses"></h2>
+<table class="invisible">
+    <tbody id="fedi-slot">
+    </tbody>
+</table>
+
+<script src="js/fediverse.js" async></script>

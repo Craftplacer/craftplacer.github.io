@@ -1,35 +1,49 @@
 // Now playing script
 
-var slot = document.getElementById("np-slot");
-    
-
-function setNowPlaying(listen) {
+function setNowPlaying(listen, slot) {
     var np = listen.track_metadata;
-    buildTextElement(slot, "h2", "Now Playing");
-    
+    var heading = buildTextElement(slot, "h2", null);
+    heading.classList = "image-heading";
+    heading.innerHTML = '<img src="/img/pink/np-header.gif" alt="Now playing">';
+
     var paragraph = buildTextElement(slot, "p", null);
 
-    var titleElement = buildTextElement(paragraph, "span", np.track_name + "\n");
+    var originUrl = null; //np.additional_info.origin_url;
+    console.debug(originUrl); 
+    var titleElement = null;
+    if (originUrl != null) {
+        titleElement = buildTextElement(paragraph, "a", np.track_name + "\n");
+        titleElement.href = originUrl;
+    } else {
+        titleElement = buildTextElement(paragraph, "span", np.track_name + "\n");
+    }
     titleElement.style.fontWeight = "bold";
+    
 
     buildTextElement(paragraph, "span", "by " + np.artist_name + "\n");
-    buildTextElement(paragraph, "span", "from " + np.release_name);
+    
+    if (np.release_name != null) {
+        buildTextElement(paragraph, "span", "from " + np.release_name);
+    }
 
-    fetchCoverArt(np);
+    fetchCoverArt(np, slot);
 }
 
-function fetchCoverArt(track_metadata) {
+function fetchCoverArt(track_metadata, slot) {
     var mbRequest = new XMLHttpRequest();
 
     mbRequest.onload = function () {
         var data = JSON.parse(mbRequest.responseText);
         var img = document.createElement("img");
+        img.alt = "";
+        img.style.width = "100%";
         img.src = "https://coverartarchive.org/release/" + data.recordings[0].releases[0].id + "/front-250";
+        img.onerror = function () { slot.removeChild(img); };
         slot.appendChild(img);
     };
-    
+
     var query = buildQuery(track_metadata);
-    mbRequest.open("GET", "http://musicbrainz.org/ws/2/recording/?fmt=json&query=" + encodeURIComponent(query), true);
+    mbRequest.open("GET", "https://musicbrainz.org/ws/2/recording/?fmt=json&query=" + encodeURIComponent(query), true);
     mbRequest.send();
 }
 
@@ -48,21 +62,25 @@ function buildTextElement(parent, type, text) {
     return element;
 }
 
-function fetchNowPlaying() {
+function fetchNowPlaying(slot) {
     var request = new XMLHttpRequest();
-    
+
     request.onload = function () {
         var data = JSON.parse(request.responseText);
-        console.debug(data);
-        setNowPlaying(data.payload.listens[0]);
+        if (data.payload.listens.length != 0) {
+          setNowPlaying(data.payload.listens[0], slot);
+        }
     };
-    
+
     request.open("GET", "https://api.listenbrainz.org/1/user/craftplacer/playing-now", true);
     request.send();
 }
 
-if (slot === null) {
-    console.warn("Couldn't find now-playing slot");
-} else {
-    fetchNowPlaying();
-}
+window.addEventListener("load", function () {
+  var slot = document.getElementById("np-slot");
+  if (slot == null) {
+      console.warn("Couldn't find now-playing slot");
+  } else {
+      fetchNowPlaying(slot);
+  }
+});

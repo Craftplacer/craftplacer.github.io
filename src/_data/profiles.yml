@@ -1,6 +1,6 @@
 front:
   - platform: Discord
-    link: https://discord.gg/qMKfcKc
+    link: https://discordid.netlify.app/?id=194891941509332992
 
   - platform: Telegram
     link: https://t.me/Craftplacer
@@ -127,9 +127,6 @@ detailed:
 
 - title: Forums
   contacts:
-  - platform: Enigmatico's Forum
-    link: https://mewmew.elinformati.co/forum/memberlist.php?mode=viewprofile&u=51
-
   - platform: StackOverflow
     link: https://stackoverflow.com/users/7972419/craftplacer
 

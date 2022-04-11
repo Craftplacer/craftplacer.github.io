@@ -1,0 +1,47 @@
+- title: "Me"
+  links:
+  - name: Blog
+    url: /blog
+    ico: /img/pink/blog.gif
+  - name: Diary
+    url: /diary
+    ico: /img/pink/diary.gif
+  - name: Cookbook
+    url: /cookbook
+    ico: /img/pink/cookbook.gif
+  - name: Things people say about me
+    url: /quotes
+    ico: /img/pink/quotes.gif
+  - name: About me
+    url: /about-me
+    ico: /img/pink/about.gif
+
+- title: "Favorites"
+  links:
+  - name: Extensions
+    url: /favorites/extensions
+  - name: Music
+    url: /favorites/music
+
+- title: "World Wide Web"
+  links:
+  - name: Directory
+    ico: /img/pink/directory.gif
+    url: /directory
+  - name: Services
+    ico: /img/pink/services.gif
+    url: /services
+
+- title: "Projects"
+  links:
+  - name: Kaiteki
+    ico: /img/ico/kaiteki.gif
+    url: /projects/kaiteki
+  - name: Contributions
+    url: /projects/contributions
+  - name: Web design
+    ico: /img/pink/web-design.gif
+    url: /projects/web-design
+  - name: Pleroma styles
+    ico: /img/ico/pleroma.gif
+    url: /projects/pleroma-user-styles

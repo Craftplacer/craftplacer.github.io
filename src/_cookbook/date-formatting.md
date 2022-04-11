@@ -1,9 +1,10 @@
 ---
-title: "Date command sequences"
 tags: [ "linux", "date", "fomatting" ]
 source-title: "date(1) — Linux manual page"
 source-url: "https://man7.org/linux/man-pages/man1/date.1.html"
 ---
+
+# Date command sequences
 
 ## Escape codes and specials
 

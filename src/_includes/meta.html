@@ -1,13 +1,10 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 {% unless page.allow-indexing %}
 <meta name="robots" content="noindex,nofollow,noarchive">
 <meta name="googlebot-news" content="nosnippet">
 {% endunless %}
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@Craftplacer" />
-<meta name="twitter:title" content="{{page.title}}" />
-<meta name="og:title" content="{{page.title}}" />
-<meta property="og:image" content="{{ "/img/social.png" | absolute_url }}" />
-<meta property="og:site_name" content="craftplacer.moe" />
+{% if site.onion_url %}<meta http-equiv="onion-location" content="{{ site.onion_url }}" />{% endif %}
+{% seo title=false %}
 {% feed_meta %}
+<link href="https://github.com/Craftplacer" rel="me">

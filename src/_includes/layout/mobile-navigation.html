@@ -1,0 +1,11 @@
+<div class="mobile-nav-container">
+    <a href="/" style="font-weight: bold;">craftplacer.moe</a>
+    {% for section in site.data.navigation %}
+    <span class="section">{{section.title}}</span>
+    {% for item in section.links %}
+    {% assign icon = item.ico | default: "/img/pink/bullet.gif" %}
+    &bull; <a href="{{item.url}}">{{item.name}}</a>
+    {% endfor %}
+    {% endfor %}
+    <a href="/guestbook">Guestbook</a>
+</div>

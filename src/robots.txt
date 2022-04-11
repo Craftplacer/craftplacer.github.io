@@ -1,0 +1,11 @@
+User-agent: *
+User-agent: Googlebot
+User-agent: Googlebot-Image
+User-agent: AdsBot-Google
+Disallow: /img/
+Disallow: /font/
+Disallow: /js/
+Disallow: /diary/
+Allow: /img/blog
+
+Sitemap: https://craftplacer.moe/sitemap.xml

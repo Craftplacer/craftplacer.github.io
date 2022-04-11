@@ -1,48 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>{{page.title}} - craftplacer.moe</title>
-        <link rel="stylesheet" type="text/css" href="/css/styles.css">
-        <link rel="stylesheet" type="text/css" href="/css/pink.css">
-        <link rel="stylesheet" type="text/css" href="/css/mobile.css">
-        {% for stylesheet in page.css  %}
-        <link rel="stylesheet" type="text/css" href="{{stylesheet}}">
-        {% endfor %}
-        {% include meta.html %}
-        <script src="/js/np.js" async></script>
-    </head>
-    <body>
-        <table id="layout">
-            <tr>
-                <td id="nav">
-                    <div class="panel">
-                        <a href="/"><img alt="craftplacer.moe" id="banner" src="/img/banner.gif"></a>
-                    </div>
-                    <div class="panel">
-                        <div>
-                            {% include navigation.html %}
-                        </div>
-                    </div>
-                </td>
-                <td id="content">
-                    {{content}}
-                    <footer>
-                        <div class="panel">
-                            <div>
-                                {% include footer.html %}
-                            </div>
-                        </div>
-                    </footer>
-                </td>
-                <td id="sidebar">
-                    <div class="panel">
-                        <div>
-                            {% include sidebar.html %}
-                        </div>
-                    </div>
-                </td>
-            </tr>
-        </table>
-        <img id="kyouko" src="/img/kyouko.gif" alt="">
-    </body>
-</html></html>
+	<head>
+		<title>{{page.title}} - craftplacer.moe</title>
+		{% include styles.html %}
+		{% include meta.html %}
+		<script src="/js/np.js" async></script>
+		<script src="/js/compat.js" async></script>
+	</head>
+	<body>
+		<div class="layout">
+			<div id="nav" class="nav layout__sidebar">
+				<div class="panel">
+					<a href="/"><img alt="craftplacer.moe" id="banner" src="/img/banner.gif"></a>
+				</div>
+				<div class="panel">
+					<div>{% include layout/navigation.html %}</div>
+				</div>
+				{% if site.onion_url and site.configuration != "tor" %}
+				<div class="panel">
+					<div><a href="{{site.onion_url}}"><img src="/img/tor-button.gif" width="104" height="23" alt="Visit Tor Version"></a></div>
+				</div>
+				{% endif %}
+			</div>
+			<div id="main" class="layout__main">
+				<div id="mobile-nav">{% include layout/mobile-navigation.html %}</div>
+				<div id="content" class="layout__content">{{content}}</div>
+				<footer><div id="footer" class="panel">
+					<div>{% include layout/footer.html %}</div>
+				</div></footer>
+			</div>
+			<div id="sidebar" class="layout__sidebar">
+				<div class="panel">
+					<div>{% include layout/sidebar.html %}</div>
+				</div>
+			</div>
+		</div>
+		<img id="kyouko" src="/img/kyouko.gif" alt="">
+	</body>
+</html>

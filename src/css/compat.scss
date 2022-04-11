@@ -1,0 +1,19 @@
+---
+---
+
+@import 'metrics.scss';
+
+// Compatibility stylesheet for browsers that don't support inline-block (e.g. Firefox 2).
+
+#nav, #main, #sidebar {
+    position: absolute;
+    top: 0;
+}
+
+#nav { left: 0; }
+#main { left: $sidebar-width + $cell-spacing * 2; } 
+#sidebar { left: $sidebar-width + $content-width + $cell-spacing * 4; }
+
+.small-wide-heading {
+    font-size: 11px;
+}
