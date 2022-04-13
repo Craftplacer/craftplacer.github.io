@@ -1,3 +1,0 @@
-@media print { .layout__sidebar, #kyouko { display: none; } .layout__main .panel { width: unset; max-width: unset; border: none; } html { font-size: unset; } body { background: none; } }
-
-/*# sourceMappingURL=print.css.map */
