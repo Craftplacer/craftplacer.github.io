@@ -4,7 +4,7 @@ function setNowPlaying(listen, slot) {
     var np = listen.track_metadata;
     var heading = buildTextElement(slot, "h2", null);
     heading.classList = "image-heading";
-    heading.innerHTML = '<img src="/img/pink/np-header.gif" alt="Now playing">';
+    heading.innerHTML = '<img src="/assets/img/pink/np-header.gif" alt="Now playing">';
 
     var paragraph = buildTextElement(slot, "p", null);
 

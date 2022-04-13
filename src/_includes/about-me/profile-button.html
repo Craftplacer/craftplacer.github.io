@@ -1,0 +1,2 @@
+{% assign fallback = profile.platform | downcase %}
+<a href="{{profile.link}}"><img src="/assets/img/profiles/{{profile.icon | default: fallback }}.png"   class="profile-button" alt="{{profile.platform}}" title="{{profile.platform}}"></a>

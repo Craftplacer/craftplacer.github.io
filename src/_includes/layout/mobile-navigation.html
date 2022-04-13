@@ -3,7 +3,7 @@
     {% for section in site.data.navigation %}
     <span class="section">{{section.title}}</span>
     {% for item in section.links %}
-    {% assign icon = item.ico | default: "/img/pink/bullet.gif" %}
+    {% assign icon = item.ico | default: "/assets/img/pink/bullet.gif" %}
     &bull; <a href="{{item.url}}">{{item.name}}</a>
     {% endfor %}
     {% endfor %}

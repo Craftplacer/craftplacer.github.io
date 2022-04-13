@@ -10,13 +10,13 @@ wanna share this site with others? do it with a cute n' fancy 88x31 button!
 
 ### Preview
 
-<a href="https://craftplacer.moe/"><img src="/img/88x31/craftplacer.moe.gif" alt="Crafti's Site" width="88" height="31"></a>
+<a href="https://craftplacer.moe/"><img src="/assets/img/88x31/craftplacer.moe.gif" alt="Crafti's Site" width="88" height="31"></a>
 
 ### HTML
 
 ```html
 <a href="https://craftplacer.moe/">
-  <img src="https://craftplacer.moe/img/88x31/craftplacer.moe.gif" alt="Crafti's Site" width="88" height="31">
+  <img src="https://craftplacer.moe/assets/img/88x31/craftplacer.moe.gif" alt="Crafti's Site" width="88" height="31">
 </a>
 ```
 

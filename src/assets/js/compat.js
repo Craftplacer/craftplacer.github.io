@@ -32,7 +32,7 @@ function applyCompatibilityStylesheet() {
     var stylesheet = document.createElement("link");
     stylesheet.rel = "stylesheet";
     stylesheet.type = "text/css";
-    stylesheet.href = "/css/compat.css";
+    stylesheet.href = "/assets/css/compat.css";
 
     var head = document.getElementsByTagName("head")[0];
     head.appendChild(stylesheet);

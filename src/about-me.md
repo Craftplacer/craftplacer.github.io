@@ -13,4 +13,4 @@ You can send me a mail at craftplacer.moe, if you want.
 
 My PGP is [`9A79 0D94 BDA3 F64B 90CE`](https://keys.openpgp.org/vks/v1/by-fingerprint/6E81FE1C230CFB5ACA2A9A790D94BDA3F64B90CE)
 
-{% include profile-list.html %}
+{% include about-me/profile-list.html %}

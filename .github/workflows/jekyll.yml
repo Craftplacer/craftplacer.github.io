@@ -6,6 +6,9 @@ on:
   schedule:
     - cron: '0 0 * * 1'
 
+env:
+  JEKYLL_ENV: production
+
 jobs:
   jekyll:
     runs-on: ubuntu-latest

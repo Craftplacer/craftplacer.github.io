@@ -3,7 +3,7 @@
 	font-family: 'Nunito';
 	font-style: normal;
 	font-weight: 800;
-	src: url("/font/Nunito/Nunito-ExtraBold.ttf");
+	src: url("/assets/font/Nunito/Nunito-ExtraBold.ttf");
 	font-display: swap;
 }
 
@@ -12,14 +12,14 @@
 	font-family: 'Nunito';
 	font-style: italic;
 	font-weight: 800;
-	src: url("/font/Nunito/Nunito-ExtraBoldItalic.ttf");
+	src: url("/assets/font/Nunito/Nunito-ExtraBoldItalic.ttf");
 	font-display: swap;
 }
 
 @font-face {
 	font-family: 'Silkscreen';
 	font-style: normal;
-	src: url("/font/Silkscreen/slkscr.ttf");
+	src: url("/assets/font/Silkscreen/slkscr.ttf");
 	font-display: swap;
 }
 
@@ -27,6 +27,6 @@
 	font-family: 'Silkscreen';
 	font-style: normal;
 	font-weight: bold;
-	src: url("/font/Silkscreen/slkscrb.ttf");
+	src: url("/assets/font/Silkscreen/slkscrb.ttf");
 	font-display: swap;
 }

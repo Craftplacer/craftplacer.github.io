@@ -5,7 +5,7 @@ User-agent: AdsBot-Google
 Disallow: /img/
 Disallow: /font/
 Disallow: /js/
+Disallow: /assets/
 Disallow: /diary/
-Allow: /img/blog
 
 Sitemap: https://craftplacer.moe/sitemap.xml

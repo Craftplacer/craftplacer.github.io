@@ -4,21 +4,21 @@
 		<title>{{page.title}} - craftplacer.moe</title>
 		{% include styles.html %}
 		{% include meta.html %}
-		<script src="/js/np.js" async></script>
-		<script src="/js/compat.js" async></script>
+		<script src="/assets/js/np.js" async></script>
+		<script src="/assets/js/compat.js" async></script>
 	</head>
 	<body>
 		<div class="layout">
 			<div id="nav" class="nav layout__sidebar">
 				<div class="panel">
-					<a href="/"><img alt="craftplacer.moe" id="banner" src="/img/banner.gif"></a>
+					<a href="/"><img alt="craftplacer.moe" id="banner" src="/assets/img/banner.gif"></a>
 				</div>
 				<div class="panel">
 					<div>{% include layout/navigation.html %}</div>
 				</div>
 				{% if site.onion_url and site.configuration != "tor" %}
 				<div class="panel">
-					<div><a href="{{site.onion_url}}"><img src="/img/tor-button.gif" width="104" height="23" alt="Visit Tor Version"></a></div>
+					<div><a href="{{site.onion_url}}"><img src="/assets/img/tor-button.gif" width="104" height="23" alt="Visit Tor Version"></a></div>
 				</div>
 				{% endif %}
 			</div>
@@ -35,6 +35,6 @@
 				</div>
 			</div>
 		</div>
-		<img id="kyouko" src="/img/kyouko.gif" alt="">
+		<img id="kyouko" src="/assets/img/kyouko.gif" width="300" height="505" aria-hidden="true" alt="">
 	</body>
 </html>

@@ -15,6 +15,8 @@ plugins:
   - jekyll-sitemap
   - jekyll-titles-from-headings
   - jekyll-postfiles
+  - jekyll-redirect-from
+  - jekyll-minifier
 
 include:
   - .well-known
@@ -22,7 +24,7 @@ include:
 collections:
   posts:
     permalink: "/blog/:title"
-    image: '/img/social.png'
+    image: '/assets/img/social.png'
     strip_title: true
 
   cookbook:
@@ -38,7 +40,7 @@ defaults:
       include-title: true
       
   - scope:
-      path: "/css/"
+      path: "/assets/css/"
     values:
       sitemap: false
 
@@ -78,3 +80,6 @@ google_search_console:
 
 titles_from_headings:
   collections: true
+
+html_press:
+  js_minifier_options: true

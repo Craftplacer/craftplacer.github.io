@@ -141,6 +141,12 @@ details[open] > summary { margin-bottom: 1em; }
         img { width: 100%; border: black 1px solid; }
 }
 
+.a11y-link {
+        &:focus {
+                $
+        }
+}
+
 ul.invisible {
         padding: 0;
         li { display: inherit; }
@@ -179,9 +185,6 @@ table.invisible {
 
 #fedi-slot {
         vertical-align: top;
-}
-
-img.fedi-avi {
 }
 
 .fediverse-post {

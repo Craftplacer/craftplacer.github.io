@@ -1,22 +1,24 @@
 {% for section in site.data.navigation %}
-{% if section.title %}
-<p class="section">{{section.title}}</p>
-{% endif %}
-<ul>
-	{% for item in section.links %}
-	{% assign icon = item.ico | default: "/img/pink/bullet.gif" %}
-	<li style="list-style-image:url('{{icon}}')">
-		<a href="{{item.url}}">{{item.name}}</a>
-	</li>
-	{% endfor %}
-</ul>
+<!-- {% if section.title %}
+<h2 class="section">{{section.title}}</h2>
+{% endif %} -->
+<nav aria-label="{{section.title}}">
+	<ul>
+		{% for item in section.links %}
+		{% assign icon = item.ico | default: "/assets/img/pink/bullet.gif" %}
+		<li style="list-style-image:url('{{icon}}')">
+			<a href="{{item.url}}">{{item.name}}</a>
+		</li>
+		{% endfor %}
+	</ul>
+</nav>
 <hr>
 {% endfor %}
 
 <!-- small hack lol -->
 
 <ul>
-	<li style="list-style-image:url('/img/pink/bullet.gif')">
+	<li style="list-style-image:url('/assets/img/pink/bullet.gif')">
 		<a href="/guestbook">Guestbook</a>
 	</li>
 </ul>

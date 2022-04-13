@@ -162,12 +162,12 @@ tags: [ "metadata", "html", "open graph", "oembed" ]
 
 #### Discord
 
-![A picture showing an embed provided by Discord with number annotations showing 1. Kaiteki; 2. Home; 3. The comfy Fediverse client; 4. (The logo); 5. (The color stripe)](/img/blog/web-previews/discord-web-embed-with-legend.png)
+![A picture showing an embed provided by Discord with number annotations showing 1. Kaiteki; 2. Home; 3. The comfy Fediverse client; 4. (The logo); 5. (The color stripe)](/assets/img/blog/web-previews/discord-web-embed-with-legend.png)
 
 #### Pleroma
 
-![A picture showing a website card on Pleroma, with number annotations showing 2. Home; 3. The comfy Fediverse client; 4. (The logo)](/img/blog/web-previews/pleroma-card-with-legend.png)
+![A picture showing a website card on Pleroma, with number annotations showing 2. Home; 3. The comfy Fediverse client; 4. (The logo)](/assets/img/blog/web-previews/pleroma-card-with-legend.png)
 
 #### Twitter
 
-![A picture showing a card on Twitter, with number annotations showing 2. Home; 3. The comfy Fediverse client; 4. (The logo)](/img/blog/web-previews/twitter-card-with-legend.png)
+![A picture showing a card on Twitter, with number annotations showing 2. Home; 3. The comfy Fediverse client; 4. (The logo)](/assets/img/blog/web-previews/twitter-card-with-legend.png)
