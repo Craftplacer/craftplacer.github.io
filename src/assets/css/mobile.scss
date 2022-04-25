@@ -1,7 +1,9 @@
 ---
 ---
 
-@media (max-width: 900px), screen and (orientation: portrait) {
+@import 'metrics.scss';
+
+@media (max-width: $page-width), screen and (orientation: portrait) {
     html { font-size: 10pt; }
 
     .layout,

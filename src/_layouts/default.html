@@ -16,8 +16,10 @@
 					<div>{% include layout/navigation.html %}</div>
 				</div>
 				{% if site.onion_url and site.configuration != "tor" %}
-				<div class="panel">
-					<div><a href="{{site.onion_url}}"><img src="/assets/img/tor-button.gif" width="104" height="23" alt="Visit Tor Version"></a></div>
+				<div class="panel" style="text-align:center">
+					<div><a href="{{site.onion_url}}"><img src="/assets/img/tor-button.gif" width="104" height="23" alt="Visit Tor Version"></a>
+						<span></span>
+					</div>
 				</div>
 				{% endif %}
 			</div>

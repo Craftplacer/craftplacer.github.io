@@ -1,6 +1,6 @@
 $cell-spacing: 6px;
 $content-padding: $cell-spacing * 2;
-$page-width: 900px;
+$page-width: 960px;
 $margins: $cell-spacing * 6;
 $sidebar-width: ($page-width - $margins) * (1 / 5);
 $content-width: ($page-width - $margins) - $sidebar-width * 2;

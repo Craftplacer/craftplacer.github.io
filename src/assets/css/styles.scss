@@ -4,7 +4,7 @@
 html { font-family: "Arial", "Roboto", sans-serif; }
 pre, code { font-family: "Roboto Mono", "Cascadia Code", "Consolas", "Lucida Console", monospace; }
 
-.panel { @extend .cute-border; }
+.panel { @extend .cute-border; overflow: hidden; }
 
 .web-button        { width: 88px; height: 31px; }
 .web-button--small { width: 80px; height: 15px; }
@@ -69,11 +69,13 @@ h1, h2, h3, h4, h5, h6 {
                 border-radius: 4px;
         }
 }
+aside { float:right; }
 
 .light-text { text-align: center; }
 
 #kyouko {
         position: fixed;
+        position: absolute;
         z-index: -1;
         bottom: 0;
         right: 0;
@@ -135,15 +137,31 @@ details[open] > summary { margin-bottom: 1em; }
         h2, h3, h4, h5, h6 { text-decoration: underline; margin-top: 3em; }
 
         // code { line-height: $line-height * 0.8; }
-        code, pre { margin: 0; font-size: 0.85em;}
-        .highlight { line-height: normal; background: lightblue; padding: 4px; margin-right: 12px; border-radius: 8px; }
+        code, pre { margin: 0; }
+        .highlight { 
+                line-height: normal;
+                background: lightblue;
+                padding: 4px;
+                margin-right: 12px;
+                border-radius: 8px;
+                overflow-x: auto;
+         }
 
         img { width: 100%; border: black 1px solid; }
 }
 
 .a11y-link {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        opacity: 0;
+
         &:focus {
-                // omfg
+                opacity: 1;
+                border: 2px white solid;
+                background: blue;
+                color: white;
+                padding: 8px;
         }
 }
 
@@ -217,4 +235,5 @@ table.invisible {
                 font-weight: bold;
                 margin-top: 0;
         }
+        code { white-space: break-spaces; }
 }
