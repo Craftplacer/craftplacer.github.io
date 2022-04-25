@@ -10,10 +10,24 @@
     top: 0;
 }
 
+.panel {
+    border-width: 3px;
+    border-style: solid;
+}
+
 #nav { left: 0; }
-#main { left: $sidebar-width + $cell-spacing * 2; } 
+#nav ul {
+    margin: 0; /* To remove default bottom margin */ 
+    padding: 0;
+}
+#main { left: $sidebar-width + $cell-spacing * 2; width: $content-width; } 
 #sidebar { left: $sidebar-width + $content-width + $cell-spacing * 4; }
 
 .small-wide-heading {
     font-size: 11px;
+}
+
+#kyouko {
+    // Kyouko doesn't scroll...
+    display: none;
 }
