@@ -1,5 +1,4 @@
 // Now playing script
-
 function setNowPlaying(listen, slot) {
     var np = listen.track_metadata;
     var heading = buildTextElement(slot, "h2", null);
@@ -76,11 +75,17 @@ function fetchNowPlaying(slot) {
     request.send();
 }
 
-window.addEventListener("load", function () {
-  var slot = document.getElementById("np-slot");
-  if (slot == null) {
-      console.warn("Couldn't find now-playing slot");
-  } else {
-      fetchNowPlaying(slot);
-  }
-});
+function loadNowPlaying() {
+    var slot = document.getElementById("np-slot");
+    if (slot == null) {
+        console.warn("Couldn't find now-playing slot");
+    } else {
+        fetchNowPlaying(slot);
+    }
+}
+
+if (window.attachEvent) {
+    window.attachEvent("load", loadNowPlaying);
+} else {
+    window.addEventListener("load", loadNowPlaying);
+}

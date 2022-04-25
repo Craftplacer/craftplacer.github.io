@@ -1,4 +1,3 @@
-
 function fedi_buildAttachmentRow(attachments) {
   if (attachments == null) {
     return null;
@@ -64,7 +63,7 @@ function fetchStatuses(slot) {
     request.send();
 }
 
-window.addEventListener("load", function () {
+function loadFediverseFeed() {
   slot = document.getElementById("fedi-slot");
   if (navigator.userAgent.indexOf("Google") != -1 ||
       navigator.userAgent.indexOf("Bot") != -1 ||
@@ -73,4 +72,10 @@ window.addEventListener("load", function () {
   } else {
     fetchStatuses(slot);
   }
-});
+}
+
+if (window.attachEvent) {
+  window.attachEvent("load", loadFediverseFeed);
+} else {
+  window.addEventListener("load", loadFediverseFeed);
+}
