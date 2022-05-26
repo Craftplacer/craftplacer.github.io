@@ -4,9 +4,7 @@ category: "Hating the world"
 
 # The Misskey API is a trainwreck
 
-I am developing Kaiteki, my attempt at building the "best" Fediverse (and by far extension, social media) client.
-
-Adding support for Misskey was way harder than Mastodon and Pleroma combined. There are multiple issues plaguing it.
+I am developing Kaiteki, my attempt at building the "best" Fediverse (and by far extension, social media) client. Adding support for Misskey was way harder than Mastodon and Pleroma combined. There are multiple issues plaguing it.
 
 ## The API breaks several conventions
 
@@ -30,23 +28,22 @@ Comparing to Pleroma, Pleroma has [a schema called a relationship](https://api.p
 
 Misskey's API documentation and schemas are [generated using an in-house tool](https://github.com/misskey-dev/misskey/blob/develop/packages/backend/src/server/api/openapi/gen-spec.ts), which works for most cases, but not all.
 
-Going back to Kaiteki, I want to future-proof the code as much as possible. That means, things like having to handwrite each <abbr title="class that holds data for use across the application">model class</abbr> are a no-go. This task has been automated by me with a tool call [ApiToDart](https://github.com/Kaiteki-Fedi/ApiToDart), which generates code using the specifications/documentation offered by each backend.
+Going back to Kaiteki, I want to future-proof the code as much as possible. That means, things like having to handwrite each <abbr title="class that holds data for use across the application">model class</abbr> is a no-go. This task has been automated by me with a tool call [ApiToDart](https://github.com/Kaiteki-Fedi/ApiToDart), which generates code using the specifications/documentation offered by each backend.
 
 My solution for Kaiteki's longevity falls apart with Misskey. There have been several issues:
 - The schemas lying about whether a property is null or not
   - requires me manually specifying it
 - The documentation is incomplete, some fields being defined as plain "objects" with no details whatsoever.
+- The generated schema always assumes JSON and not other form data like multipart.
 
   ```json
-  {
-    // ...
-    "reactions": {
-        "type": "object",
-        "optional": false,
-        "nullable": false
-    },
-    // ...
-  }
+  // ...
+  "reactions": {
+      "type": "object",
+      "optional": false,
+      "nullable": false
+  },
+  // ...
   ```
 
 ## Will something ever change?
