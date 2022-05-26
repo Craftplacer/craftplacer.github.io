@@ -4,7 +4,11 @@ category: "Hating the world"
 
 # The Misskey API is a trainwreck
 
-I am developing Kaiteki, my attempt at building the "best" Fediverse (and by far extension, social media) client. Adding support for Misskey was way harder than Mastodon and Pleroma combined. There are multiple issues plaguing it.
+Adding support for Misskey was way harder than Mastodon and Pleroma combined.
+
+For context, I am developing Kaiteki, my attempt at building the "best" Fediverse (and by far extension, social media) client.
+
+
 
 ## The API breaks several conventions
 
@@ -46,8 +50,12 @@ My solution for Kaiteki's longevity falls apart with Misskey. There have been se
   // ...
   ```
 
+This poor documentation ends up in me sending requests over the official frontend and peeking with my browser's developer tools. This is also how Kaiteki uses the private `sign-in` endpoint which has been [explicitly removed](https://github.com/misskey-dev/misskey/tree/develop/packages/backend/src/server/api/private) from the documentation.
+
 ## Will something ever change?
 
 While I despise Misskey's userbase, I still try to be fair about it. But the API is, like mentioned above, objectively bad. I am not the single one sharing that opinion, with a1batross (former developer of Husky) saying "at this point it's Misskey \[that\] must be patched to support your client".
+
+It's as if Syuilo actively doesn't cares about third-party applications, like Kaiteki. 
 
 It's easy to complain while doing nothing. But at the same time, I don't have 100 copies of myself to contribute to every piece of software I don't like to fix it up to the way I like it (taking Linux software as an example). Except creating an easily forgotten issue on their repository that can be easily dismissed, I don't think there is much hope.
