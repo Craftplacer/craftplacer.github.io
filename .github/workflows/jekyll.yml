@@ -17,15 +17,10 @@ jobs:
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: 3.0
+        bundler-cache: true
 
     - name: Checkout
       uses: actions/checkout@v2
-      
-    - name: 'Checkout (Kaiteki)'
-      uses: actions/checkout@v2
-      with:
-        repository: 'Kaiteki-Fedi/Website'
-        path: './kaiteki'
 
     - name: Build
       uses: limjh16/jekyll-action-ts@v2
@@ -34,15 +29,14 @@ jobs:
         format_output: true
         custom_opts: '-d ./publish/'
 
+    - name: Download Kaiteki subsite
+      run: wget -O kaiteki.zip https://nightly.link/Kaiteki-Fedi/Website/workflows/build/master/website.zip
+      
     - name: 'Create directories'
       run: 'mkdir -p ./publish/projects/kaiteki/'
-
-    - name: 'Build (Kaiteki)'
-      uses: limjh16/jekyll-action-ts@v2
-      with:
-        jekyll_src: './kaiteki/src/'
-        format_output: true
-        custom_opts: '-d ./publish/projects/kaiteki/'
+      
+    - name: Extract Kaiteki subsite
+      run: 'unzip -d ./publish/projects/kaiteki/ kaiteki.zip'
 
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
